@@ -139,7 +139,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="16234.cpp" />
+    <ClCompile Include="12869번.cpp" />
+    <ClCompile Include="15686번.cpp" />
+    <ClCompile Include="16234번.cpp" />
     <ClCompile Include="2589번.cpp" />
     <ClCompile Include="4179번.cpp" />
   </ItemGroup>
