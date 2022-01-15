@@ -13,13 +13,19 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="소스 파일\완전탐색, 배트래킹">
+    <Filter Include="소스 파일\완전탐색, 백트래킹">
       <UniqueIdentifier>{e7736f3c-8fe1-4c93-8512-7f13c14c4f1d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
-      <Filter>소스 파일\완전탐색, 배트래킹</Filter>
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="16234.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="4179번.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
