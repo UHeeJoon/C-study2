@@ -16,6 +16,9 @@
     <Filter Include="소스 파일\완전탐색, 백트래킹">
       <UniqueIdentifier>{e7736f3c-8fe1-4c93-8512-7f13c14c4f1d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\아무문제">
+      <UniqueIdentifier>{f0515145-b9cc-4209-bafc-9d29ed8e0b78}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -31,6 +34,18 @@
       <Filter>소스 파일\완전탐색, 백트래킹</Filter>
     </ClCompile>
     <ClCompile Include="15686번.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="16637번.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="약수의 개수와 덧셈.cpp">
+      <Filter>소스 파일\아무문제</Filter>
+    </ClCompile>
+    <ClCompile Include="12851번.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="13913번.cpp">
       <Filter>소스 파일\완전탐색, 백트래킹</Filter>
     </ClCompile>
   </ItemGroup>
