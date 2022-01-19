@@ -51,5 +51,11 @@
     <ClCompile Include="17071번.cpp">
       <Filter>소스 파일\완전탐색, 백트래킹</Filter>
     </ClCompile>
+    <ClCompile Include="1015번.cpp">
+      <Filter>소스 파일\아무문제</Filter>
+    </ClCompile>
+    <ClCompile Include="1016번.cpp">
+      <Filter>소스 파일\아무문제</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
