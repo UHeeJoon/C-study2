@@ -19,6 +19,9 @@
     <Filter Include="소스 파일\아무문제">
       <UniqueIdentifier>{f0515145-b9cc-4209-bafc-9d29ed8e0b78}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\비트마스킹">
+      <UniqueIdentifier>{9206faec-035d-427f-b235-3bd400bd605d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -71,6 +74,21 @@
     </ClCompile>
     <ClCompile Include="9934번.cpp">
       <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="23825번.cpp">
+      <Filter>소스 파일\아무문제</Filter>
+    </ClCompile>
+    <ClCompile Include="1189번.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="14620번.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="15684번.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="19942번.cpp">
+      <Filter>소스 파일\비트마스킹</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
