@@ -22,6 +22,9 @@
     <Filter Include="소스 파일\비트마스킹">
       <UniqueIdentifier>{9206faec-035d-427f-b235-3bd400bd605d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\단계별 문제 풀이, 14단계 백트래킹">
+      <UniqueIdentifier>{723ea454-43b2-4ba2-aaf7-b1b63ca3d337}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -101,6 +104,21 @@
     </ClCompile>
     <ClCompile Include="2의 보수.cpp">
       <Filter>소스 파일\아무문제</Filter>
+    </ClCompile>
+    <ClCompile Include="15649번.cpp">
+      <Filter>소스 파일\단계별 문제 풀이, 14단계 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="15650번.cpp">
+      <Filter>소스 파일\단계별 문제 풀이, 14단계 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="15651번.cpp">
+      <Filter>소스 파일\단계별 문제 풀이, 14단계 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="15652번.cpp">
+      <Filter>소스 파일\단계별 문제 풀이, 14단계 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="9663번.cpp">
+      <Filter>소스 파일\단계별 문제 풀이, 14단계 백트래킹</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
