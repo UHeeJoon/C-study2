@@ -39,7 +39,7 @@ int main() {
                     dfs(i, j, v);
                     if (v.size() == 1) continue;
                     for (pair<int, int> b : v) {
-                        a[b.first][b.second] = sum / v.size();
+                        a[b.first][b.second] = sum / (int)v.size();
                         flag = 1;
                     }
                 }

@@ -90,5 +90,17 @@
     <ClCompile Include="19942번.cpp">
       <Filter>소스 파일\비트마스킹</Filter>
     </ClCompile>
+    <ClCompile Include="1145번.cpp">
+      <Filter>소스 파일\아무문제</Filter>
+    </ClCompile>
+    <ClCompile Include="1789번.cpp">
+      <Filter>소스 파일\아무문제</Filter>
+    </ClCompile>
+    <ClCompile Include="2805번.cpp">
+      <Filter>소스 파일\아무문제</Filter>
+    </ClCompile>
+    <ClCompile Include="2의 보수.cpp">
+      <Filter>소스 파일\아무문제</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
