@@ -1,4 +1,4 @@
-
+/*
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -55,7 +55,8 @@ int main() {
 		cout << "\n";
 	}
 }
-/*
+*/
+
 // 답만 출력
 #include<iostream>
 #include<vector>
@@ -118,4 +119,3 @@ int main() {
 		cout << "\n";
 	}
 }
-*/
