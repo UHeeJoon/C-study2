@@ -1,15 +1,12 @@
 #include<iostream>
 #include<queue>
-
 using namespace std;
 const int max_n = 500000;
 const int dx[3] = { -1, 1, 0 };
 const int dm[3] = { 1, 1, 2 };
 int visited[2][500001], a, b, ok, turn = 1;
 int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
     cin >> a >> b;
     if (a == b) { cout << 0 << "\n"; return 0; }
     queue<int> q;
@@ -29,6 +26,7 @@ int main() {
             for (int j = 0; j < 3; j++) {
                 int nx = (x + dx[j]) * dm[j];
                 if (nx < 0 || nx > max_n || visited[turn % 2][nx]) continue;
+                // 수빈이가 앞 뒤로 왔다갔다 할 때
                 visited[turn % 2][nx] = visited[(turn + 1) % 2][x] + 1;
                 //수빈이가 갈 때 확인하거나
                 if (nx == b) {

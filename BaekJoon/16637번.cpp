@@ -22,7 +22,7 @@ void go(int here, int _num) {
     if (here == num.size() - 1) {
         ret = max(ret, _num);
         return;
-    }
+    }// ±âÀú »ç·Ê
     go(here + 1, oper(oper_str[here], _num, num[here + 1]));
 
     if (here + 2 <= num.size() - 1) {
