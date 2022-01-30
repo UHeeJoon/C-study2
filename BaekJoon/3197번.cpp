@@ -1,11 +1,7 @@
-#include <cstdio>
-#include <string>
 #include <iostream>
-#include <vector>
-#include <algorithm>
 #include <string>
+#include <algorithm>
 #include <queue>
-#include <stack>
 using namespace std;
 const int max_n = 1501;
 const int dx[4] = { 1, 0, -1, 0 };
@@ -53,9 +49,7 @@ void move_swan() {
     }
 }
 int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
     cin >> R >> C;
     for (int i = 0; i < R; i++) {
         cin >> s;
@@ -78,6 +72,5 @@ int main() {
         day++;
     }
     cout << day << "\n";
-
     return 0;
 }

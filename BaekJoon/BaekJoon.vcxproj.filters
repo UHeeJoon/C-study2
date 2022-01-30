@@ -129,5 +129,11 @@
     <ClCompile Include="14889번.cpp">
       <Filter>소스 파일\단계별 문제 풀이, 14단계 백트래킹</Filter>
     </ClCompile>
+    <ClCompile Include="1285번.cpp">
+      <Filter>소스 파일\비트마스킹</Filter>
+    </ClCompile>
+    <ClCompile Include="기본 개념.cpp">
+      <Filter>소스 파일\비트마스킹</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

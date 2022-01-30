@@ -13,8 +13,8 @@ bool good(char x, char y, char op) {
 }
 void go(int idx, string num) {
 	if (idx == n + 1) {
-
-		ret.push_back(num); return;
+		ret.push_back(num); 
+		return;
 	}
 	for (int i = 0; i <= 9; i++) {
 		if (check[i]) continue;
