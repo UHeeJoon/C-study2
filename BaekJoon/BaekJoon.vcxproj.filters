@@ -135,5 +135,17 @@
     <ClCompile Include="기본 개념.cpp">
       <Filter>소스 파일\비트마스킹</Filter>
     </ClCompile>
+    <ClCompile Include="1259번.cpp">
+      <Filter>소스 파일\아무문제</Filter>
+    </ClCompile>
+    <ClCompile Include="1874번.cpp">
+      <Filter>소스 파일\아무문제</Filter>
+    </ClCompile>
+    <ClCompile Include="1074번.cpp">
+      <Filter>소스 파일\아무문제</Filter>
+    </ClCompile>
+    <ClCompile Include="17471번.cpp">
+      <Filter>소스 파일\비트마스킹</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
