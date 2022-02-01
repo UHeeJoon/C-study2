@@ -147,5 +147,8 @@
     <ClCompile Include="17471번.cpp">
       <Filter>소스 파일\비트마스킹</Filter>
     </ClCompile>
+    <ClCompile Include="14890번.cpp">
+      <Filter>소스 파일\비트마스킹</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
