@@ -1,13 +1,8 @@
 #include<iostream>
 #include<string>
 #include<algorithm>
-#define maxn 200005
-typedef long long ll;
 using namespace std;
-const int INF = 987654321;
-const int dy[] = { -1, 0, 1, 0 };
-const int dx[] = { 0, 1, 0, -1 };
-int n, a[44], ret = INF;
+int n, a[44], ret = 987654321;
 string s;
 void go(int here) {
 	if (here == n + 1) {
@@ -33,7 +28,7 @@ int main() {
 		cin >> s;
 		int value = 1;
 		for (int j = 0; j < s.size(); j++) {
-			if (s[j] == 'T')a[i] |= value;
+			if (s[j] == 'T') a[i] |= value; 
 			value *= 2;
 		}
 	}

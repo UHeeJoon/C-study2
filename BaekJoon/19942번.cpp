@@ -3,7 +3,6 @@
 #include<vector>
 #include<map>
 using namespace std;
-typedef long long ll;
 const int INF = 987654321;
 int n, mp, mf, ms, mv;
 int b, c, d, e, ret = INF, sum;
