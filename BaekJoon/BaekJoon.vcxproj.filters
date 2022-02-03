@@ -153,5 +153,11 @@
     <ClCompile Include="1062번.cpp">
       <Filter>소스 파일\비트마스킹</Filter>
     </ClCompile>
+    <ClCompile Include="1094번.cpp">
+      <Filter>소스 파일\비트마스킹</Filter>
+    </ClCompile>
+    <ClCompile Include="1987-2비트마스킹 풀이.cpp">
+      <Filter>소스 파일\비트마스킹</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
