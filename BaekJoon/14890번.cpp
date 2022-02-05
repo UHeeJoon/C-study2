@@ -16,11 +16,12 @@ void solve(int a[104][104]) {
     return;
 }
 int main() {
-    scanf("%d %d", &n, &l);
+    scanf_s("%d %d", &n, &l);
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
-            scanf("%d", &a[i][j]);
+            scanf_s("%d", &a[i][j]);
             b[j][i] = a[i][j];
+            // 행과 열을 체크하기 위한 b와 a
         }
     }
     solve(a); solve(b);

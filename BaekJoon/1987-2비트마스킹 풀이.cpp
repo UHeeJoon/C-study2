@@ -11,7 +11,7 @@ void go(int y, int x, int num, int cnt) {
         ny = y + dy[i], nx = x + dx[i];
         if (ny < 0 || ny >= R || nx < 0 || nx >= C) continue;
         int _next = (1 << (int)(a[ny][nx] - 'A'));
-        if ((num & _next) == 0) go(ny, nx, num | _next, cnt + 1);
+        if ((num & _next) == 0) go(ny, nx, num | _next, cnt + 1);  
     }
     return;
 }

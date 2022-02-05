@@ -49,6 +49,11 @@ int main() {
 	int num2 = 16;
 	cout << ~num << " " << ~num2;
 	cout << "\n";
+	int a = 12;
+	int b = 1 << 2;
+	int d = a & b;
+	int c = a | b;
+	cout << a << " " << b << " " << d << " " << c << "\n";
 	return 0;
 }
 
