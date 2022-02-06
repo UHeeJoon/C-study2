@@ -25,6 +25,9 @@
     <Filter Include="소스 파일\단계별 문제 풀이, 14단계 백트래킹">
       <UniqueIdentifier>{723ea454-43b2-4ba2-aaf7-b1b63ca3d337}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\아무문제 2">
+      <UniqueIdentifier>{c6b65e38-f4e9-4964-8a3d-6cedabf2455a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -185,6 +188,18 @@
     </ClCompile>
     <ClCompile Include="1520번.cpp">
       <Filter>소스 파일\아무문제</Filter>
+    </ClCompile>
+    <ClCompile Include="2644번.cpp">
+      <Filter>소스 파일\아무문제</Filter>
+    </ClCompile>
+    <ClCompile Include="2573번.cpp">
+      <Filter>소스 파일\아무문제</Filter>
+    </ClCompile>
+    <ClCompile Include="1937번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
+    <ClCompile Include="1926번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
