@@ -201,5 +201,20 @@
     <ClCompile Include="1926번.cpp">
       <Filter>소스 파일\아무문제 2</Filter>
     </ClCompile>
+    <ClCompile Include="2668번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
+    <ClCompile Include="2638번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
+    <ClCompile Include="13023번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
+    <ClCompile Include="1743번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
+    <ClCompile Include="2210번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
