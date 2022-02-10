@@ -4,14 +4,14 @@ using namespace std;
 #define MAX 301
 int dy[4] = { 0,1,0,-1 };
 int dx[4] = { 1,0,-1,0 };
-int result, n, m, iceburg[MAX][MAX];
+int year, n, m, iceburg[MAX][MAX];
 bool visited[MAX][MAX];
 void dfs(int y, int x) {
 	visited[y][x] = 1;
 	for (int i = 0; i < 4; i++) {
 		int ny = y + dy[i];
 		int nx = x + dx[i];
-		if (ny < 1 || ny >= n - 1 || nx < 1 || nx >= m - 1 || visited[ny][nx] || iceburg[ny][nx] <= 0) continue;
+		if (ny < 1 || ny >= n - 1 || nx < 1 || nx >= m - 1 || visited[ny][nx] || !iceburg[ny][nx]) continue;
 		dfs(ny, nx);
 	}
 }
@@ -51,14 +51,23 @@ int main() {
 				}
 			}
 		}
-		result += 1;
+
+		cout << "\n";
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < m; j++) {
+				cout << iceburg[i][j] << " ";
+			}
+			cout << "\n";
+		}
+
+		year += 1;
 		if (cnt >= 2) break;
 		else if (cnt == 0) {
-			result = 0;
+			year = 0;
 			break;
 		}
 	}
-	cout << result << "\n";
+	cout << year << "\n";
 }
 
 /*
