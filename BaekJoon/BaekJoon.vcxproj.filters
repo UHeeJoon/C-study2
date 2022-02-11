@@ -225,5 +225,8 @@
     <ClCompile Include="1697번.cpp">
       <Filter>소스 파일\아무문제 2</Filter>
     </ClCompile>
+    <ClCompile Include="11723번.cpp">
+      <Filter>소스 파일\비트마스킹</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
