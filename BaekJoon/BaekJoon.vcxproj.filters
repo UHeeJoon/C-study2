@@ -28,6 +28,12 @@
     <Filter Include="소스 파일\아무문제 2">
       <UniqueIdentifier>{c6b65e38-f4e9-4964-8a3d-6cedabf2455a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\단계별 문제풀이 18 스택">
+      <UniqueIdentifier>{79672795-d1a7-4b68-bdbf-afa914bae128}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\단계별 문제풀이 17 정수론 및 조합론">
+      <UniqueIdentifier>{f99907d7-d569-4e2a-8cfd-10a3dd410a88}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -227,6 +233,33 @@
     </ClCompile>
     <ClCompile Include="11723번.cpp">
       <Filter>소스 파일\비트마스킹</Filter>
+    </ClCompile>
+    <ClCompile Include="10828번.cpp">
+      <Filter>소스 파일\단계별 문제풀이 18 스택</Filter>
+    </ClCompile>
+    <ClCompile Include="10773번.cpp">
+      <Filter>소스 파일\단계별 문제풀이 18 스택</Filter>
+    </ClCompile>
+    <ClCompile Include="5086번.cpp">
+      <Filter>소스 파일\단계별 문제풀이 17 정수론 및 조합론</Filter>
+    </ClCompile>
+    <ClCompile Include="1934번.cpp">
+      <Filter>소스 파일\단계별 문제풀이 17 정수론 및 조합론</Filter>
+    </ClCompile>
+    <ClCompile Include="2981번.cpp">
+      <Filter>소스 파일\단계별 문제풀이 17 정수론 및 조합론</Filter>
+    </ClCompile>
+    <ClCompile Include="3036번.cpp">
+      <Filter>소스 파일\단계별 문제풀이 17 정수론 및 조합론</Filter>
+    </ClCompile>
+    <ClCompile Include="11050번.cpp">
+      <Filter>소스 파일\단계별 문제풀이 17 정수론 및 조합론</Filter>
+    </ClCompile>
+    <ClCompile Include="11051번.cpp">
+      <Filter>소스 파일\단계별 문제풀이 17 정수론 및 조합론</Filter>
+    </ClCompile>
+    <ClCompile Include="1676번.cpp">
+      <Filter>소스 파일\단계별 문제풀이 17 정수론 및 조합론</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
