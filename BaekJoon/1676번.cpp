@@ -11,7 +11,7 @@ void Five(int five) {
 }
 int main() {
 	cin >> n;
-	while (n--) 
+	while (n--)
 		Five(n + 1);
 	cout << cnt << "\n";
 }

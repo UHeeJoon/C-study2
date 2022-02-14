@@ -1,4 +1,5 @@
-#define _CRT_SECURE_NO_WARNINGS
+#pragma warning(disable:4996)
+//#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 using namespace std;
 int n, m, x;

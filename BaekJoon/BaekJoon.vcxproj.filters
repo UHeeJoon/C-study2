@@ -261,5 +261,17 @@
     <ClCompile Include="1676번.cpp">
       <Filter>소스 파일\단계별 문제풀이 17 정수론 및 조합론</Filter>
     </ClCompile>
+    <ClCompile Include="2004번.cpp">
+      <Filter>소스 파일\단계별 문제풀이 17 정수론 및 조합론</Filter>
+    </ClCompile>
+    <ClCompile Include="14391번.cpp">
+      <Filter>소스 파일\비트마스킹</Filter>
+    </ClCompile>
+    <ClCompile Include="13244번.cpp">
+      <Filter>소스 파일\비트마스킹</Filter>
+    </ClCompile>
+    <ClCompile Include="5430번.cpp">
+      <Filter>소스 파일\비트마스킹</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
