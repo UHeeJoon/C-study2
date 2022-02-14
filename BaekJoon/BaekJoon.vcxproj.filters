@@ -273,5 +273,14 @@
     <ClCompile Include="5430번.cpp">
       <Filter>소스 파일\비트마스킹</Filter>
     </ClCompile>
+    <ClCompile Include="14405번cpp.cpp">
+      <Filter>소스 파일\비트마스킹</Filter>
+    </ClCompile>
+    <ClCompile Include="15353번.cpp">
+      <Filter>소스 파일\비트마스킹</Filter>
+    </ClCompile>
+    <ClCompile Include="질의응답.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
