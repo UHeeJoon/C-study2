@@ -282,5 +282,23 @@
     <ClCompile Include="질의응답.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="9311번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
+    <ClCompile Include="24479번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
+    <ClCompile Include="24480번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
+    <ClCompile Include="24481번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
+    <ClCompile Include="24482번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
+    <ClCompile Include="2206번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
