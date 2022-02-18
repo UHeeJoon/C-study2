@@ -303,5 +303,8 @@
     <ClCompile Include="15926번.cpp">
       <Filter>소스 파일\비트마스킹</Filter>
     </ClCompile>
+    <ClCompile Include="3015번.cpp">
+      <Filter>소스 파일\비트마스킹</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
