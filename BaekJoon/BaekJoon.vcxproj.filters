@@ -34,6 +34,9 @@
     <Filter Include="소스 파일\단계별 문제풀이 17 정수론 및 조합론">
       <UniqueIdentifier>{f99907d7-d569-4e2a-8cfd-10a3dd410a88}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\그리디, 라인스위핑, 투포인터">
+      <UniqueIdentifier>{7eb12ab2-5104-4ac9-a0f0-b75d74845eca}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -305,6 +308,9 @@
     </ClCompile>
     <ClCompile Include="3015번.cpp">
       <Filter>소스 파일\비트마스킹</Filter>
+    </ClCompile>
+    <ClCompile Include="2109번.cpp">
+      <Filter>소스 파일\그리디, 라인스위핑, 투포인터</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
