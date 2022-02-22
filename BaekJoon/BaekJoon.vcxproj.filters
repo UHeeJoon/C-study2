@@ -321,5 +321,14 @@
     <ClCompile Include="11047번.cpp">
       <Filter>소스 파일\아무문제 2</Filter>
     </ClCompile>
+    <ClCompile Include="17615번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
+    <ClCompile Include="1049번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
+    <ClCompile Include="1051번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
