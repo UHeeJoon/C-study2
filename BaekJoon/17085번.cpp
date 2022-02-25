@@ -12,14 +12,13 @@ int main() {
 	for (int i = 0; i < N; i++)
 		for (int j = 0; j < M; j++)
 			cin >> board[i][j];
-	int tmp = 1, flag = N < M ? N : M;
-	while (1) {
-		if (tmp == flag - tmp) break;
+	int tmp = N < M ? N - 1 : M - 1, flag = N < M ? N : M;
+	while (tmp > 0) {
 		for (int i = tmp; i < N - tmp; i++) {
 			for (int j = tmp; j < M - tmp; j++) {
 				if (board[i][j] == '#' && visited[i][j] == 0) {
 					if (check(i, j + tmp) && check(i + tmp, j) && check(i, j - tmp) && check(i - tmp, j)) {
-						tmp++;
+						tmp--;
 					}
 					cout << tmp << " ";
 				}
