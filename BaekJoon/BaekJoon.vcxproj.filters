@@ -345,5 +345,14 @@
     <ClCompile Include="14469번.cpp">
       <Filter>소스 파일\그리디, 라인스위핑, 투포인터</Filter>
     </ClCompile>
+    <ClCompile Include="4101번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
+    <ClCompile Include="18110번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
+    <ClCompile Include="1522번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
