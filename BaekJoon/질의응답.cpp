@@ -1,20 +1,16 @@
-#include<iostream>
-#include<algorithm>
-#include<string>
+#include <iostream>
+
 using namespace std;
-bool isprime(int n) {
-	if (n == 2) return true;
-	for (int j = 2; j < n; j++) {
-		if (n % j == 0) return false;
-	}
-	return true;
-}
+
 int main() {
-	int tmp(0);
-	for (int i = 2; i <= 523; i++) {
-		if (isprime(i))
-			tmp++;
+	int n;
+	int cnt = 0;
+	cin >> n;
+	int new_n = n;
+	while (1) {
+		cnt = cnt + 1;
+		new_n = ((new_n / 10) + (new_n % 10)) % 10 + (new_n % 10) * 10;
+		if (new_n == n) break;
 	}
-	cout << 999 + tmp << "\n";
-	return 0;
+	cout << cnt;
 }
