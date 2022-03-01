@@ -1,16 +1,25 @@
-#include <iostream>
-
+#pragma warning (disable :4996)
+#include<iostream>
+#include<algorithm>
+#define MAX 9
 using namespace std;
-
+int n, m;
+int arr[MAX] = { 0, };
+bool visited[MAX] = { 0, };
+void dfs(int num, int cnt) {
+    if (cnt == m) {
+        for (int i = 0; i < m; i++)
+            cout << arr[i] << " ";
+        cout << "\n";
+        return;
+    }
+    for (int i = num; i <= n; i++) {
+        arr[cnt] = i;
+        dfs(i, cnt + 1);
+    }
+}
 int main() {
-	int n;
-	int cnt = 0;
-	cin >> n;
-	int new_n = n;
-	while (1) {
-		cnt = cnt + 1;
-		new_n = ((new_n / 10) + (new_n % 10)) % 10 + (new_n % 10) * 10;
-		if (new_n == n) break;
-	}
-	cout << cnt;
+    ios_base::sync_with_stdio(false); cout.tie(NULL);
+    cin >> n >> m;
+    dfs(1, 0);
 }
