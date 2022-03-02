@@ -9,15 +9,21 @@
 #include<tuple>
 #include<cmath>
 using namespace std;
-int	rope[100001], n, k;
+string s;
+int ret, tmp, num[10];
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-	cin >> n;
-	for (int i = 0; i < n; i++) cin >> rope[i];
-	sort(rope, rope + n);
-	for (int i = 0; i < n; i++) 
-		k = max(rope[i] * (n - i), k);
-	cout << k << '\n';
+	cin >> s;
+	for (int i = 0; i < (int)s.length(); i++) 
+		num[s[i] - '0']++;
+	for (int i = 0; i < 10; i++) {
+		if (i == 6 || i == 9) continue;
+		if (ret < num[i]) {
+			ret = num[i];
+		}
+	}
+	tmp = (num[6] + num[9]) & 1 ? (num[6] + num[9] + 1) / 2 : (num[6] + num[9]) / 2;
+	cout << (ret > tmp ? ret : tmp) << '\n';
 	return 0;
 }
 

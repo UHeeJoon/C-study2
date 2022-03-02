@@ -366,5 +366,8 @@
     <ClCompile Include="2217번.cpp">
       <Filter>소스 파일\아무문제</Filter>
     </ClCompile>
+    <ClCompile Include="1475번.cpp">
+      <Filter>소스 파일\아무문제</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
