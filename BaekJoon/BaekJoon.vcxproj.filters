@@ -37,6 +37,9 @@
     <Filter Include="소스 파일\그리디, 라인스위핑, 투포인터">
       <UniqueIdentifier>{7eb12ab2-5104-4ac9-a0f0-b75d74845eca}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\다이나믹 프로그래밍">
+      <UniqueIdentifier>{c706a1b4-8cb1-478f-9c4c-d3111bba76d8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -383,6 +386,12 @@
     </ClCompile>
     <ClCompile Include="7569번.cpp">
       <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
+    <ClCompile Include="11659번.cpp">
+      <Filter>소스 파일\아무문제</Filter>
+    </ClCompile>
+    <ClCompile Include="2839번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
