@@ -40,6 +40,9 @@
     <Filter Include="소스 파일\다이나믹 프로그래밍">
       <UniqueIdentifier>{c706a1b4-8cb1-478f-9c4c-d3111bba76d8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\연속합">
+      <UniqueIdentifier>{9ac0163a-f9f3-4182-bd02-a44eae672734}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -425,6 +428,15 @@
     </ClCompile>
     <ClCompile Include="10844번.cpp">
       <Filter>소스 파일\다이나믹 프로그래밍</Filter>
+    </ClCompile>
+    <ClCompile Include="10986번.cpp">
+      <Filter>소스 파일\연속합</Filter>
+    </ClCompile>
+    <ClCompile Include="13144번.cpp">
+      <Filter>소스 파일\그리디, 라인스위핑, 투포인터</Filter>
+    </ClCompile>
+    <ClCompile Include="3273번.cpp">
+      <Filter>소스 파일\그리디, 라인스위핑, 투포인터</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
