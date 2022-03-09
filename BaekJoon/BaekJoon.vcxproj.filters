@@ -444,5 +444,8 @@
     <ClCompile Include="1966번.cpp">
       <Filter>소스 파일\아무문제</Filter>
     </ClCompile>
+    <ClCompile Include="6603번.cpp">
+      <Filter>소스 파일\단계별 문제 풀이, 14단계 백트래킹</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
