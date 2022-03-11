@@ -43,6 +43,9 @@
     <Filter Include="소스 파일\연속합">
       <UniqueIdentifier>{9ac0163a-f9f3-4182-bd02-a44eae672734}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\깊이, 너비 우선 탐색">
+      <UniqueIdentifier>{df211646-b6f3-4b7d-8e75-148675c9e095}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -446,6 +449,9 @@
     </ClCompile>
     <ClCompile Include="6603번.cpp">
       <Filter>소스 파일\단계별 문제 풀이, 14단계 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="3055번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
