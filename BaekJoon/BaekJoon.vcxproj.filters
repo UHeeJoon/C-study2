@@ -186,61 +186,7 @@
     <ClCompile Include="1057번.cpp">
       <Filter>소스 파일\아무문제</Filter>
     </ClCompile>
-    <ClCompile Include="2667번.cpp">
-      <Filter>소스 파일\아무문제</Filter>
-    </ClCompile>
-    <ClCompile Include="2606번.cpp">
-      <Filter>소스 파일\아무문제</Filter>
-    </ClCompile>
-    <ClCompile Include="11724번.cpp">
-      <Filter>소스 파일\아무문제</Filter>
-    </ClCompile>
-    <ClCompile Include="4963번.cpp">
-      <Filter>소스 파일\아무문제</Filter>
-    </ClCompile>
-    <ClCompile Include="11725번.cpp">
-      <Filter>소스 파일\아무문제</Filter>
-    </ClCompile>
-    <ClCompile Include="10026번.cpp">
-      <Filter>소스 파일\아무문제</Filter>
-    </ClCompile>
-    <ClCompile Include="1520번.cpp">
-      <Filter>소스 파일\아무문제</Filter>
-    </ClCompile>
-    <ClCompile Include="2644번.cpp">
-      <Filter>소스 파일\아무문제</Filter>
-    </ClCompile>
-    <ClCompile Include="2573번.cpp">
-      <Filter>소스 파일\아무문제</Filter>
-    </ClCompile>
-    <ClCompile Include="1937번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
-    </ClCompile>
-    <ClCompile Include="1926번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
-    </ClCompile>
-    <ClCompile Include="2668번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
-    </ClCompile>
-    <ClCompile Include="2638번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
-    </ClCompile>
     <ClCompile Include="13023번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
-    </ClCompile>
-    <ClCompile Include="1743번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
-    </ClCompile>
-    <ClCompile Include="2210번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
-    </ClCompile>
-    <ClCompile Include="3184번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
-    </ClCompile>
-    <ClCompile Include="7576번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
-    </ClCompile>
-    <ClCompile Include="1697번.cpp">
       <Filter>소스 파일\아무문제 2</Filter>
     </ClCompile>
     <ClCompile Include="11723번.cpp">
@@ -293,24 +239,6 @@
     </ClCompile>
     <ClCompile Include="질의응답.cpp">
       <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="9311번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
-    </ClCompile>
-    <ClCompile Include="24479번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
-    </ClCompile>
-    <ClCompile Include="24480번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
-    </ClCompile>
-    <ClCompile Include="24481번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
-    </ClCompile>
-    <ClCompile Include="24482번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
-    </ClCompile>
-    <ClCompile Include="2206번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
     </ClCompile>
     <ClCompile Include="15926번.cpp">
       <Filter>소스 파일\비트마스킹</Filter>
@@ -390,9 +318,6 @@
     <ClCompile Include="2075번.cpp">
       <Filter>소스 파일\아무문제</Filter>
     </ClCompile>
-    <ClCompile Include="7569번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
-    </ClCompile>
     <ClCompile Include="11659번.cpp">
       <Filter>소스 파일\아무문제</Filter>
     </ClCompile>
@@ -451,6 +376,81 @@
       <Filter>소스 파일\단계별 문제 풀이, 14단계 백트래킹</Filter>
     </ClCompile>
     <ClCompile Include="3055번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="1520번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="2573번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="2606번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="2644번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="2667번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="4963번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="10026번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="11724번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="11725번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="1743번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="1697번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="1926번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="1937번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="2206번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="2210번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="2638번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="2668번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="3184번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="7569번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="7576번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="9311번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="24479번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="24480번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="24482번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="24481번.cpp">
       <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
     </ClCompile>
   </ItemGroup>
