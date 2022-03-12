@@ -453,5 +453,17 @@
     <ClCompile Include="24481번.cpp">
       <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
     </ClCompile>
+    <ClCompile Include="24444번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="24445번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="24446번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="24447번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
