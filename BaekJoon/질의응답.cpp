@@ -1,19 +1,22 @@
 #pragma warning(disable :4996)
 #include<bits/stdc++.h>
 using namespace std;
-int sub(int n) {
-	//if (n < 0)
-	//	return 0;
-	//return n + sub(n - 3);
-	int sum(0);
-	for (int i = n; i > 0; i -= 3)
-		sum += i;
-	return sum;
-}
+int dp[1001], card[1001], n;
 int main() {
-	ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(NULL);
-	int n; cin >> n;
-	cout << sub(10) << '\n';
-	//22
+	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+	int m, n;
+	scanf("%d %d", &m, &n);
+	int i, j;
+	for (i = m; i <= n; i++) {
+		for (j = 2; j * j  <= i; j++) {
+			if (i % j == 0 && i == j) {
+				printf("%d\n", i);
+				break;
+			}
+			else if (i % j == 0 && i != j) 
+				break;
+			
+		}
+	}
 	return 0;
 }
