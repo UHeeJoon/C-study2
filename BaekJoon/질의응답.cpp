@@ -1,16 +1,19 @@
 #pragma warning(disable :4996)
 #include<bits/stdc++.h>
 using namespace std;
-long long N[91];
+int sub(int n) {
+	//if (n < 0)
+	//	return 0;
+	//return n + sub(n - 3);
+	int sum(0);
+	for (int i = n; i > 0; i -= 3)
+		sum += i;
+	return sum;
+}
 int main() {
 	ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(NULL);
-	N[1] = 1;
-	int n;
-	cin >> n;
-	if (n > 1){
-		for (int i = 2; i <= n; i++)
-			N[i] = N[i - 1] + N[i - 2];
-	}
-	cout << N[n] << '\n';
+	int n; cin >> n;
+	cout << sub(10) << '\n';
+	//22
 	return 0;
 }
