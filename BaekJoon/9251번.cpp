@@ -1,4 +1,3 @@
-#pragma warning(disable :4996)
 #include<bits/stdc++.h>
 using namespace std;
 int dp[1001][1001], A_len, B_len;
