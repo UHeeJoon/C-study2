@@ -495,5 +495,11 @@
     <ClCompile Include="1700번.cpp">
       <Filter>소스 파일\그리디, 라인스위핑, 투포인터</Filter>
     </ClCompile>
+    <ClCompile Include="11057번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍</Filter>
+    </ClCompile>
+    <ClCompile Include="11055번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,4 +1,3 @@
-#pragma warning(disable :4996)
 #include<bits/stdc++.h>
 using namespace std;
 int n, sum, arr[1010], dp[1010];
@@ -11,7 +10,7 @@ int main() {
 	}
 	for (int i = 1; i <= n; i++) {
 		for (int j = 1; j <= i; j++) {
-			if(arr[i] > arr[j] && dp[i] < dp[j] + arr[i])
+			if (arr[i] > arr[j] && dp[i] < dp[j] + arr[i])
 				dp[i] = dp[j] + arr[i];
 		}
 		if (sum < dp[i])
