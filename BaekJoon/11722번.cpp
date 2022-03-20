@@ -1,4 +1,3 @@
-#pragma warning(disable :4996)
 #include<bits/stdc++.h>
 using namespace std;
 int n, cnt, arr[1010], dp[1010];
@@ -11,7 +10,7 @@ int main() {
 	}
 	for (int i = 1; i <= n; i++) {
 		for (int j = 0; j < i; j++) {
-			if(arr[j] > arr[i])
+			if (arr[j] > arr[i])
 				dp[i] = max(dp[i], dp[j] + 1);
 			if (cnt < dp[i]) cnt = dp[i];
 		}
