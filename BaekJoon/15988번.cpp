@@ -1,4 +1,3 @@
-#pragma warning(disable :4996)
 #include<bits/stdc++.h>
 #define MOD 1000000009
 using namespace std;
@@ -10,7 +9,7 @@ long long Plus(long long n) {
 	dp[2] = 2;
 	dp[3] = 4;
 	for (int i = 4; i <= n; i++) {
-		dp[i] = (dp[i - 1]%MOD + dp[i - 2] % MOD + dp[i - 3] % MOD) % MOD;
+		dp[i] = (dp[i - 1] % MOD + dp[i - 2] % MOD + dp[i - 3] % MOD) % MOD;
 	}
 	return dp[n];
 }
