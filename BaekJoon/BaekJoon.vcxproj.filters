@@ -504,5 +504,17 @@
     <ClCompile Include="11722번.cpp">
       <Filter>소스 파일\다이나믹 프로그래밍</Filter>
     </ClCompile>
+    <ClCompile Include="15988번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍</Filter>
+    </ClCompile>
+    <ClCompile Include="11054번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍</Filter>
+    </ClCompile>
+    <ClCompile Include="2164번.cpp">
+      <Filter>소스 파일\아무문제</Filter>
+    </ClCompile>
+    <ClCompile Include="10866번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
