@@ -46,6 +46,9 @@
     <Filter Include="소스 파일\깊이, 너비 우선 탐색">
       <UniqueIdentifier>{df211646-b6f3-4b7d-8e75-148675c9e095}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\세그먼트 트리">
+      <UniqueIdentifier>{dc548920-6b32-4cf6-a1e7-2c7219f129b5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -515,6 +518,12 @@
     </ClCompile>
     <ClCompile Include="10866번.cpp">
       <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
+    <ClCompile Include="2042번.cpp">
+      <Filter>소스 파일\세그먼트 트리</Filter>
+    </ClCompile>
+    <ClCompile Include="14438번.cpp">
+      <Filter>소스 파일\세그먼트 트리</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
