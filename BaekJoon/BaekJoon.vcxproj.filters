@@ -525,5 +525,8 @@
     <ClCompile Include="14438번.cpp">
       <Filter>소스 파일\세그먼트 트리</Filter>
     </ClCompile>
+    <ClCompile Include="17144번.cpp">
+      <Filter>소스 파일\그리디, 라인스위핑, 투포인터</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
