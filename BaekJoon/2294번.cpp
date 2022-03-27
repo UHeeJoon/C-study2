@@ -1,6 +1,5 @@
-#pragma warning(disable :4996)
 #include<bits/stdc++.h>
-using namespace std; 
+using namespace std;
 int coin[101], dp[100001];
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
