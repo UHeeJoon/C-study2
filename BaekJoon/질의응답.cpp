@@ -1,18 +1,14 @@
 #pragma warning(disable :4996)
 #include<bits/stdc++.h>
-using namespace std; 
-int coin[101], dp[100001];
+using namespace std;
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-	int n, k;
-	cin >> n >> k;
-	for (int i = 1; i <= n; i++) cin >> coin[i];
-	fill(dp, dp + 100001, 100001);
-	dp[0] = 0;
-	for (int i = 1; i <= n; i++) {
-		for (int j = coin[i]; j <= k; j++)
-			dp[j] = min(dp[j], dp[j - coin[i]] + 1);
+	cout << fixed; cout.precision(2);
+	int t; cin >> t;
+	while (t--) {
+		double a, b, c, d, e;
+		cin >> a >> b >> c >> d >> e;
+		cout << '$' << a * 350.34 + b * 230.90 + c * 190.55 + d * 125.30 + e * 180.90 << '\n';
 	}
-	cout << (dp[k] == 100001 ? -1 : dp[k]) << '\n';
 	return 0;
 }

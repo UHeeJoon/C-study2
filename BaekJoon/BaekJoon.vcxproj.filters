@@ -537,5 +537,8 @@
     <ClCompile Include="2294번.cpp">
       <Filter>소스 파일\다이나믹 프로그래밍</Filter>
     </ClCompile>
+    <ClCompile Include="2293번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
