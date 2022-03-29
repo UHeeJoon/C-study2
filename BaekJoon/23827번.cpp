@@ -1,4 +1,3 @@
-#pragma warning(disable :4996)
 #include<bits/stdc++.h>
 using namespace std;
 const int MOD = 1000000007;
@@ -13,7 +12,7 @@ int main() {
 	while (n--) {
 		cin >> tmp;
 		result = (result + (sum * tmp)) % MOD;
-		sum =(sum + tmp) % MOD;
+		sum = (sum + tmp) % MOD;
 	}
 	cout << result << '\n';
 	return 0;
