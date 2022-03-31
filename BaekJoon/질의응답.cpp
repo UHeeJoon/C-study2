@@ -1,20 +1,20 @@
 #pragma warning(disable :4996)
 #include<bits/stdc++.h>
 using namespace std;
-const int MOD = 1000000007;
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-	long long n, sum(0), result(0); cin >> n;
-	long long tmp, tmp2;
-	cin >> tmp >> tmp2;
-	sum = (tmp + tmp2) % MOD;
-	result = ((tmp % MOD) * (tmp2 % MOD)) % MOD;
-	n -= 2;
-	while (n--) {
-		cin >> tmp;
-		result = (result + (sum * tmp)) % MOD;
-		sum =(sum + tmp) % MOD;
-	}
-	cout << result << '\n';
+	cout << fixed; cout.precision(1);
+	string s; cin >> s;
+	double gdp(0);
+	if (s[0] == 'A') gdp = 4.0;
+	else if (s[0] == 'B') gdp = 3.0;
+	else if (s[0] == 'C') gdp = 2.0;
+	else if (s[0] == 'D') gdp = 1.0;
+	else gdp = 0.0;
+	if (s[1] == '+')gdp += 0.3;
+	else if (s[1] == '-') gdp -= 0.3;
+	else if (s[1] == '0');
+	else;
+	cout << gdp << '\n';
 	return 0;
 }
