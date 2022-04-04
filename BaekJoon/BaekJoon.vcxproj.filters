@@ -58,6 +58,9 @@
     <Filter Include="소스 파일\누적합">
       <UniqueIdentifier>{9ac0163a-f9f3-4182-bd02-a44eae672734}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\이분탐색">
+      <UniqueIdentifier>{ad9c3f85-edcb-448c-8c98-0a5e4a6efc72}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -584,6 +587,18 @@
     </ClCompile>
     <ClCompile Include="2133번.cpp">
       <Filter>소스 파일\다이나믹 프로그래밍</Filter>
+    </ClCompile>
+    <ClCompile Include="16926버.cpp">
+      <Filter>소스 파일\아무문제</Filter>
+    </ClCompile>
+    <ClCompile Include="10816번.cpp">
+      <Filter>소스 파일\이분탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="1654번.cpp">
+      <Filter>소스 파일\이분탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="18111번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
