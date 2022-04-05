@@ -600,5 +600,20 @@
     <ClCompile Include="18111번.cpp">
       <Filter>소스 파일\아무문제 2</Filter>
     </ClCompile>
+    <ClCompile Include="4150번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
+    <ClCompile Include="1292번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
+    <ClCompile Include="6588번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
+    <ClCompile Include="15654번.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="15655번.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

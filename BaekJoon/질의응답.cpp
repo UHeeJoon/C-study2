@@ -1,39 +1,28 @@
 #pragma warning(disable: 4996)
 #include<bits/stdc++.h>
+#define MAX 9
 using namespace std;
-int land[501][501];
-int _max, _min = 987654321;
+int n, m;
+int arr[MAX] = { 0, };
+int arr2[MAX] = { 0, };
+bool visited[MAX] = { 0, };
+void dfs(int num,int cnt) {
+	if (cnt == m) {
+		for (int i = 0; i < m; i++)
+			cout << arr[i] << " ";
+		cout << "\n";
+		return;
+	}
+	for (int i = num; i <= n; i++) {
+		arr[cnt] = arr2[i];
+		dfs(i, cnt + 1);
+	}
+}
 int main() {
-	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-	int n, m, b; cin >> n >> m >> b;
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < m; j++) {
-			cin >> land[i][j];
-			_min = min(_min, land[i][j]);
-			_max = max(_max, land[i][j]);
-		}
-	}
-	int cnt = 987654321, height = 0;
-	for (int i = _min; i <= _max; i++) {
-		int build(0), remove(0), tmp;
-		for (int j = 0; j < n; j++) {
-			for (int k = 0; k < m; k++) {
-				tmp = i - land[j][k];
-				if (tmp < 0)
-					remove += tmp * -1;
-				else
-					build += tmp;
-			}
-		}
-		if (build <= remove + b) {
-			tmp = build + remove * 2;
-			if (cnt > tmp)
-				cnt = tmp, height = i;
-			if (tmp == cnt)
-				if (height < i)
-					height = i;
-		}
-	}
-	cout << cnt << ' ' << height << '\n';
-	return 0;
+	ios_base::sync_with_stdio(false); cout.tie(NULL);
+	cin >> n >> m;
+	for (int i = 1; i <= n; i++)
+		cin >> arr2[i];
+	sort(arr2 + 0, arr2 + n + 1);
+	dfs(1, 0);
 }
