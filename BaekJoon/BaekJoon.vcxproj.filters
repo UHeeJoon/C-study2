@@ -621,5 +621,14 @@
     <ClCompile Include="15656번.cpp">
       <Filter>소스 파일\완전탐색, 백트래킹</Filter>
     </ClCompile>
+    <ClCompile Include="1920번.cpp">
+      <Filter>소스 파일\이분탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="10815번.cpp">
+      <Filter>소스 파일\이분탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="카라츠바의 빠른 정수 곱셈 알고리즘.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
