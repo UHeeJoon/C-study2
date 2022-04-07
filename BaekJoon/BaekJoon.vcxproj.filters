@@ -61,6 +61,9 @@
     <Filter Include="소스 파일\이분탐색">
       <UniqueIdentifier>{ad9c3f85-edcb-448c-8c98-0a5e4a6efc72}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\자료구조">
+      <UniqueIdentifier>{8bd45c22-a209-4af0-a1ba-62895cc84ada}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -629,6 +632,18 @@
     </ClCompile>
     <ClCompile Include="카라츠바의 빠른 정수 곱셈 알고리즘.cpp">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1918번.cpp">
+      <Filter>소스 파일\자료구조</Filter>
+    </ClCompile>
+    <ClCompile Include="자료구조.c">
+      <Filter>소스 파일\자료구조</Filter>
+    </ClCompile>
+    <ClCompile Include="1935번.cpp">
+      <Filter>소스 파일\자료구조</Filter>
+    </ClCompile>
+    <ClCompile Include="11399번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
