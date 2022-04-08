@@ -64,6 +64,9 @@
     <Filter Include="소스 파일\자료구조">
       <UniqueIdentifier>{8bd45c22-a209-4af0-a1ba-62895cc84ada}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\자료구조\해시를 이용한 집합과 맵">
+      <UniqueIdentifier>{1664b2ba-6845-4961-af5d-bc5977beeb55}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -644,6 +647,12 @@
     </ClCompile>
     <ClCompile Include="11399번.cpp">
       <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
+    <ClCompile Include="17219번.cpp">
+      <Filter>소스 파일\자료구조\해시를 이용한 집합과 맵</Filter>
+    </ClCompile>
+    <ClCompile Include="17626번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
