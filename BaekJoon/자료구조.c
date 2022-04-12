@@ -1,9 +1,84 @@
-#pragma warning(disable: 4996)
-#include<stdio.h>
-int main(int argc, char *argv[]) {
+#pragma warning (disable : 4996)
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
+typedef struct {
+	int top;
+	int array[100];
+} stack;
 
-	return 0;
+void stack_init(stack* s) {
+	s->top = -1;
+}
+
+int empty(stack* s) {
+	return (s->top == -1);
+}
+
+void push(stack* s, int a) {
+	s->array[++(s->top)] = a;
+}
+
+int top(stack* s) {
+	if (empty(s) == 1) {
+		return -1;
+	}
+	else {
+		return s->array[s->top];
+	}
+}
+
+int size(stack* s) {
+	if (empty(s) == 1) {
+		return -1;
+	}
+	else {
+		return (s->top + 1);
+	}
+}
+
+int pop(stack* s) {
+	if (empty(s) == 1) {
+		return -1;
+	}
+	else {
+		return s->array[(s->top)--];
+	}
+}
+
+int main() {
+	int n = 0;
+	stack s;
+	stack_init(&s);
+	scanf("%d", &n);
+
+	for (int i = 0; i < n; i++) {
+		char s[100];
+		int a = 0;
+		scanf("%s", s);
+		if (strcmp(s, "push") == 0) {
+			scanf("%d", &a);
+			push(&s, a);
+		}
+		else if (strcmp(s, "top") == 0) {
+			printf("%d", top(&s));
+		}
+		else if (strcmp(s, "size") == 0) {
+			printf("%d", size(&s));
+		}
+		else if (strcmp(s, "empty") == 0) {
+			if (empty(&s) == 1) {
+				printf("1");
+			}
+			else {
+				printf("0");
+			}
+		}
+		else { // pop 일 때
+			printf("%d", pop(&s));
+		}
+	}
 }
 /*
 // 1935 후위 표기식2
