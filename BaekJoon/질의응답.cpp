@@ -3,17 +3,12 @@
 using namespace std;
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-	priority_queue<int, vector<int>, less<>> qp_l;
-	priority_queue<int, vector<int>, greater<>> qp_g;
-	for (int i = 1; i < 10; i++)
-		qp_l.push(i), qp_g.push(i);
-	for (int i = 1; i < 10; i++) {
-		cout << qp_l.top() << ' ';
-		qp_l.pop();
-	} cout << '\n';
-	for (int i = 1; i < 10; i++) {
-		cout << qp_g.top() << ' ';
-		qp_g.pop();
+	int n, m, k; cin >> n >> m >> k;
+	int result = min(n / 2, m);
+	n = n - result * 2, m = m - result;
+	if (n + m < k) {
+		result -= ((k - n - m) % 3 == 0 ? (k - n - m) / 3 : (k - n - m) / 3 + 1);
 	}
+	cout << result << '\n';
 	return 0;
 }
