@@ -16,6 +16,9 @@
     <Filter Include="소스 파일\브론즈3">
       <UniqueIdentifier>{605a98d5-7bd0-4541-968f-52387bdd51af}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\코드포스">
+      <UniqueIdentifier>{154d5861-67ec-4e75-8faa-1bea3d4791bc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3460번.cpp">
@@ -76,6 +79,12 @@
       <Filter>소스 파일\브론즈3</Filter>
     </ClCompile>
     <ClCompile Include="5101번.cpp">
+      <Filter>소스 파일\브론즈3</Filter>
+    </ClCompile>
+    <ClCompile Include="A_Chat room.cpp">
+      <Filter>소스 파일\코드포스</Filter>
+    </ClCompile>
+    <ClCompile Include="5354번.cpp">
       <Filter>소스 파일\브론즈3</Filter>
     </ClCompile>
   </ItemGroup>
