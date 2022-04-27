@@ -87,5 +87,56 @@
     <ClCompile Include="5354번.cpp">
       <Filter>소스 파일\브론즈3</Filter>
     </ClCompile>
+    <ClCompile Include="4922번.cpp">
+      <Filter>소스 파일\브론즈3</Filter>
+    </ClCompile>
+    <ClCompile Include="5074번.cpp">
+      <Filter>소스 파일\브론즈3</Filter>
+    </ClCompile>
+    <ClCompile Include="5102번.cpp">
+      <Filter>소스 파일\브론즈3</Filter>
+    </ClCompile>
+    <ClCompile Include="A_Organizing SWERC.cpp">
+      <Filter>소스 파일\코드포스</Filter>
+    </ClCompile>
+    <ClCompile Include="5163번.cpp">
+      <Filter>소스 파일\브론즈3</Filter>
+    </ClCompile>
+    <ClCompile Include="5220번.cpp">
+      <Filter>소스 파일\브론즈3</Filter>
+    </ClCompile>
+    <ClCompile Include="5235번.cpp">
+      <Filter>소스 파일\브론즈3</Filter>
+    </ClCompile>
+    <ClCompile Include="5217번.cpp">
+      <Filter>소스 파일\브론즈3</Filter>
+    </ClCompile>
+    <ClCompile Include="5523번.cpp">
+      <Filter>소스 파일\브론즈3</Filter>
+    </ClCompile>
+    <ClCompile Include="5607번.cpp">
+      <Filter>소스 파일\브론즈3</Filter>
+    </ClCompile>
+    <ClCompile Include="5618번.cpp">
+      <Filter>소스 파일\브론즈3</Filter>
+    </ClCompile>
+    <ClCompile Include="6322번.cpp">
+      <Filter>소스 파일\브론즈3</Filter>
+    </ClCompile>
+    <ClCompile Include="5612번.cpp">
+      <Filter>소스 파일\브론즈3</Filter>
+    </ClCompile>
+    <ClCompile Include="5613번.cpp">
+      <Filter>소스 파일\브론즈3</Filter>
+    </ClCompile>
+    <ClCompile Include="A_Anton and Danik.cpp">
+      <Filter>소스 파일\코드포스</Filter>
+    </ClCompile>
+    <ClCompile Include="5666번.cpp">
+      <Filter>소스 파일\브론즈3</Filter>
+    </ClCompile>
+    <ClCompile Include="5692번.cpp">
+      <Filter>소스 파일\브론즈3</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
