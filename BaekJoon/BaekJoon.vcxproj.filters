@@ -654,5 +654,11 @@
     <ClCompile Include="17626번.cpp">
       <Filter>소스 파일\다이나믹 프로그래밍</Filter>
     </ClCompile>
+    <ClCompile Include="9205번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색\DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="2661번.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
