@@ -2,12 +2,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 bool visited[310][310];
-int dx[] = { 1,2,2,1,-1,-2,-2,-1 }; 
+int dx[] = { 1,2,2,1,-1,-2,-2,-1 };
 int dy[] = { 2,1,-1,-2,-2,-1,1,2 };
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-	int t; cin >> t; 
-	while (t--) { 
+	int t; cin >> t;
+	while (t--) {
 		memset(visited, 0, sizeof(visited));
 		int l, y1, x1, y2, x2, cnt = 0;
 		cin >> l;

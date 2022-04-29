@@ -660,5 +660,11 @@
     <ClCompile Include="2661번.cpp">
       <Filter>소스 파일\완전탐색, 백트래킹</Filter>
     </ClCompile>
+    <ClCompile Include="16953번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="7562번.cpp">
+      <Filter>소스 파일\깊이, 너비 우선 탐색\BFS</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
