@@ -33,9 +33,6 @@
     <ClCompile Include="..\BaekJoon2\A. Domino piling.cpp">
       <Filter>소스 파일\A class</Filter>
     </ClCompile>
-    <ClCompile Include="..\BaekJoon2\A. Football.cpp">
-      <Filter>소스 파일\A class</Filter>
-    </ClCompile>
     <ClCompile Include="..\BaekJoon2\A. Helpful Maths.cpp">
       <Filter>소스 파일\A class</Filter>
     </ClCompile>
@@ -63,9 +60,6 @@
     <ClCompile Include="..\BaekJoon2\A. Anton and Danik.cpp">
       <Filter>소스 파일\A class</Filter>
     </ClCompile>
-    <ClCompile Include="..\BaekJoon2\A. Chat room.cpp">
-      <Filter>소스 파일\A class</Filter>
-    </ClCompile>
     <ClCompile Include="..\BaekJoon2\A. Organizing SWERC.cpp">
       <Filter>소스 파일\A class</Filter>
     </ClCompile>
@@ -91,6 +85,33 @@
       <Filter>소스 파일\A class</Filter>
     </ClCompile>
     <ClCompile Include="A. Young Physicist.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="A. Soldier and Bananas.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="A. Football.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="A. Elephant.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="A. Wrong Subtraction.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="A. Tram.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="A. Red Versus Blue.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="A. Nearly Lucky Number.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="A. Chat room.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="A. Subtle Substring Subtraction.cpp">
       <Filter>소스 파일\A class</Filter>
     </ClCompile>
   </ItemGroup>
