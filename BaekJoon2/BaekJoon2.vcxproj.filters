@@ -16,9 +16,6 @@
     <Filter Include="소스 파일\브론즈3">
       <UniqueIdentifier>{605a98d5-7bd0-4541-968f-52387bdd51af}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\코드포스">
-      <UniqueIdentifier>{154d5861-67ec-4e75-8faa-1bea3d4791bc}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3460번.cpp">
@@ -81,9 +78,6 @@
     <ClCompile Include="5101번.cpp">
       <Filter>소스 파일\브론즈3</Filter>
     </ClCompile>
-    <ClCompile Include="A. Chat room.cpp">
-      <Filter>소스 파일\코드포스</Filter>
-    </ClCompile>
     <ClCompile Include="5354번.cpp">
       <Filter>소스 파일\브론즈3</Filter>
     </ClCompile>
@@ -95,9 +89,6 @@
     </ClCompile>
     <ClCompile Include="5102번.cpp">
       <Filter>소스 파일\브론즈3</Filter>
-    </ClCompile>
-    <ClCompile Include="A. Organizing SWERC.cpp">
-      <Filter>소스 파일\코드포스</Filter>
     </ClCompile>
     <ClCompile Include="5163번.cpp">
       <Filter>소스 파일\브론즈3</Filter>
@@ -129,9 +120,6 @@
     <ClCompile Include="5613번.cpp">
       <Filter>소스 파일\브론즈3</Filter>
     </ClCompile>
-    <ClCompile Include="A. Anton and Danik.cpp">
-      <Filter>소스 파일\코드포스</Filter>
-    </ClCompile>
     <ClCompile Include="5666번.cpp">
       <Filter>소스 파일\브론즈3</Filter>
     </ClCompile>
@@ -155,42 +143,6 @@
     </ClCompile>
     <ClCompile Include="7770번.cpp">
       <Filter>소스 파일\브론즈3</Filter>
-    </ClCompile>
-    <ClCompile Include="A. Theatre Square.cpp">
-      <Filter>소스 파일\코드포스</Filter>
-    </ClCompile>
-    <ClCompile Include="A. Watermelon.cpp">
-      <Filter>소스 파일\코드포스</Filter>
-    </ClCompile>
-    <ClCompile Include="A. Way Too Long Words.cpp">
-      <Filter>소스 파일\코드포스</Filter>
-    </ClCompile>
-    <ClCompile Include="A. Die Roll.cpp">
-      <Filter>소스 파일\코드포스</Filter>
-    </ClCompile>
-    <ClCompile Include="A. Translation.cpp">
-      <Filter>소스 파일\코드포스</Filter>
-    </ClCompile>
-    <ClCompile Include="A. Ultra-Fast Mathematician.cpp">
-      <Filter>소스 파일\코드포스</Filter>
-    </ClCompile>
-    <ClCompile Include="A. Football.cpp">
-      <Filter>소스 파일\코드포스</Filter>
-    </ClCompile>
-    <ClCompile Include="A. Second Order Statistics.cpp">
-      <Filter>소스 파일\코드포스</Filter>
-    </ClCompile>
-    <ClCompile Include="A. Word.cpp">
-      <Filter>소스 파일\코드포스</Filter>
-    </ClCompile>
-    <ClCompile Include="A. Team.cpp">
-      <Filter>소스 파일\코드포스</Filter>
-    </ClCompile>
-    <ClCompile Include="A. Next Round.cpp">
-      <Filter>소스 파일\코드포스</Filter>
-    </ClCompile>
-    <ClCompile Include="A. Beautiful Matrix.cpp">
-      <Filter>소스 파일\코드포스</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

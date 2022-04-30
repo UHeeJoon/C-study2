@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\A class">
+      <UniqueIdentifier>{1ab87ef7-f378-4632-b340-8fe501b7ef8f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\BaekJoon2\A. Bear and Big Brother.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaekJoon2\A. Beautiful Matrix.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaekJoon2\A. Boy or Girl.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaekJoon2\A. Die Roll.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaekJoon2\A. Domino piling.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaekJoon2\A. Football.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaekJoon2\A. Helpful Maths.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaekJoon2\A. Next Round.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaekJoon2\A. Petya and Strings.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaekJoon2\A. Second Order Statistics.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaekJoon2\A. Stones on the Table.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaekJoon2\A. String Task.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaekJoon2\A. Team.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaekJoon2\A. Theatre Square.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaekJoon2\A. Anton and Danik.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaekJoon2\A. Chat room.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaekJoon2\A. Organizing SWERC.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaekJoon2\A. Translation.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaekJoon2\A. Ultra-Fast Mathematician.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaekJoon2\A. Vasya and Coins.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaekJoon2\A. Watermelon.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaekJoon2\A. Way Too Long Words.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaekJoon2\A. Word Capitalization.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaekJoon2\A. Word.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+    <ClCompile Include="A. Young Physicist.cpp">
+      <Filter>소스 파일\A class</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
