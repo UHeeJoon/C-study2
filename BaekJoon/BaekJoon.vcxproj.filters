@@ -687,5 +687,35 @@
     <ClCompile Include="13549번.cpp">
       <Filter>소스 파일\그래프 이론\다익스트라</Filter>
     </ClCompile>
+    <ClCompile Include="17142번.cpp">
+      <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="2251번.cpp">
+      <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="13565번.cpp">
+      <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="3187번.cpp">
+      <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="14716번.cpp">
+      <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="11123번.cpp">
+      <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="24483번.cpp">
+      <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="24484번.cpp">
+      <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="10974번.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="10819번.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
