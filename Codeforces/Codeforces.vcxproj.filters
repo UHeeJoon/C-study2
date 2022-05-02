@@ -19,6 +19,9 @@
     <Filter Include="소스 파일\C class">
       <UniqueIdentifier>{ec893817-5261-4b55-b63f-093a27bf0a48}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\B class">
+      <UniqueIdentifier>{55b84593-0157-4e76-aa5f-b2c32a0bad85}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\BaekJoon2\A. Bear and Big Brother.cpp">
@@ -118,6 +121,12 @@
       <Filter>소스 파일\A class</Filter>
     </ClCompile>
     <ClCompile Include="C. Palindrome Basis.cpp">
+      <Filter>소스 파일\C class</Filter>
+    </ClCompile>
+    <ClCompile Include="B. Dictionary.cpp">
+      <Filter>소스 파일\B class</Filter>
+    </ClCompile>
+    <ClCompile Include="C. Infinite Replacement.cpp">
       <Filter>소스 파일\C class</Filter>
     </ClCompile>
   </ItemGroup>
