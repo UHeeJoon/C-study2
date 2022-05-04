@@ -73,6 +73,12 @@
     <Filter Include="소스 파일\그래프 이론\플로이드-와샬">
       <UniqueIdentifier>{bdb8dc11-5444-4b35-88e1-2f5e4efd715b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\분할정복">
+      <UniqueIdentifier>{3dbf696b-cf97-45be-a9b3-3b1d6952856f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\우선순위 큐">
+      <UniqueIdentifier>{7443202f-1db7-4e8e-830b-edd003c13a65}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -716,6 +722,27 @@
     </ClCompile>
     <ClCompile Include="10819번.cpp">
       <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="12852.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍</Filter>
+    </ClCompile>
+    <ClCompile Include="2630번.cpp">
+      <Filter>소스 파일\분할정복</Filter>
+    </ClCompile>
+    <ClCompile Include="1780번.cpp">
+      <Filter>소스 파일\분할정복</Filter>
+    </ClCompile>
+    <ClCompile Include="1927번.cpp">
+      <Filter>소스 파일\우선순위 큐</Filter>
+    </ClCompile>
+    <ClCompile Include="11279번.cpp">
+      <Filter>소스 파일\우선순위 큐</Filter>
+    </ClCompile>
+    <ClCompile Include="7662번.cpp">
+      <Filter>소스 파일\우선순위 큐</Filter>
+    </ClCompile>
+    <ClCompile Include="11286번.cpp">
+      <Filter>소스 파일\우선순위 큐</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

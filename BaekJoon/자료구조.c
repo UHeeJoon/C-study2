@@ -24,11 +24,6 @@ int is_empty(QueueType* q) {
 int is_full(QueueType* q) {
 	return ((q->rear + 1) % MAX_QUEUE_SIZE == q->front);
 }
-
-void queue_print() {
-
-}
-
 void enqueue(QueueType* q, element item) {
 	if (is_full(q)) {
 		error("큐가 포화상태입니다");

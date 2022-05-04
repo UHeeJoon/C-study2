@@ -1,7 +1,6 @@
-#pragma warning(disable: 4996)
 #include<bits/stdc++.h>
 using namespace std;
-int main(){
+int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 	priority_queue<pair<int, int>, vector<pair<int, int>>, greater<>> pq;
 	int n; cin >> n;
