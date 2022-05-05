@@ -744,5 +744,8 @@
     <ClCompile Include="11286번.cpp">
       <Filter>소스 파일\우선순위 큐</Filter>
     </ClCompile>
+    <ClCompile Include="17404번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
