@@ -79,6 +79,9 @@
     <Filter Include="소스 파일\우선순위 큐">
       <UniqueIdentifier>{7443202f-1db7-4e8e-830b-edd003c13a65}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\트리">
+      <UniqueIdentifier>{31d7cd6b-df5d-427d-b70e-563805f060d9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -746,6 +749,9 @@
     </ClCompile>
     <ClCompile Include="17404번.cpp">
       <Filter>소스 파일\다이나믹 프로그래밍</Filter>
+    </ClCompile>
+    <ClCompile Include="9372번.cpp">
+      <Filter>소스 파일\트리</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,20 +1,14 @@
 #pragma warning(disable: 4996)
 #include<bits/stdc++.h>
 using namespace std;
+int arr[100010], arr2[100010];
 int main(){
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-	int t; cin >> t;
-	while (t--) {
-		string s; cin >> s;
-		int idx = 0, cnt = 987654321;
-		for (int i = 0; i < s.length(); i++) {
-			if (s[i] == '1')
-				idx = i;
-			else if (s[i] == '0')
-				cnt = min(cnt, i - idx);
-		}
-		if (cnt == 0)cnt = s.length();
-		cout << cnt + 1 << '\n';
-	}
+	int n = 1; cin >> n;
+	for (int i = 0; i < n; i++)
+		cin >> arr[i] >> arr2[i];
+	sort(arr, arr + n);
+	sort(arr2, arr2 + n);
+	cout << (arr[n - 1] - arr[0]) * (arr2[n - 1] - arr2[0]) << '\n';
 	return 0;
 }
