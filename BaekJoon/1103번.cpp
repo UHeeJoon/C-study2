@@ -1,4 +1,3 @@
-#pragma warning(disable: 4996)
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 52
@@ -16,7 +15,7 @@ int dfs(int y, int x) {
 	}
 	if (dp[y][x] != -1)
 		return dp[y][x];
-	visited[y][x] = true;	
+	visited[y][x] = true;
 	dp[y][x] = 0;
 	for (int i = 0; i < 4; i++) {
 		int ny = y + ((board[y][x] - '0') * dy[i]);
