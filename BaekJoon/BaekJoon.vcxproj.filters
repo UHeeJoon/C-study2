@@ -82,6 +82,12 @@
     <Filter Include="소스 파일\트리">
       <UniqueIdentifier>{31d7cd6b-df5d-427d-b70e-563805f060d9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\트리\최소 스패닝 트리">
+      <UniqueIdentifier>{5193783d-620b-419d-bc0c-04a3ee75afee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\트리\최소 스패닝 트리\크루스칼 알고리즘">
+      <UniqueIdentifier>{c8e5d9ba-fa4f-4389-819d-fa4cd59ec371}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -758,6 +764,9 @@
     </ClCompile>
     <ClCompile Include="1103번.cpp">
       <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="1197번.cpp">
+      <Filter>소스 파일\트리\최소 스패닝 트리\크루스칼 알고리즘</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
