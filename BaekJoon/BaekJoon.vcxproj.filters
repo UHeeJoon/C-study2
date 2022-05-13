@@ -786,5 +786,17 @@
     <ClCompile Include="16174번.cpp">
       <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\DFS</Filter>
     </ClCompile>
+    <ClCompile Include="21736번.cpp">
+      <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="14248번.cpp">
+      <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="9625번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍</Filter>
+    </ClCompile>
+    <ClCompile Include="1890번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

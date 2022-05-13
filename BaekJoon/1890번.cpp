@@ -1,4 +1,3 @@
-#pragma warning(disable: 4996)
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 110
@@ -28,3 +27,28 @@ int main() {
 	cout << dp[n][n] << '\n';
 	return 0;
 }
+
+/*
+#include<bits/stdc++.h>
+using namespace std;
+using ll = long long;
+int board[102][102];
+ll dp[102][102];
+int N;
+int main() {
+	ios::sync_with_stdio(0);
+	cin.tie(0); cout.tie(0);
+	cin >> N;
+	for (int i = 0; i < N; i++)
+		for (int j = 0; j < N; j++) cin >> board[i][j];
+	dp[0][0] = 1;
+	for (int i = 0; i < N; i++) {
+		for (int j = 0; j < N; j++) {
+			if (board[i][j] == 0) continue;
+			if (i + board[i][j] < N) dp[i + board[i][j]][j] += dp[i][j];
+			if (j + board[i][j] < N) dp[i][j + board[i][j]] += dp[i][j];
+		}
+	}
+	cout << dp[N - 1][N - 1];
+}
+*/
