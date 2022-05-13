@@ -88,6 +88,12 @@
     <Filter Include="소스 파일\트리\최소 스패닝 트리\크루스칼 알고리즘">
       <UniqueIdentifier>{c8e5d9ba-fa4f-4389-819d-fa4cd59ec371}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\자료구조\큐">
+      <UniqueIdentifier>{b3d22450-d78c-4f05-adaf-d0fd9abe60ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\자료구조\스택">
+      <UniqueIdentifier>{ce9d6edc-fc47-4c6a-a0bd-5a7ffbfded8b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -657,13 +663,7 @@
     <ClCompile Include="카라츠바의 빠른 정수 곱셈 알고리즘.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="1918번.cpp">
-      <Filter>소스 파일\자료구조</Filter>
-    </ClCompile>
     <ClCompile Include="자료구조.c">
-      <Filter>소스 파일\자료구조</Filter>
-    </ClCompile>
-    <ClCompile Include="1935번.cpp">
       <Filter>소스 파일\자료구조</Filter>
     </ClCompile>
     <ClCompile Include="11399번.cpp">
@@ -767,6 +767,24 @@
     </ClCompile>
     <ClCompile Include="1197번.cpp">
       <Filter>소스 파일\트리\최소 스패닝 트리\크루스칼 알고리즘</Filter>
+    </ClCompile>
+    <ClCompile Include="13335번.cpp">
+      <Filter>소스 파일\자료구조\큐</Filter>
+    </ClCompile>
+    <ClCompile Include="1918번.cpp">
+      <Filter>소스 파일\자료구조\스택</Filter>
+    </ClCompile>
+    <ClCompile Include="1935번.cpp">
+      <Filter>소스 파일\자료구조\스택</Filter>
+    </ClCompile>
+    <ClCompile Include="1388번.cpp">
+      <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="16173번.cpp">
+      <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="16174번.cpp">
+      <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\DFS</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
