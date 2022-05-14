@@ -1,4 +1,3 @@
-#pragma warning(disable: 4996)
 #include<bits/stdc++.h>
 using namespace std;
 int main() {
@@ -11,7 +10,6 @@ int main() {
 			break;
 		}
 	}
-	cout << (flag?1:0) << '\n';
-	//system("pause");
+	cout << (flag ? 1 : 0) << '\n';
 	return 0;
 }
