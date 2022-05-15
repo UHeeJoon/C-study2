@@ -2,16 +2,23 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main() {
-	ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-	int n; cin >> n;
-	bool flag = false;
-	for (int i = 0; i < 31; i++) {
-		if (n == 1 << i) {
-			flag = true;
-			break;
+	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+	int n, x1, x2, y1, y2;
+	int nn, cnt, cx, cy, cr;
+	int da, db, sqrcr;
+	cin >> n;
+	for (int i = 0; i < n; i++) {
+		cnt = 0;
+		cin >> x1 >> y1 >> x2 >> y2 >> nn;
+		for (int j = 0; j < nn; j++) {
+			cin >> cx >> cy >> cr;
+			da = (x1 - cx) * (x1 - cx) + (y1 - cy) * (y1 - cy);
+			db = (x2 - cx) * (x2 - cx) + (y2 - cy) * (y2 - cy);
+			sqrcr = cr * cr;
+			if (da < sqrcr && db < sqrcr) continue;
+			else if (da < sqrcr || db < sqrcr) cnt++;
 		}
+		cout << cnt << '\n';
+		return 0;
 	}
-	cout << (flag?1:0) << '\n';
-	//system("pause");
-	return 0;
 }
