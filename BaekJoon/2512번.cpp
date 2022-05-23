@@ -1,4 +1,3 @@
-#pragma warning(disable: 4996)
 #include<bits/stdc++.h>
 using namespace std;
 int num[10010];
@@ -21,13 +20,13 @@ void binary_search() {
 	}
 	cout << high << '\n';
 }
-int main(){
+int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 	cin >> n;
 	for (int i = 0; i < n; i++)
 		cin >> num[i];
 	cin >> m;
-    sort(num, num + n);
+	sort(num, num + n);
 	binary_search();
 	return 0;
 }
