@@ -1,102 +1,174 @@
 #pragma warning(disable:4996)
-#include <stdio.h>
-#include <stdlib.h>
-#define MAX_QUEUE_SIZE 50
-typedef struct {
-	int id;
-	int arrival_time;
-	int service_time;
-}element;
-typedef struct {
-	element data[MAX_QUEUE_SIZE];
-	int front, rear;
-}QueueType;
-void error(char* message) {
-	fprintf(stderr, "%s\n", message);
-	exit(1);
+#include<stdio.h>
+#include<stdlib.h>
+typedef int element;
+typedef struct TreeNode {
+	element key;
+	struct TreeNode* left, * right;
+}TreeNode;
+TreeNode* new_node(int item) {
+	TreeNode* temp = (TreeNode*)malloc(sizeof(TreeNode));
+	if (temp == NULL) exit(1);
+	temp->key = item;
+	temp->left = temp->right = NULL;
+	return temp;
 }
-void init_queue(QueueType* q) {
-	q->front = q->rear = 0;
+TreeNode* insert_node(TreeNode* node, int key) {
+	if (node == NULL) return new_node(key);
+	if (key < node->key)node->left = insert_node(node->left, key);
+	else if (key > node->key) node->right = insert_node(node->right, key);
+	return node;
 }
-int is_empty(QueueType* q) {
-	return (q->front == q->rear);
+TreeNode* min_value_node(TreeNode* node) {
+	TreeNode* current = node;
+	while (current->left != NULL)
+		current = current->left;
+	return current;
 }
-int is_full(QueueType* q) {
-	return ((q->rear + 1) % MAX_QUEUE_SIZE == q->front);
+TreeNode* delete_node(TreeNode* root, int key) {
+	if (root == NULL) return root;
+	if (key < root->key)
+		root->left = delete_node(root->left, key);
+	else if (key > root->key)
+		root->left = delete_node(root->right, key);
+	else {
+		if (root->left == NULL) {
+			TreeNode* temp = root->right;
+			free(root);
+			return temp;
+		}
+		else if (root->right == NULL) {
+			TreeNode* temp = root->left;
+			free(root);
+			return temp;
+		}
+		TreeNode* temp = min_value_node(root->right);
+		root->key = temp->key;
+		root->right = delete_node(root->right, temp->key);
+	}
+	return root;
 }
-void enqueue(QueueType* q, element item) {
-	if (is_full(q))error("큐가 포화상태입니다");
-	q->rear = (q->rear + 1) % MAX_QUEUE_SIZE;
-	q->data[q->rear] = item;
-}
-element dequeue(QueueType* q) {
-	if (is_empty(q))error("큐가 공백상태입니다");
-	q->front = (q->front + 1) % MAX_QUEUE_SIZE;
-	return q->data[q->front];
-}
-element peek(QueueType* q) {
-	if (is_empty(q)) error("큐가 공백상태입니다");
-	return q->data[(q->front + 1) % MAX_QUEUE_SIZE];
+int Sum(TreeNode* root) {
+	if (root == NULL) return 0;
+	int sum = root->key;
+	return sum + Sum(root->left) + Sum(root->right);
+
 }
 int main() {
-	int minutes = 10;
-	int total_wait = 0;
-	int total_customers = 0;
-	int service_time = 0, service_time2 = 0;
-	int service_customer, service_customer2 = 0;
-	int aCounter = 0, bCounter = 0;
-	QueueType queue;
-	init_queue(&queue);
-	srand(time(NULL));
-	for (int clock = 0; clock < minutes; clock++) {
-		printf("현재시각=%d\n", clock);
-		if ((rand() % 10) < 7) {
-			element customer;
-			customer.id = total_customers++;
-			customer.arrival_time = clock;
-			customer.service_time = rand() % 3 + 1;
-			enqueue(&queue, customer);
-			printf("고객 %d이 %d분에 들어옵니다. 업무처리시간 = %d분\n",
-				customer.id, customer.arrival_time, customer.service_time);
-		}
-		if (service_time > 0) {
-			printf("고객 %d가 a창구에서 업무처리중입니다. \n", service_customer);
-			service_time--;
-			if (service_time == 0)
-				aCounter = 0;
-		}
-		else if(aCounter == 0) {
-			if (!is_empty(&queue)) {
-				element customer = dequeue(&queue);
-				service_customer = customer.id;
-				service_time = customer.service_time;
-				printf("고객 %d이 %d분에 a 창구에서 업무를 시작합니다. 대기시간은 %d분이었습니다.\n",
-					customer.id, clock, clock - customer.arrival_time);
-				total_wait += clock - customer.arrival_time;
-				aCounter = 1;
-			}
-		}
-		if (service_time2 > 0) {
-			printf("고객 %d가 b창구에서 업무처리중입니다. \n", service_customer2);
-			service_time2--;
-			if (service_time2 == 0)
-				bCounter = 0;
-		}
-		else if (bCounter == 0) {
-			if (!is_empty(&queue)) {
-				element customer = dequeue(&queue);
-				service_customer2 = customer.id;
-				service_time2 = customer.service_time;
-				printf("고객 %d이 %d분에 b창구에서 업무를 시작합니다. 대기시간은 %d분이었습니다.\n",
-					customer.id, clock, clock - customer.arrival_time);
-				total_wait += clock - customer.arrival_time;
-				bCounter = 1;
-			}
-		}
-	}
-	printf("전체 대기 시간=%d분 \n", total_wait);
+	TreeNode* root = NULL;
+	root = insert_node(root, 1);
+	root = insert_node(root, 2);
+	root = insert_node(root, 3);
+	root = insert_node(root, 4);
+	root = insert_node(root, 5);
+	root = insert_node(root, 6);
+	root = insert_node(root, 8);
+	printf("node의 합은 : %d 입니다.\n", Sum(root));
 	return 0;
 }
+
+
+
+
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#define MAX_QUEUE_SIZE 50
+//typedef struct {
+//	int id;
+//	int arrival_time;
+//	int service_time;
+//}element;
+//typedef struct {
+//	element data[MAX_QUEUE_SIZE];
+//	int front, rear;
+//}QueueType;
+//void error(char* message) {
+//	fprintf(stderr, "%s\n", message);
+//	exit(1);
+//}
+//void init_queue(QueueType* q) {
+//	q->front = q->rear = 0;
+//}
+//int is_empty(QueueType* q) {
+//	return (q->front == q->rear);
+//}
+//int is_full(QueueType* q) {
+//	return ((q->rear + 1) % MAX_QUEUE_SIZE == q->front);
+//}
+//void enqueue(QueueType* q, element item) {
+//	if (is_full(q))error("큐가 포화상태입니다");
+//	q->rear = (q->rear + 1) % MAX_QUEUE_SIZE;
+//	q->data[q->rear] = item;
+//}
+//element dequeue(QueueType* q) {
+//	if (is_empty(q))error("큐가 공백상태입니다");
+//	q->front = (q->front + 1) % MAX_QUEUE_SIZE;
+//	return q->data[q->front];
+//}
+//element peek(QueueType* q) {
+//	if (is_empty(q)) error("큐가 공백상태입니다");
+//	return q->data[(q->front + 1) % MAX_QUEUE_SIZE];
+//}
+//int main() {
+//	int minutes = 10;
+//	int total_wait = 0;
+//	int total_customers = 0;
+//	int service_time = 0, service_time2 = 0;
+//	int service_customer, service_customer2 = 0;
+//	int aCounter = 0, bCounter = 0;
+//	QueueType queue;
+//	init_queue(&queue);
+//	srand(time(NULL));
+//	for (int clock = 0; clock < minutes; clock++) {
+//		printf("현재시각=%d\n", clock);
+//		if ((rand() % 10) < 7) {
+//			element customer;
+//			customer.id = total_customers++;
+//			customer.arrival_time = clock;
+//			customer.service_time = rand() % 3 + 1;
+//			enqueue(&queue, customer);
+//			printf("고객 %d이 %d분에 들어옵니다. 업무처리시간 = %d분\n",
+//				customer.id, customer.arrival_time, customer.service_time);
+//		}
+//		if (service_time > 0) {
+//			printf("고객 %d가 a창구에서 업무처리중입니다. \n", service_customer);
+//			service_time--;
+//			if (service_time == 0)
+//				aCounter = 0;
+//		}
+//		else if(aCounter == 0) {
+//			if (!is_empty(&queue)) {
+//				element customer = dequeue(&queue);
+//				service_customer = customer.id;
+//				service_time = customer.service_time;
+//				printf("고객 %d이 %d분에 a 창구에서 업무를 시작합니다. 대기시간은 %d분이었습니다.\n",
+//					customer.id, clock, clock - customer.arrival_time);
+//				total_wait += clock - customer.arrival_time;
+//				aCounter = 1;
+//			}
+//		}
+//		if (service_time2 > 0) {
+//			printf("고객 %d가 b창구에서 업무처리중입니다. \n", service_customer2);
+//			service_time2--;
+//			if (service_time2 == 0)
+//				bCounter = 0;
+//		}
+//		else if (bCounter == 0) {
+//			if (!is_empty(&queue)) {
+//				element customer = dequeue(&queue);
+//				service_customer2 = customer.id;
+//				service_time2 = customer.service_time;
+//				printf("고객 %d이 %d분에 b창구에서 업무를 시작합니다. 대기시간은 %d분이었습니다.\n",
+//					customer.id, clock, clock - customer.arrival_time);
+//				total_wait += clock - customer.arrival_time;
+//				bCounter = 1;
+//			}
+//		}
+//	}
+//	printf("전체 대기 시간=%d분 \n", total_wait);
+//	return 0;
+//}
 
 
 
