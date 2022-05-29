@@ -19,6 +19,9 @@
     <Filter Include="소스 파일\브론즈3-2">
       <UniqueIdentifier>{b6bc0edc-5203-4c35-be13-e2280436cc5b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\브론즈2">
+      <UniqueIdentifier>{2d22f13e-59b0-453c-acfc-4772ffdb2e43}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3460번.cpp">
@@ -221,6 +224,12 @@
     </ClCompile>
     <ClCompile Include="14215번.cpp">
       <Filter>소스 파일\브론즈3-2</Filter>
+    </ClCompile>
+    <ClCompile Include="6359번.cpp">
+      <Filter>소스 파일\브론즈2</Filter>
+    </ClCompile>
+    <ClCompile Include="13300번.cpp">
+      <Filter>소스 파일\브론즈2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
