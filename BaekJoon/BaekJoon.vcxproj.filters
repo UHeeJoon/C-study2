@@ -834,5 +834,17 @@
     <ClCompile Include="9084번.cpp">
       <Filter>소스 파일\다이나믹 프로그래밍</Filter>
     </ClCompile>
+    <ClCompile Include="17266번.cpp">
+      <Filter>소스 파일\이분탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="19637번.cpp">
+      <Filter>소스 파일\이분탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="2792번.cpp">
+      <Filter>소스 파일\이분탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="16401번.cpp">
+      <Filter>소스 파일\이분탐색</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
