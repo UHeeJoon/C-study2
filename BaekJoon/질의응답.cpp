@@ -1,33 +1,27 @@
 #pragma warning(disable: 4996)
 #include<bits/stdc++.h>
 using namespace std;
-long long n, m, snack[1000001];
-long long sum(long long num) {
-	long long _sum = 0;
-	for (int i = 0; i < m; i++) 
-		_sum += snack[i]/num;
-	return _sum;
-}
+int arr[200001];
+int n, m;
 void binarySearch() {
-	long long l = 1;
-	long long r = 1000000000;
-	long long _max = 0;
-	while (l <= r) {
-		long long mid = (l + r) / 2;
-		if (sum(mid) < n) 
-			r = mid - 1;
+	int high = 0, low = 0;
+	while (low <= high) {
+		int mid = (low + high) / 2;
+		if (high) {
+			high = mid - 1;
+		}
 		else {
-			l = mid + 1;
-			_max = max(_max, mid);
+			low = mid + 1;
 		}
 	}
-	cout << _max << '\n';
+	cout << low << '\n';
 }
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 	cin >> n >> m;
-	for (int i = 0; i < m; i++) 
-		cin >> snack[i];
+	for (int i = 0; i < n; i++)
+		cin >> arr[i];
+	sort(arr, arr + n);
 	binarySearch();
 	return 0;
 }

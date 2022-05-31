@@ -846,5 +846,8 @@
     <ClCompile Include="16401번.cpp">
       <Filter>소스 파일\이분탐색</Filter>
     </ClCompile>
+    <ClCompile Include="2343번.cpp">
+      <Filter>소스 파일\이분탐색</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
