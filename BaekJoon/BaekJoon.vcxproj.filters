@@ -816,7 +816,7 @@
     <ClCompile Include="14500번.cpp">
       <Filter>소스 파일\아무문제 2</Filter>
     </ClCompile>
-    <ClCompile Include="9019.cpp">
+    <ClCompile Include="9019번.cpp">
       <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS</Filter>
     </ClCompile>
     <ClCompile Include="2512번.cpp">
@@ -848,6 +848,18 @@
     </ClCompile>
     <ClCompile Include="2343번.cpp">
       <Filter>소스 파일\이분탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="16928번.cpp">
+      <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="16236번.cpp">
+      <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="1389번.cpp">
+      <Filter>소스 파일\그래프 이론\플로이드-와샬</Filter>
+    </ClCompile>
+    <ClCompile Include="2407번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,27 +1,28 @@
 #pragma warning(disable: 4996)
 #include<bits/stdc++.h>
 using namespace std;
-int arr[200001];
-int n, m;
-void binarySearch() {
-	int high = 0, low = 0;
-	while (low <= high) {
-		int mid = (low + high) / 2;
-		if (high) {
-			high = mid - 1;
-		}
-		else {
-			low = mid + 1;
-		}
-	}
-	cout << low << '\n';
+int gcd(int a, int b) {
+    return b != 0 ? gcd(b, a % b) : a;
+}
+int lcm(int a, int b) {
+    return a * b / gcd(a, b);
 }
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-	cin >> n >> m;
-	for (int i = 0; i < n; i++)
-		cin >> arr[i];
-	sort(arr, arr + n);
-	binarySearch();
+    int t, m, n, x, y, i, j;
+    cin >> t;
+    for (i = 0; i < t; i++) {
+        cin >> m >> n >> x >> y;
+        int limit = lcm(m, n);
+        for (j = x; j <= limit; j += m) {
+            int temp = (j % n == 0) ? n : j % n;
+            if (temp == y) {
+                cout << j << '\n';
+                break;
+            }
+        }
+        if (j > limit)
+            cout << -1 << '\n';
+    }
 	return 0;
 }
