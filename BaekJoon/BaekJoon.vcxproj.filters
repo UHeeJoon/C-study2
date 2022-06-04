@@ -861,5 +861,29 @@
     <ClCompile Include="2407번.cpp">
       <Filter>소스 파일\아무문제 2</Filter>
     </ClCompile>
+    <ClCompile Include="11404번.cpp">
+      <Filter>소스 파일\그래프 이론\플로이드-와샬</Filter>
+    </ClCompile>
+    <ClCompile Include="1967번.cpp">
+      <Filter>소스 파일\트리</Filter>
+    </ClCompile>
+    <ClCompile Include="1167번.cpp">
+      <Filter>소스 파일\트리</Filter>
+    </ClCompile>
+    <ClCompile Include="2239번.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="5567번.cpp">
+      <Filter>소스 파일\그래프 이론</Filter>
+    </ClCompile>
+    <ClCompile Include="18352번.cpp">
+      <Filter>소스 파일\그래프 이론\다익스트라</Filter>
+    </ClCompile>
+    <ClCompile Include="11060번.cpp">
+      <Filter>소스 파일\그래프 이론</Filter>
+    </ClCompile>
+    <ClCompile Include="1058번.cpp">
+      <Filter>소스 파일\그래프 이론\플로이드-와샬</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
