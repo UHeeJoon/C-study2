@@ -94,6 +94,9 @@
     <Filter Include="소스 파일\자료구조\스택">
       <UniqueIdentifier>{ce9d6edc-fc47-4c6a-a0bd-5a7ffbfded8b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\다이나믹 프로그래밍2">
+      <UniqueIdentifier>{53e95193-4057-4b27-aec8-7e8d6c78723e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -899,6 +902,12 @@
     </ClCompile>
     <ClCompile Include="17086번.cpp">
       <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="1309번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍</Filter>
+    </ClCompile>
+    <ClCompile Include="9656번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
