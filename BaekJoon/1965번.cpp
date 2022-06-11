@@ -1,13 +1,12 @@
-#pragma warning(disable: 4996)
 #include<bits/stdc++.h>
 using namespace std;
 int n;
 int arr[1001];
 int dp[1001];
 int main() {
-	ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
     cin >> n;
-    for (int i = 1; i <= n;i++) 
+    for (int i = 1; i <= n; i++)
         cin >> arr[i];
     int result = 0;
     for (int i = 1; i <= n; i++) {
@@ -19,5 +18,5 @@ int main() {
         result = max(result, dp[i]);
     }
     cout << result << '\n';
-	return 0;
+    return 0;
 }
