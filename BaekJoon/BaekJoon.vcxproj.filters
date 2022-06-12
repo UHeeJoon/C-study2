@@ -909,5 +909,17 @@
     <ClCompile Include="9656번.cpp">
       <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
     </ClCompile>
+    <ClCompile Include="1965번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
+    </ClCompile>
+    <ClCompile Include="14916번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
+    </ClCompile>
+    <ClCompile Include="16395번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
+    </ClCompile>
+    <ClCompile Include="13699번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
