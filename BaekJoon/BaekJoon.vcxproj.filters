@@ -936,5 +936,20 @@
     <ClCompile Include="2302번.cpp">
       <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
     </ClCompile>
+    <ClCompile Include="17216번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
+    </ClCompile>
+    <ClCompile Include="14503번.cpp">
+      <Filter>소스 파일\아무문제</Filter>
+    </ClCompile>
+    <ClCompile Include="1240번.cpp">
+      <Filter>소스 파일\트리</Filter>
+    </ClCompile>
+    <ClCompile Include="12100번.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="3190번.cpp">
+      <Filter>소스 파일\자료구조\큐</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

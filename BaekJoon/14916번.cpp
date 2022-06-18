@@ -12,3 +12,21 @@ int main() {
 	else cout << dp[n] << '\n';
 	return 0;
 }
+/*
+#include<bits/stdc++.h>
+using namespace std;
+int dp[100001];
+int main() {
+	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+	int n;
+	cin >> n;
+	fill(dp, dp + 100001, 100001);
+	dp[0] = 0;
+	for (int i : {2, 5}) {
+		for (int j = i; j <= n; j++)
+			dp[j] = min(dp[j], dp[j - i] + 1);
+	}
+	cout << (dp[n] == 100001 ? -1 : dp[n]) << '\n';
+	return 0;
+}
+*/
