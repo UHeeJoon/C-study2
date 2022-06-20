@@ -1,4 +1,3 @@
-#pragma warning(disable: 4996)
 #include<bits/stdc++.h>
 using namespace std;
 #define s second
@@ -73,4 +72,3 @@ int main() {
 	cout << ret << "\n";
 	return 0;
 }
-

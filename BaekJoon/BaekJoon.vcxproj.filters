@@ -951,5 +951,11 @@
     <ClCompile Include="3190번.cpp">
       <Filter>소스 파일\자료구조\큐</Filter>
     </ClCompile>
+    <ClCompile Include="17406번.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="15662번.cpp">
+      <Filter>소스 파일\아무문제 2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
