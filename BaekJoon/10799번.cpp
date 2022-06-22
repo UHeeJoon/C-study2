@@ -1,4 +1,3 @@
-#pragma warning(disable: 4996)
 #include<bits/stdc++.h>
 using namespace std;
 int main() {
@@ -11,11 +10,11 @@ int main() {
 		if (s[i] == '(') {
 			S.push(s[i]);
 		}
-		else if (s[i] == ')' && s[i - 1] == '(') { 
+		else if (s[i] == ')' && s[i - 1] == '(') {
 			S.pop();
 			total += S.size();
 		}
-		else { 
+		else {
 			total++;
 			S.pop();
 		}
@@ -23,4 +22,3 @@ int main() {
 	cout << total << '\n';
 	return 0;
 }
-

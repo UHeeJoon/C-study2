@@ -957,5 +957,11 @@
     <ClCompile Include="15662번.cpp">
       <Filter>소스 파일\아무문제 2</Filter>
     </ClCompile>
+    <ClCompile Include="10799번.cpp">
+      <Filter>소스 파일\자료구조\스택</Filter>
+    </ClCompile>
+    <ClCompile Include="1911번.cpp">
+      <Filter>소스 파일\그리디, 라인스위핑, 투포인터</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
