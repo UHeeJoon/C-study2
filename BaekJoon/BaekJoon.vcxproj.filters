@@ -963,5 +963,8 @@
     <ClCompile Include="1911번.cpp">
       <Filter>소스 파일\그리디, 라인스위핑, 투포인터</Filter>
     </ClCompile>
+    <ClCompile Include="17825번.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
