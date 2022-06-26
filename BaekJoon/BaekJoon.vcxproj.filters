@@ -972,5 +972,11 @@
     <ClCompile Include="2110번.cpp">
       <Filter>소스 파일\이분탐색</Filter>
     </ClCompile>
+    <ClCompile Include="2565번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
+    </ClCompile>
+    <ClCompile Include="5639번.cpp">
+      <Filter>소스 파일\트리</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
