@@ -1,8 +1,8 @@
-#pragma warning(disable: 4996)
 #include<bits/stdc++.h>
 using namespace std;
 int arr[10];
 int arr2[10];
+bool visited[10];
 int n, m;
 void dfs(int idx, int cnt) {
 	if (cnt == m) {
@@ -13,10 +13,12 @@ void dfs(int idx, int cnt) {
 	}
 	int tmp = 0;
 	for (int i = idx; i < n; i++) {
-		if (tmp != arr[i]) {
+		if (!visited[i] && tmp != arr[i]) {
+			visited[i] = true;
 			tmp = arr[i];
 			arr2[cnt] = arr[i];
-			dfs(i, cnt + 1);
+			dfs(i + 1, cnt + 1);
+			visited[i] = false;
 		}
 	}
 }

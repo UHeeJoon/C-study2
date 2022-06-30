@@ -1,10 +1,9 @@
-#pragma warning(disable: 4996)
 #include<bits/stdc++.h>
 using namespace std;
 int arr[10];
 int arr2[10];
 int n, m;
-void dfs(int idx, int cnt) {
+void dfs(int cnt) {
 	if (cnt == m) {
 		for (int i = 0; i < m; i++)
 			cout << arr2[i] << ' ';
@@ -12,11 +11,11 @@ void dfs(int idx, int cnt) {
 		return;
 	}
 	int tmp = 0;
-	for (int i = idx; i < n; i++) {
+	for (int i = 0; i < n; i++) {
 		if (tmp != arr[i]) {
 			tmp = arr[i];
 			arr2[cnt] = arr[i];
-			dfs(i, cnt + 1);
+			dfs(cnt + 1);
 		}
 	}
 }
@@ -26,6 +25,6 @@ int main() {
 	for (int i = 0; i < n; i++)
 		cin >> arr[i];
 	sort(arr, arr + n);
-	dfs(0, 0);
+	dfs(0);
 	return 0;
 }
