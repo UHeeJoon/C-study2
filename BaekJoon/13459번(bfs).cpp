@@ -1,4 +1,3 @@
-#pragma warning(disable: 4996)
 #include<bits/stdc++.h>
 using namespace std;
 int n = 0, m = 0;
@@ -27,7 +26,7 @@ int bfs() {
 			int blue_x = b_que.front().second;
 			r_que.pop(), b_que.pop();
 			if (arr[red_y][red_x] == 'O') // O에 있을때
-				return result;
+				return 1;
 			for (int i = 0; i < 4; i++) {
 				int nextred_y = red_y;
 				int nextred_x = red_x;
@@ -55,10 +54,10 @@ int bfs() {
 				visited[nextred_y][nextred_x][nextblue_y][nextblue_x] = 1;
 			}
 		}
-		if (result == 10) return -1;
+		if (result == 10) return 0;
 		result++;
 	}
-	return -1;
+	return 0;
 }
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);

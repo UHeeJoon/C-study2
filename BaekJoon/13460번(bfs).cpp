@@ -1,4 +1,3 @@
-#pragma warning(disable: 4996)
 #include<bits/stdc++.h>
 using namespace std;
 int n = 0, m = 0;
