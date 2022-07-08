@@ -1014,5 +1014,8 @@
     <ClCompile Include="2263번.cpp">
       <Filter>소스 파일\트리</Filter>
     </ClCompile>
+    <ClCompile Include="2632번.cpp">
+      <Filter>소스 파일\이분탐색</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
