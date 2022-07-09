@@ -1,4 +1,3 @@
-#pragma warning(disable: 4996)
 #include<bits/stdc++.h>
 using namespace std;
 int n, m, a[10][10], temp[10][10], ret = 987654321;
@@ -108,7 +107,7 @@ void dfs(int here) {
     }
 }
 int main() {
-	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
     cin >> n >> m;
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
@@ -118,5 +117,5 @@ int main() {
     }
     dfs(0);
     cout << ret << "\n";
-	return 0;
+    return 0;
 }
