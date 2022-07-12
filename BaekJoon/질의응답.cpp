@@ -1,18 +1,16 @@
 #pragma warning(disable: 4996)
 #include<bits/stdc++.h>
-using namespace std;    
+using namespace std;
+string s, s2;
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-	int a, b, n, w; cin >> a >> b >> n >> w;
-	int s, g, cnt = 0;
-	for (int i = 1; i < n; i++) {
-		if (a * i + b * (n - i) == w) {
-			cnt++;
-			s = i; g = n - i;
+	cin >> s >> s2;
+	long long sum = 0;
+	for (int i = 0; i < s.length(); i++) {
+		for (int j = 0; j < s2.length(); j++) {
+			sum += (s[i] - '0') * (s2[j] - '0');
 		}
 	}
-	if (cnt == 1)cout << s << ' ' << g << '\n';
-	else cout << -1 << '\n';
+	cout << sum << '\n';
 	return 0;
 }
-
