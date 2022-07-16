@@ -1,4 +1,3 @@
-#pragma warning(disable: 4996)
 #include<bits/stdc++.h>
 using namespace std;
 bool multi(string str1, string str2) {
@@ -16,13 +15,12 @@ bool multi(string str1, string str2) {
     return sum == sum2;
 }
 int main() {
-	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-	string s; cin >> s;
-	bool flag = false;
-	for (int i = 1; i < s.length(); i++) {
-		if (multi(s.substr(0, i) , s.substr(i))) { flag = true; break; }
-	}
-	cout << (flag ? "YES\n" : "NO\n");
-	return 0;
+    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    string s; cin >> s;
+    bool flag = false;
+    for (int i = 1; i < s.length(); i++) {
+        if (multi(s.substr(0, i), s.substr(i))) { flag = true; break; }
+    }
+    cout << (flag ? "YES\n" : "NO\n");
+    return 0;
 }
-
