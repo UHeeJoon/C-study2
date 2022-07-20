@@ -1029,5 +1029,11 @@
     <ClCompile Include="15900번.cpp">
       <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\DFS</Filter>
     </ClCompile>
+    <ClCompile Include="17822번.cpp">
+      <Filter>소스 파일\아무문제</Filter>
+    </ClCompile>
+    <ClCompile Include="11478번.cpp">
+      <Filter>소스 파일\아무문제</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
