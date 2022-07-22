@@ -100,6 +100,9 @@
     <Filter Include="소스 파일\완전탐색, 백트래킹\n과 m">
       <UniqueIdentifier>{0468ad6d-909e-4f93-b9d4-fa7740de0f9f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\투포인터">
+      <UniqueIdentifier>{a7653e95-25b2-4907-94cb-2bc14e5b3270}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -1034,6 +1037,15 @@
     </ClCompile>
     <ClCompile Include="11478번.cpp">
       <Filter>소스 파일\아무문제</Filter>
+    </ClCompile>
+    <ClCompile Include="2003번.cpp">
+      <Filter>소스 파일\투포인터</Filter>
+    </ClCompile>
+    <ClCompile Include="11728번.cpp">
+      <Filter>소스 파일\투포인터</Filter>
+    </ClCompile>
+    <ClCompile Include="2470번.cpp">
+      <Filter>소스 파일\투포인터</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
