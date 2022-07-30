@@ -103,6 +103,9 @@
     <Filter Include="소스 파일\투포인터">
       <UniqueIdentifier>{a7653e95-25b2-4907-94cb-2bc14e5b3270}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\아무문제3">
+      <UniqueIdentifier>{37486666-7b9b-42e7-977f-24239760720e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -1046,6 +1049,45 @@
     </ClCompile>
     <ClCompile Include="2470번.cpp">
       <Filter>소스 파일\투포인터</Filter>
+    </ClCompile>
+    <ClCompile Include="1806번.cpp">
+      <Filter>소스 파일\투포인터</Filter>
+    </ClCompile>
+    <ClCompile Include="2018번.cpp">
+      <Filter>소스 파일\투포인터</Filter>
+    </ClCompile>
+    <ClCompile Include="4158번.cpp">
+      <Filter>소스 파일\투포인터</Filter>
+    </ClCompile>
+    <ClCompile Include="2467번.cpp">
+      <Filter>소스 파일\투포인터</Filter>
+    </ClCompile>
+    <ClCompile Include="17609번.cpp">
+      <Filter>소스 파일\투포인터</Filter>
+    </ClCompile>
+    <ClCompile Include="3649번.cpp">
+      <Filter>소스 파일\투포인터</Filter>
+    </ClCompile>
+    <ClCompile Include="2170번.cpp">
+      <Filter>소스 파일\아무문제3</Filter>
+    </ClCompile>
+    <ClCompile Include="1358번.cpp">
+      <Filter>소스 파일\아무문제3</Filter>
+    </ClCompile>
+    <ClCompile Include="2225번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
+    </ClCompile>
+    <ClCompile Include="1495번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
+    </ClCompile>
+    <ClCompile Include="15989번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
+    </ClCompile>
+    <ClCompile Include="16194번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
+    </ClCompile>
+    <ClCompile Include="10164번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
