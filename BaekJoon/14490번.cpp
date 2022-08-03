@@ -1,4 +1,3 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 int GCD(int a, int b) {
@@ -9,10 +8,8 @@ int main() {
 	string s; cin >> s;
 	int idx = (int)s.find(":");
 	int num1 = stoi(s.substr(0, idx));
-	int num2 = stoi(s.substr( idx + 1));
+	int num2 = stoi(s.substr(idx + 1));
 	int gcd = GCD(num1, num2);
 	cout << num1 / gcd << ':' << num2 / gcd << '\n';
 	return 0;
 }
-
-

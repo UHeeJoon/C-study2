@@ -1104,5 +1104,11 @@
     <ClCompile Include="1406번.cpp">
       <Filter>소스 파일\자료구조\스택</Filter>
     </ClCompile>
+    <ClCompile Include="1969번.cpp">
+      <Filter>소스 파일\아무문제3</Filter>
+    </ClCompile>
+    <ClCompile Include="14490번.cpp">
+      <Filter>소스 파일\아무문제3</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
