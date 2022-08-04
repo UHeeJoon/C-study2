@@ -1119,5 +1119,14 @@
     <ClCompile Include="14426번.cpp">
       <Filter>소스 파일\트리\트라이 %28문자열%29</Filter>
     </ClCompile>
+    <ClCompile Include="14725번.cpp">
+      <Filter>소스 파일\트리\트라이 %28문자열%29</Filter>
+    </ClCompile>
+    <ClCompile Include="7432번.cpp">
+      <Filter>소스 파일\트리\트라이 %28문자열%29</Filter>
+    </ClCompile>
+    <ClCompile Include="16934번.cpp">
+      <Filter>소스 파일\트리\트라이 %28문자열%29</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

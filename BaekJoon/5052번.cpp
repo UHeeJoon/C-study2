@@ -11,6 +11,9 @@ struct TRIE {
 			Node[i] = NULL;
 		}
 	}
+	~TRIE() {
+		for (int i = 0; i < 10; i++)if (Node[i]) delete Node[i];
+	}
 	void insert(char* str) {
 		if (*str == '\0') {
 			Finish = true;
