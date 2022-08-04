@@ -106,6 +106,9 @@
     <Filter Include="소스 파일\아무문제3">
       <UniqueIdentifier>{37486666-7b9b-42e7-977f-24239760720e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\트리\트라이 %28문자열%29">
+      <UniqueIdentifier>{88d0962d-f491-4476-95c2-d06db4992fc2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -1109,6 +1112,12 @@
     </ClCompile>
     <ClCompile Include="14490번.cpp">
       <Filter>소스 파일\아무문제3</Filter>
+    </ClCompile>
+    <ClCompile Include="5052번.cpp">
+      <Filter>소스 파일\트리\트라이 %28문자열%29</Filter>
+    </ClCompile>
+    <ClCompile Include="14426번.cpp">
+      <Filter>소스 파일\트리\트라이 %28문자열%29</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

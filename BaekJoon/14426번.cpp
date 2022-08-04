@@ -1,8 +1,7 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 struct TRIE {
-	TRIE *Node[26];
+	TRIE* Node[26];
 	TRIE() {
 		for (int i = 0; i < 26; i++) {
 			Node[i] = NULL;
@@ -14,7 +13,7 @@ struct TRIE {
 		if (Node[Cur] == NULL) Node[Cur] = new TRIE();
 		Node[Cur]->insert(str + 1);
 	}
-	bool find(char *str) {
+	bool find(char* str) {
 		if (*str == '\0') return true;
 		int Cur = *str - 'a';
 		if (Node[Cur] == NULL) return false;
