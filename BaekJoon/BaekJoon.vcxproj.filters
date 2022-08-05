@@ -109,6 +109,9 @@
     <Filter Include="소스 파일\트리\트라이 %28문자열%29">
       <UniqueIdentifier>{88d0962d-f491-4476-95c2-d06db4992fc2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\그래프 이론\벨만포드">
+      <UniqueIdentifier>{200c85fc-5d07-4501-a4b2-e663c882a393}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -1127,6 +1130,12 @@
     </ClCompile>
     <ClCompile Include="16934번.cpp">
       <Filter>소스 파일\트리\트라이 %28문자열%29</Filter>
+    </ClCompile>
+    <ClCompile Include="11444번.cpp">
+      <Filter>소스 파일\분할정복</Filter>
+    </ClCompile>
+    <ClCompile Include="1865번.cpp">
+      <Filter>소스 파일\그래프 이론\벨만포드</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
