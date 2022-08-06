@@ -112,6 +112,9 @@
     <Filter Include="소스 파일\그래프 이론\벨만포드">
       <UniqueIdentifier>{200c85fc-5d07-4501-a4b2-e663c882a393}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\트리\LCA">
+      <UniqueIdentifier>{050f9ba3-3040-4935-815e-dd35799779fc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -1136,6 +1139,12 @@
     </ClCompile>
     <ClCompile Include="1865번.cpp">
       <Filter>소스 파일\그래프 이론\벨만포드</Filter>
+    </ClCompile>
+    <ClCompile Include="1504번.cpp">
+      <Filter>소스 파일\그래프 이론\다익스트라</Filter>
+    </ClCompile>
+    <ClCompile Include="3854번.cpp">
+      <Filter>소스 파일\트리\LCA</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
