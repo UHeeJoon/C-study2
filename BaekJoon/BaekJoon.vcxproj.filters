@@ -115,6 +115,12 @@
     <Filter Include="소스 파일\트리\LCA">
       <UniqueIdentifier>{050f9ba3-3040-4935-815e-dd35799779fc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\트리\이진 트리">
+      <UniqueIdentifier>{8c79c436-5981-4fdf-83b9-8354fde907ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\애드혹">
+      <UniqueIdentifier>{33d4c0f1-ded5-4eba-a887-dcd7957bd8da}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -1145,6 +1151,18 @@
     </ClCompile>
     <ClCompile Include="3854번.cpp">
       <Filter>소스 파일\트리\LCA</Filter>
+    </ClCompile>
+    <ClCompile Include="13325번.cpp">
+      <Filter>소스 파일\트리\이진 트리</Filter>
+    </ClCompile>
+    <ClCompile Include="16434번.cpp">
+      <Filter>소스 파일\이분탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="14627번.cpp">
+      <Filter>소스 파일\이분탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="10158번.cpp">
+      <Filter>소스 파일\애드혹</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
