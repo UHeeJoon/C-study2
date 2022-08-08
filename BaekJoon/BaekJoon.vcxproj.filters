@@ -121,6 +121,12 @@
     <Filter Include="소스 파일\애드혹">
       <UniqueIdentifier>{33d4c0f1-ded5-4eba-a887-dcd7957bd8da}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS 2">
+      <UniqueIdentifier>{9421faf2-4675-44db-91d6-457d8d27d16c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\그래프 이론\깊이, 너비 우선 탐색\DFS 2">
+      <UniqueIdentifier>{722eba71-9451-44be-93aa-c4a96a145d29}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -1163,6 +1169,12 @@
     </ClCompile>
     <ClCompile Include="10158번.cpp">
       <Filter>소스 파일\애드혹</Filter>
+    </ClCompile>
+    <ClCompile Include="5014번.cpp">
+      <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS 2</Filter>
+    </ClCompile>
+    <ClCompile Include="17070번.cpp">
+      <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS 2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
