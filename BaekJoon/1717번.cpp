@@ -1,8 +1,8 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 int n, m;
 int parent[1000001];
+
 int getParent(int x) {
     if (parent[x] == x) return x;
     return parent[x] = getParent(parent[x]);
@@ -20,7 +20,7 @@ void findParent(int a, int b) {
     else cout << "NO\n";
 }
 int main() {
-	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
     cin >> n >> m;
     for (int i = 1; i <= n; i++) {
         parent[i] = i;
@@ -36,5 +36,5 @@ int main() {
         }
 
     }
-	return 0;
+    return 0;
 }
