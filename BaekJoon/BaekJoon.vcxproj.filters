@@ -1185,5 +1185,11 @@
     <ClCompile Include="1717번.cpp">
       <Filter>소스 파일\트리\최소 스패닝 트리\크루스칼 알고리즘</Filter>
     </ClCompile>
+    <ClCompile Include="5670번.cpp">
+      <Filter>소스 파일\트리\트라이 %28문자열%29</Filter>
+    </ClCompile>
+    <ClCompile Include="10825번.cpp">
+      <Filter>소스 파일\아무문제3</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
