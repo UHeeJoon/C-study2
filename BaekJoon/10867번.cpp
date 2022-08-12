@@ -1,4 +1,3 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 int arr[2010];
@@ -10,7 +9,7 @@ int main() {
 		arr[tmp + 1000] = 1;
 	}
 	for (int i = 0; i < 2005; i++) {
-		if (arr[i]) 
+		if (arr[i])
 			cout << i - 1000 << ' ';
 	}
 	cout << '\n';
