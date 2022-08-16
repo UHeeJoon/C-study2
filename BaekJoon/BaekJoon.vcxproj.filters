@@ -1218,5 +1218,20 @@
     <ClCompile Include="20168번.cpp">
       <Filter>소스 파일\그래프 이론\다익스트라</Filter>
     </ClCompile>
+    <ClCompile Include="20182번.cpp">
+      <Filter>소스 파일\그래프 이론\다익스트라</Filter>
+    </ClCompile>
+    <ClCompile Include="1138번.cpp">
+      <Filter>소스 파일\아무문제3</Filter>
+    </ClCompile>
+    <ClCompile Include="2504번.cpp">
+      <Filter>소스 파일\자료구조\스택</Filter>
+    </ClCompile>
+    <ClCompile Include="5397번.cpp">
+      <Filter>소스 파일\자료구조\스택</Filter>
+    </ClCompile>
+    <ClCompile Include="10451번.cpp">
+      <Filter>소스 파일\아무문제3</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

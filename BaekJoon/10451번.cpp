@@ -1,4 +1,3 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 void check(int now, bool visited[], int arr[]) {
@@ -14,11 +13,11 @@ int main() {
 		bool visited[1010] = { 0, };
 		int cnt = 0;
 		int n; cin >> n;
-		for (int i = 1; i <= n; i++) 
+		for (int i = 1; i <= n; i++)
 			cin >> arr[i];
 		for (int i = 1; i <= n; i++) {
-			if (!visited[i]) { 
-				check(arr[i], visited, arr); 
+			if (!visited[i]) {
+				check(arr[i], visited, arr);
 				cnt++;
 			}
 		}
