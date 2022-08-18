@@ -1,4 +1,3 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 1000 + 5
@@ -34,9 +33,9 @@ void dijkstra(int start, int end) {
 		way.push_back(tmp);
 		if (tmp == start)break;
 		tmp = route[tmp];
-	}    
+	}
 	cout << way.size() << '\n';
-	for (int i = (int)way.size() - 1; i >= 0; i--) 
+	for (int i = (int)way.size() - 1; i >= 0; i--)
 		cout << way[i] << ' ';
 	cout << '\n';
 }
@@ -51,4 +50,3 @@ int main() {
 	dijkstra(start, end);
 	return 0;
 }
-
