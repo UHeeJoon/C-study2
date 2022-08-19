@@ -1,4 +1,3 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 1005
@@ -6,9 +5,9 @@ using namespace std;
 vector<pair<int, int>> v[MAX];
 int n, m, x;
 int dijkstra(int start, int end) {
-	int dist[MAX];	
+	int dist[MAX];
 	fill(&dist[0], &dist[0] + MAX, INF);
-	dist[start] = 0;		
+	dist[start] = 0;
 	priority_queue<pair<int, int>> pq;
 	pq.push({ 0, start });
 	while (!pq.empty()) {
@@ -32,7 +31,7 @@ int dijkstra(int start, int end) {
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 	cin >> n >> m >> x;
-	for(int i=0;i<m;i++){
+	for (int i = 0; i < m; i++) {
 		int start, end, _time; cin >> start >> end >> _time;
 		v[start].push_back({ end, _time });
 	}
@@ -44,4 +43,3 @@ int main() {
 	cout << _max << '\n';
 	return 0;
 }
-

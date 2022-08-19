@@ -1245,5 +1245,11 @@
     <ClCompile Include="11779번.cpp">
       <Filter>소스 파일\그래프 이론\다익스트라</Filter>
     </ClCompile>
+    <ClCompile Include="1261번.cpp">
+      <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS 2</Filter>
+    </ClCompile>
+    <ClCompile Include="1238번.cpp">
+      <Filter>소스 파일\그래프 이론\다익스트라</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
