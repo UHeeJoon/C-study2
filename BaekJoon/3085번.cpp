@@ -1,4 +1,3 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 55
@@ -31,8 +30,8 @@ int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 	int rowCnt = 0, colCnt = 0;
 	cin >> n;
-	for (int i = 1; i <= n; i++) 
-		for (int j = 1; j <= n; j++) 
+	for (int i = 1; i <= n; i++)
+		for (int j = 1; j <= n; j++)
 			cin >> board[i][j];
 
 	for (int i = 1; i <= n; i++) {
@@ -41,7 +40,7 @@ int main() {
 				colCnt = max(colCnt, colCheck(j));
 				swap(board[i][j], board[i + 1][j]);
 				rowCnt = max({ rowCnt, rowCheck(i), rowCheck(i + 1) });
-				colCnt = max( colCnt, colCheck(j));
+				colCnt = max(colCnt, colCheck(j));
 				swap(board[i][j], board[i + 1][j]);
 			}
 			if (j != n) {
@@ -56,4 +55,3 @@ int main() {
 	cout << max(rowCnt, colCnt) << '\n';
 	return 0;
 }
-

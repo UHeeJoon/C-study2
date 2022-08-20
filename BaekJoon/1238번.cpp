@@ -5,7 +5,7 @@ using namespace std;
 vector<pair<int, int>> v[MAX];
 int n, m, x;
 int dijkstra(int start, int end) {
-	int dist[MAX];
+	int dist[MAX] = {0, };
 	fill(&dist[0], &dist[0] + MAX, INF);
 	dist[start] = 0;
 	priority_queue<pair<int, int>> pq;
@@ -17,6 +17,7 @@ int dijkstra(int start, int end) {
 		if (start != x && cur == end) {
 			return dist[end] + dijkstra(end, start);
 		}
+		if (dist[cur] < cost) continue;
 		for (int i = 0; i < v[cur].size(); i++) {
 			int next = v[cur][i].first;
 			int ncost = v[cur][i].second;
