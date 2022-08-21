@@ -1,4 +1,3 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 10010
@@ -19,4 +18,3 @@ int main() {
 	cout << '\n';
 	return 0;
 }
-
