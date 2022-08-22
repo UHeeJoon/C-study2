@@ -1,4 +1,3 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 8
@@ -13,7 +12,7 @@ void check(int y, int x) {
 	for (int i = 0; i < 4; i++) {
 		int ny = y + dy[i];
 		int nx = x + dx[i];
-		if (ny < 0 || ny >= 12 || nx < 0 || nx >= 6|| visited[ny][nx] || puyoPuyo[y][x] != puyoPuyo[ny][nx] || puyoPuyo[ny][nx] == '.') continue;
+		if (ny < 0 || ny >= 12 || nx < 0 || nx >= 6 || visited[ny][nx] || puyoPuyo[y][x] != puyoPuyo[ny][nx] || puyoPuyo[ny][nx] == '.') continue;
 		visited[ny][nx] = true;
 		check(ny, nx);
 		cnt++;
@@ -57,7 +56,7 @@ bool isBoom() {
 void gravity() {
 	for (int i = 0; i < 6; i++) {
 		int idx = 11;
-		while(idx--) {
+		while (idx--) {
 			if (puyoPuyo[idx][i] != '.') {
 				int tmp = idx + 1;
 				if (puyoPuyo[tmp][i] == '.') {

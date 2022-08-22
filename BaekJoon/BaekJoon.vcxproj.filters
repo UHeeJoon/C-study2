@@ -1269,5 +1269,11 @@
     <ClCompile Include="10973번.cpp">
       <Filter>소스 파일\구현/ 시뮬레이션</Filter>
     </ClCompile>
+    <ClCompile Include="16235번.cpp">
+      <Filter>소스 파일\구현/ 시뮬레이션</Filter>
+    </ClCompile>
+    <ClCompile Include="11559번.cpp">
+      <Filter>소스 파일\구현/ 시뮬레이션</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
