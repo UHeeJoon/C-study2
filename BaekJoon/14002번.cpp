@@ -1,4 +1,3 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 1010
@@ -7,8 +6,8 @@ int arr[MAX];
 int dp[MAX];
 vector<int> v;
 int main() {
-	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-	int n; cin >> n;
+    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    int n; cin >> n;
     int _max = 0, idx = 0, tmp = 0;
     for (int i = 1; i <= n; i++) {
         cin >> arr[i];
@@ -18,7 +17,7 @@ int main() {
                 len = max(dp[j], len);
         }
         dp[i] = len + 1;
-       
+
         if (tmp < dp[i]) {
             tmp = dp[i];
             idx = i;
@@ -35,16 +34,5 @@ int main() {
     for (int i = (int)v.size() - 1; i >= 0; i--) {
         cout << v[i] << ' ';
     }
-	return 0;
+    return 0;
 }
-/*
-7
-1 5 6 2 3 4 7
-
-
-3
-3 1 2
-
-
-*/
-
