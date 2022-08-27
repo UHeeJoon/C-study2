@@ -1,4 +1,3 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 1010
@@ -36,7 +35,7 @@ int main() {
 			else
 				pqLeft.push(num);
 		}
-		else{
+		else {
 			if (pqLeft.top() > num) {
 				pqRight.push(pqLeft.top());
 				pqLeft.pop();
@@ -47,6 +46,6 @@ int main() {
 		}
 		cout << pqLeft.top() << '\n';
 	}
-	
+
 	return 0;
 }
