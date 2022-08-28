@@ -1290,5 +1290,14 @@
     <ClCompile Include="1655번.cpp">
       <Filter>소스 파일\우선순위 큐</Filter>
     </ClCompile>
+    <ClCompile Include="1715번.cpp">
+      <Filter>소스 파일\우선순위 큐</Filter>
+    </ClCompile>
+    <ClCompile Include="14719번.cpp">
+      <Filter>소스 파일\구현/ 시뮬레이션</Filter>
+    </ClCompile>
+    <ClCompile Include="2659번.cpp">
+      <Filter>소스 파일\구현/ 시뮬레이션</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
