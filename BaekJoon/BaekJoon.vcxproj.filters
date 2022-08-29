@@ -130,6 +130,9 @@
     <Filter Include="소스 파일\구현/ 시뮬레이션">
       <UniqueIdentifier>{821ce817-ef9e-4f36-a08c-6268433c127a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\이분탐색\LIS">
+      <UniqueIdentifier>{0af82eee-9b12-4c5c-a6fe-e2f3845e7554}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -1298,6 +1301,15 @@
     </ClCompile>
     <ClCompile Include="2659번.cpp">
       <Filter>소스 파일\구현/ 시뮬레이션</Filter>
+    </ClCompile>
+    <ClCompile Include="14003번.cpp">
+      <Filter>소스 파일\이분탐색\LIS</Filter>
+    </ClCompile>
+    <ClCompile Include="12015번.cpp">
+      <Filter>소스 파일\이분탐색\LIS</Filter>
+    </ClCompile>
+    <ClCompile Include="12738번.cpp">
+      <Filter>소스 파일\이분탐색\LIS</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
