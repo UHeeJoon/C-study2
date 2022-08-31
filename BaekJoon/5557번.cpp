@@ -1,4 +1,3 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 110
@@ -7,7 +6,7 @@ int arr[MAX];
 long long dp[MAX][MAX / 2];
 int n;
 int main() {
-    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 	long long ans(0);
 	cin >> n;
 	for (int i = 1; i <= n; i++)
@@ -28,4 +27,3 @@ int main() {
 	cout << ans << '\n';
 	return 0;
 }
-
