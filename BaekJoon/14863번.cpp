@@ -1,4 +1,3 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 100010
@@ -6,7 +5,7 @@ using namespace std;
 int  n, k;
 int dp[100][MAX];
 int main() {
-    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 	cin >> n >> k;
 	for (int i = 0; i < n; i++) {
 		int q, w, e, r;
@@ -24,11 +23,10 @@ int main() {
 		}
 	}
 	int res = 0;
-	for (int i = 0; i <= k; i++) 
-		res = max(dp[n-1][i], res);
+	for (int i = 0; i <= k; i++)
+		res = max(dp[n - 1][i], res);
 
 
 	cout << res << '\n';
 	return 0;
 }
-
