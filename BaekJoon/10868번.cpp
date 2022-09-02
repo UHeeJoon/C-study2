@@ -1,8 +1,7 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
-//#define MAX 100010
-//#define INF 2147483647
+#define MAX 100010
+#define INF 2147483647
 void init(vector<int>& a, vector<int>& tree, int node, int start, int end) {
     if (start == end) tree[node] = a[start];
     else {
@@ -27,18 +26,16 @@ int main() {
     vector<int> a(n);
     int h = (int)ceil(log2(n));
     int tree_size = (1 << (h + 1));
-
     vector<int> tree(tree_size);
     for (int i = 0; i < n; i++) {
         cin >> a[i];
     }
     init(a, tree, 1, 0, n - 1);
-    
-    while (m--) {
-		int left, right;
-		cin >> left >> right;
-		cout << query(tree, 1, 0, n - 1, left - 1, right - 1) << '\n';
-    }
-	return 0;
-}
 
+    while (m--) {
+        int left, right;
+        cin >> left >> right;
+        cout << query(tree, 1, 0, n - 1, left - 1, right - 1) << '\n';
+    }
+    return 0;
+}
