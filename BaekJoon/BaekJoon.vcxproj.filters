@@ -133,6 +133,9 @@
     <Filter Include="소스 파일\이분탐색\LIS">
       <UniqueIdentifier>{0af82eee-9b12-4c5c-a6fe-e2f3845e7554}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\펜윅트리">
+      <UniqueIdentifier>{25eaa5da-71d7-47b8-a61a-8f6b9612eba2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -1322,6 +1325,12 @@
     </ClCompile>
     <ClCompile Include="10868번.cpp">
       <Filter>소스 파일\세그먼트 트리</Filter>
+    </ClCompile>
+    <ClCompile Include="1280번.cpp">
+      <Filter>소스 파일\펜윅트리</Filter>
+    </ClCompile>
+    <ClCompile Include="2531번.cpp">
+      <Filter>소스 파일\투포인터</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
