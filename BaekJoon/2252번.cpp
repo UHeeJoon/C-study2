@@ -1,4 +1,3 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 32010
@@ -10,12 +9,12 @@ int arr[MAX];
 vector<int> v[MAX];
 void topologicalSort() {
     queue<int> q;
-    for (int i = 1;i <= n; i++) {
-        if(arr[i] == 0)
+    for (int i = 1; i <= n; i++) {
+        if (arr[i] == 0)
             q.push(i);
     }
-	for (int i = 0; i < n; i++) {
-		if (q.empty())return;
+    for (int i = 0; i < n; i++) {
+        if (q.empty())return;
         int cur = q.front(); q.pop();
         cout << cur << ' ';
         for (int next : v[cur]) {
