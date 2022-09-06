@@ -40,9 +40,6 @@
     <Filter Include="소스 파일\다이나믹 프로그래밍">
       <UniqueIdentifier>{c706a1b4-8cb1-478f-9c4c-d3111bba76d8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\세그먼트 트리">
-      <UniqueIdentifier>{dc548920-6b32-4cf6-a1e7-2c7219f129b5}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\누적합">
       <UniqueIdentifier>{9ac0163a-f9f3-4182-bd02-a44eae672734}</UniqueIdentifier>
     </Filter>
@@ -141,6 +138,9 @@
     </Filter>
     <Filter Include="소스 파일\트리\펜윅트리">
       <UniqueIdentifier>{25eaa5da-71d7-47b8-a61a-8f6b9612eba2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\트리\세그먼트 트리">
+      <UniqueIdentifier>{dc548920-6b32-4cf6-a1e7-2c7219f129b5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -508,10 +508,10 @@
       <Filter>소스 파일\아무문제 2</Filter>
     </ClCompile>
     <ClCompile Include="2042번.cpp">
-      <Filter>소스 파일\세그먼트 트리</Filter>
+      <Filter>소스 파일\트리\세그먼트 트리</Filter>
     </ClCompile>
     <ClCompile Include="14438번.cpp">
-      <Filter>소스 파일\세그먼트 트리</Filter>
+      <Filter>소스 파일\트리\세그먼트 트리</Filter>
     </ClCompile>
     <ClCompile Include="17144번.cpp">
       <Filter>소스 파일\그리디, 라인스위핑, 투포인터</Filter>
@@ -1330,7 +1330,7 @@
       <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
     </ClCompile>
     <ClCompile Include="10868번.cpp">
-      <Filter>소스 파일\세그먼트 트리</Filter>
+      <Filter>소스 파일\트리\세그먼트 트리</Filter>
     </ClCompile>
     <ClCompile Include="1280번.cpp">
       <Filter>소스 파일\트리\펜윅트리</Filter>
@@ -1349,6 +1349,9 @@
     </ClCompile>
     <ClCompile Include="소스.c">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11505번.cpp">
+      <Filter>소스 파일\트리\세그먼트 트리</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
