@@ -1347,10 +1347,19 @@
     <ClCompile Include="1561번.cpp">
       <Filter>소스 파일\이분탐색</Filter>
     </ClCompile>
-    <ClCompile Include="소스.c">
+    <ClCompile Include="알고리즘.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="11505번.cpp">
+      <Filter>소스 파일\트리\세그먼트 트리</Filter>
+    </ClCompile>
+    <ClCompile Include="2357번.cpp">
+      <Filter>소스 파일\트리\세그먼트 트리</Filter>
+    </ClCompile>
+    <ClCompile Include="11658번.cpp">
+      <Filter>소스 파일\트리\세그먼트 트리</Filter>
+    </ClCompile>
+    <ClCompile Include="14428번.cpp">
       <Filter>소스 파일\트리\세그먼트 트리</Filter>
     </ClCompile>
   </ItemGroup>

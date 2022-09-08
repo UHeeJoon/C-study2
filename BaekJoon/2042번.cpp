@@ -67,3 +67,48 @@ int main() {
     }
     return 0;
 }
+
+/*      // ∆Ê¿®∆Æ∏Æ
+#include<bits/stdc++.h>
+using namespace std;
+#define MAX 1'000'010
+//#define INF 60'000'000'000
+//#define MOD 1'000'000'007
+typedef long long ll;
+ll arr[MAX];
+ll tmp[MAX];
+int n, m, k;
+void update(ll idx, ll num) {
+    while (idx <= n + 1) {
+        tmp[idx] += num;
+        idx += (idx & -idx);
+    }
+}
+ll sum(ll idx) {
+    ll ans = 0;
+    while (idx) {
+        ans += tmp[idx];
+        idx -= (idx & -idx);
+    }
+    return ans;
+}
+int main() {
+    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    cin >> n >> m >> k;
+    for (int i = 1; i <= n; i++) {
+        cin >> arr[i];
+        update(i, arr[i]);
+    }
+    m += k;
+    while (m--) {
+        ll a, b, c; cin >> a >> b >> c;
+        if (a == 1) {
+            update(b, c - arr[b]);
+            arr[b] = c;
+        }
+        else
+            cout << sum(c) - sum(b - 1) << '\n';
+    }
+    return 0;
+}
+*/
