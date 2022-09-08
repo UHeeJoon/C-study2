@@ -1362,5 +1362,17 @@
     <ClCompile Include="14428번.cpp">
       <Filter>소스 파일\트리\세그먼트 트리</Filter>
     </ClCompile>
+    <ClCompile Include="2665번.cpp">
+      <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS 2</Filter>
+    </ClCompile>
+    <ClCompile Include="10282번.cpp">
+      <Filter>소스 파일\그래프 이론\다익스트라</Filter>
+    </ClCompile>
+    <ClCompile Include="14938번.cpp">
+      <Filter>소스 파일\그래프 이론\다익스트라</Filter>
+    </ClCompile>
+    <ClCompile Include="14938번(플로이드).cpp">
+      <Filter>소스 파일\그래프 이론\플로이드-와샬</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -43,7 +43,7 @@ int main() {
     tree_size = 1 << (tree_size + 1);
     vector<Node> tree(tree_size);
     init(tree, v, 0, n - 1, 1);
-    int m; cin >> m;¤º
+    int m; cin >> m;
     while (m--) {
         int a, b, c;
         cin >> a >> b >> c;
