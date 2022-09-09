@@ -1374,5 +1374,8 @@
     <ClCompile Include="14938번(플로이드).cpp">
       <Filter>소스 파일\그래프 이론\플로이드-와샬</Filter>
     </ClCompile>
+    <ClCompile Include="1922번.cpp">
+      <Filter>소스 파일\트리\최소 스패닝 트리\크루스칼 알고리즘</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
