@@ -1,4 +1,3 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 1010
@@ -20,7 +19,7 @@ int bfs(queue<pair<pair<int, int>, int>> sang, queue<pair<int, int>> fireLocate)
 			for (int i = 0; i < 4; i++) {
 				int ny = y + dy[i];
 				int nx = x + dx[i];
-				if (ny < 0 || ny >= h || nx < 0 || nx >=w || fire[ny][nx] == '#' || fire[ny][nx] == '*')continue;
+				if (ny < 0 || ny >= h || nx < 0 || nx >= w || fire[ny][nx] == '#' || fire[ny][nx] == '*')continue;
 				fireLocate.push({ ny, nx });
 				fire[ny][nx] = '*';
 			}
@@ -62,7 +61,7 @@ int main() {
 			}
 		}
 		int cnt = bfs(sang, fireLocate);
-		if(cnt != -1)
+		if (cnt != -1)
 			cout << cnt << '\n';
 		else
 			cout << "IMPOSSIBLE\n";
