@@ -1356,9 +1356,6 @@
     <ClCompile Include="2357번.cpp">
       <Filter>소스 파일\트리\세그먼트 트리</Filter>
     </ClCompile>
-    <ClCompile Include="11658번.cpp">
-      <Filter>소스 파일\트리\세그먼트 트리</Filter>
-    </ClCompile>
     <ClCompile Include="14428번.cpp">
       <Filter>소스 파일\트리\세그먼트 트리</Filter>
     </ClCompile>
@@ -1379,6 +1376,18 @@
     </ClCompile>
     <ClCompile Include="5427번.cpp">
       <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS 2</Filter>
+    </ClCompile>
+    <ClCompile Include="1038번.cpp">
+      <Filter>소스 파일\아무문제3</Filter>
+    </ClCompile>
+    <ClCompile Include="1083번.cpp">
+      <Filter>소스 파일\정렬</Filter>
+    </ClCompile>
+    <ClCompile Include="3653번.cpp">
+      <Filter>소스 파일\트리\펜윅트리</Filter>
+    </ClCompile>
+    <ClCompile Include="11658번.cpp">
+      <Filter>소스 파일\트리\펜윅트리</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
