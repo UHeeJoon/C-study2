@@ -1,4 +1,3 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 //#define MAX 200'010
@@ -35,4 +34,3 @@ int main() {
 	cout << sum + one << '\n';
 	return 0;
 }
-

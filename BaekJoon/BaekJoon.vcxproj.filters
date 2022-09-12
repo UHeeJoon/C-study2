@@ -142,6 +142,9 @@
     <Filter Include="소스 파일\트리\세그먼트 트리">
       <UniqueIdentifier>{dc548920-6b32-4cf6-a1e7-2c7219f129b5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\그리디">
+      <UniqueIdentifier>{be130c96-0134-4e4e-936f-d81a559f7d5e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -1388,6 +1391,12 @@
     </ClCompile>
     <ClCompile Include="11658번.cpp">
       <Filter>소스 파일\트리\펜윅트리</Filter>
+    </ClCompile>
+    <ClCompile Include="1946번.cpp">
+      <Filter>소스 파일\그리디</Filter>
+    </ClCompile>
+    <ClCompile Include="1744번.cpp">
+      <Filter>소스 파일\그리디</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
