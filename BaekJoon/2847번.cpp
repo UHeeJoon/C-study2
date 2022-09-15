@@ -1,4 +1,3 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 //#define MAX 200'010
@@ -9,20 +8,19 @@ using namespace std;
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 	int n; cin >> n;
-	int _max = 0, cnt = 0, h = 0;
-	while (n--) {
-		int a;
-		cin >> a;
-		if (h < a) {
-			_max = max(cnt, _max);
-			h = a;
-			cnt = 0;
-		}
+	vector<int> v(n);
+	for (int i = 0; i < n; i++) {
+		cin >> v[i];
+	}
+	int cnt = 0;
+	for (int i = (int)v.size() - 1; i > 0; i--) {
+		if (v[i] > v[i - 1])continue;
 		else {
-			cnt++;
+			int tmp = v[i - 1] - v[i] + 1;
+			cnt += tmp;
+			v[i - 1] = v[i - 1] - tmp;
 		}
 	}
-	cout << max(_max, cnt ) << '\n';
+	cout << cnt << '\n';
 	return 0;
 }
-

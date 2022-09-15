@@ -1,4 +1,3 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 //#define MAX 200'010
@@ -22,7 +21,6 @@ int main() {
 			cnt++;
 		}
 	}
-	cout << max(_max, cnt ) << '\n';
+	cout << max(_max, cnt) << '\n';
 	return 0;
 }
-

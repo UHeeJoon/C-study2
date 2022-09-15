@@ -1,13 +1,23 @@
 #pragma warning(disable:4996)
-
-#include<stdio.h>
-int sum(int n) {
-	int _sum = 0;
-	for (int i = 1; i <= n; i += 2)
-		_sum += i;
-	return _sum;
-}
+#include<math.h>
+#include<vector>
+#include<unordered_map>
+#include<unordered_set>
+#include<cmath>
+#include<cstring>
+#include<algorithm>
+#include<vector>
+#include<queue>
+#include<map>
+#include<hash_map>
+#include<hash_set>
+#include<string>
+#include<tuple>
+#include<utility>
+#include<set>
 int main() {
-	printf("%d", sum(10));
+
 	return 0;
 }
+
+
