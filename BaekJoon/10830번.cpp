@@ -1,4 +1,3 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 //#define MAX 200'010
@@ -7,7 +6,7 @@ using namespace std;
 typedef long long ll;
 typedef vector<vector<ll>> matrix;
 ll n, m;
-matrix operator *(matrix& a,  matrix &b) {
+matrix operator *(matrix& a, matrix& b) {
 	matrix temp(n, vector<ll>(n));
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
@@ -22,7 +21,7 @@ matrix operator *(matrix& a,  matrix &b) {
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 	cin >> n >> m;
-	matrix a(n, vector<ll> (n)), b(n, vector<ll>(n)), ans(n, vector<ll>(n));
+	matrix a(n, vector<ll>(n)), b(n, vector<ll>(n)), ans(n, vector<ll>(n));
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
 			cin >> a[i][j];
@@ -42,4 +41,3 @@ int main() {
 	}
 	return 0;
 }
-
