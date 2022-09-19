@@ -19,6 +19,7 @@ matrix operator *(matrix& a,  matrix &b) {
 	}
 	return temp;
 }
+
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 	cin >> n >> m;
