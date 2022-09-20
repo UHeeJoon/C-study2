@@ -1,4 +1,3 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 //#define MAX 200'010
@@ -37,4 +36,3 @@ int main() {
 	else cout << result << '\n';
 	return 0;
 }
-

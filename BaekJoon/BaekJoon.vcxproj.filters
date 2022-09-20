@@ -1419,5 +1419,8 @@
     <ClCompile Include="10830번.cpp">
       <Filter>소스 파일\분할정복</Filter>
     </ClCompile>
+    <ClCompile Include="1343번.cpp">
+      <Filter>소스 파일\그리디</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
