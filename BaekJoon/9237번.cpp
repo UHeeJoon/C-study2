@@ -1,4 +1,3 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 //#define MAX 200'010
@@ -26,4 +25,3 @@ int main() {
 	cout << ans + day << '\n';
 	return 0;
 }
-
