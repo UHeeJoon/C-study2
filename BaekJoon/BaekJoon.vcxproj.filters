@@ -1428,5 +1428,8 @@
     <ClCompile Include="9237번.cpp">
       <Filter>소스 파일\그리디</Filter>
     </ClCompile>
+    <ClCompile Include="19939번.cpp">
+      <Filter>소스 파일\그리디</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -5,25 +5,49 @@ using namespace std;
 //#define INF 2'100'000'000
 //#define MOD 1000
 //typedef long long ll;
-int arr[100010];
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+	priority_queue<int, vector<int>, greater<>> pqRight;
+	priority_queue<int, vector<int>, less<>> pqLeft;
 	int n; cin >> n;
-	for (int i = 0; i < n; i++)
-		cin >> arr[i];
-	sort(arr, arr + n, greater<>());
-	int max_day = arr[0] - 1;
-	int day = 2, ans = arr[0], idx = 1;
-	for (int i = 1; i < n; i++) {
-		if (arr[i] > max_day) {
-			max_day = ans = arr[i];
-			day += idx;
-			idx = 0;
+	int num; cin >> num;
+	n--;
+	cout << num << '\n';
+	pqLeft.push(num);
+	//if (n > 0) {
+	//	cin >> num;
+	//	n--;
+	//	if (pqLeft.top() > num) {
+	//		pqRight.push(pqLeft.top());
+	//		pqLeft.pop();
+	//		pqLeft.push(num);
+	//	}
+	//	else
+	//		pqRight.push(num);
+	//	cout << pqLeft.top() << '\n';
+	//}
+	for (int i = 1; i <= n; i++) {
+		cin >> num;
+		if (pqLeft.size() <= pqRight.size()) {
+			if (pqRight.top() < num) {
+				pqLeft.push(pqRight.top());
+				pqRight.pop();
+				pqRight.push(num);
+			}
+			else
+				pqLeft.push(num);
 		}
-		idx++;
-		max_day--;
+		else {
+			if (pqLeft.top() > num) {
+				pqRight.push(pqLeft.top());
+				pqLeft.pop();
+				pqLeft.push(num);
+			}
+			else
+				pqRight.push(num);
+		}
+		cout << pqLeft.top() << '\n';
 	}
-	cout << ans + day << '\n';
+
 	return 0;
 }
-
