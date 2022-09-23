@@ -1,4 +1,3 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 //#define MAX 200'010
@@ -12,7 +11,7 @@ int main() {
 	vector<int> v(n);
 	for (int i = 0; i < n; i++)cin >> v[i];
 	sort(v.begin(), v.end(), greater<>());
-	for (int i = 0; i < n; i++) 
+	for (int i = 0; i < n; i++)
 		if (i % 3 != 2) sum += v[i];
 	cout << sum << '\n';
 	return 0;
