@@ -1,4 +1,3 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 1<<21
@@ -28,14 +27,14 @@ void merge_sort(int s, int e) {
     my_merge(s, e);
 }
 int main() {
-	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-	cin >> n;
-	for (int i = 0; i < n; i++)
-		cin >> arr[i];
-	cin >> k;
+    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    cin >> n;
+    for (int i = 0; i < n; i++)
+        cin >> arr[i];
+    cin >> k;
     merge_sort(0, n - 1);
     for (int i = 0; i < n; i++)
         cout << arr[i] << ' ';
     cout << '\n';
-	return 0;
+    return 0;
 }

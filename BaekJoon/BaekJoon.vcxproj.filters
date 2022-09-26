@@ -1443,5 +1443,14 @@
     <ClCompile Include="6550번.cpp">
       <Filter>소스 파일\그리디</Filter>
     </ClCompile>
+    <ClCompile Include="16208번.cpp">
+      <Filter>소스 파일\그리디</Filter>
+    </ClCompile>
+    <ClCompile Include="17829번.cpp">
+      <Filter>소스 파일\분할정복</Filter>
+    </ClCompile>
+    <ClCompile Include="11528번.cpp">
+      <Filter>소스 파일\정렬</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -38,7 +38,7 @@ int main() {
 	while (1) {
 		fgets(input.name, sizeof(input.name), stdin);
 		input.name[(int)strlen(input.name) - 1] = '\0';
-		if (!strcmp(input.name, "³¡\0")) {
+		if (!strcmp(input.name, "³¡")) {
 			break;
 		}
 		head = insert_first(head, input);
