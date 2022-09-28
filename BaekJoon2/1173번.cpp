@@ -1,4 +1,3 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 //#define MAX 1<<21
@@ -14,12 +13,12 @@ int main() {
 		return 0;
 	}
 	int pulse = m, minute(0);
-	while (N){
-		if (pulse + T <= M){
+	while (N) {
+		if (pulse + T <= M) {
 			pulse += T;
 			N--;
 		}
-		else{
+		else {
 			pulse -= R;
 			if (pulse < m) pulse = m;
 		}
