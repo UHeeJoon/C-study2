@@ -1,10 +1,6 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 4010
-//#define INF 2'100'000'000
-//#define MOD 1000
-//typedef long long ll;
 int dp[4001][4001];
 string a, b;
 int main() {
