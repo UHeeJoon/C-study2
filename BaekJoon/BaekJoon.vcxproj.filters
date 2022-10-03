@@ -145,6 +145,9 @@
     <Filter Include="소스 파일\그리디">
       <UniqueIdentifier>{be130c96-0134-4e4e-936f-d81a559f7d5e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\완전탐색, 백트래킹\외판원순회">
+      <UniqueIdentifier>{973af7ce-b4ae-492f-adba-363098ea8a93}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -1472,6 +1475,9 @@
     </ClCompile>
     <ClCompile Include="1707번.cpp">
       <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS 2</Filter>
+    </ClCompile>
+    <ClCompile Include="10971번.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹\외판원순회</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
