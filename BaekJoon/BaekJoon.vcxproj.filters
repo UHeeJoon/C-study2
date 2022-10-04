@@ -1479,5 +1479,8 @@
     <ClCompile Include="10971번.cpp">
       <Filter>소스 파일\완전탐색, 백트래킹\외판원순회</Filter>
     </ClCompile>
+    <ClCompile Include="1034번.cpp">
+      <Filter>소스 파일\애드혹</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
