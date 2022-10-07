@@ -108,3 +108,46 @@ int main() {
 	return 0;
 }
 */
+
+//#include <bits/stdc++.h>
+//using namespace std;
+//
+//int n, m, t;
+//int adj[55][55], p[55];
+//vector<int> v[55];
+//
+//int vis[55];
+//
+//void dfs(int x) {
+//	if (vis[x]) return;
+//	vis[x] = 1;
+//	for (int i = 1; i <= n; i++) if (adj[x][i]) dfs(i);
+//}
+//
+//int main() {
+//	scanf("%d %d %d", &n, &m, &t);
+//	for (int i = 0; i < t; i++) cin >> p[i];
+//	for (int i = 0; i < t; i++) {
+//		for (int j = 0; j < i; j++) {
+//			adj[p[i]][p[j]] = adj[p[j]][p[i]] = 1;
+//		}
+//	}
+//	for (int i = 0; i < m; i++) {
+//		int q;
+//		cin >> q;
+//		v[i].resize(q);
+//		for (int j = 0; j < q; j++) {
+//			cin >> v[i][j];
+//			for (int k = 0; k < j; k++) {
+//				adj[v[i][j]][v[i][k]] = 1;
+//				adj[v[i][k]][v[i][j]] = 1;
+//			}
+//		}
+//	}
+//	dfs(p[0]);
+//	int cnt = 0;
+//	for (int i = 0; i < m; i++) {
+//		if (!vis[v[i][0]]) cnt++;
+//	}
+//	printf("%d", cnt);
+//}
