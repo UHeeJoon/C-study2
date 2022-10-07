@@ -11,10 +11,10 @@ void dijkstra(int start, int end) {
 		dist[i] = 2100000000;
 	dist[start] = 0;
 	priority_queue<pair<int, int>> pq;
-	pq.push({ start, 0 });
+	pq.push({  0, start });
 	while (!pq.empty()) {
-		int cur = pq.top().first;
-		int cost = -pq.top().second;
+		int cost = -pq.top().first;
+		int cur = pq.top().second;
 		pq.pop();
 		if (cost > dist[cur]) continue;
 		for (int i = 0; i < v[cur].size(); i++) {
@@ -22,7 +22,7 @@ void dijkstra(int start, int end) {
 			int ncost = v[cur][i].second;
 			if (cost + ncost < dist[next]) {
 				dist[next] = cost + ncost;
-				pq.push({ next, -dist[next] });
+				pq.push({ -dist[next], next });
 				route[next] = cur;
 			}
 		}
