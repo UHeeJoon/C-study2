@@ -1488,5 +1488,11 @@
     <ClCompile Include="14940번.cpp">
       <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS 2</Filter>
     </ClCompile>
+    <ClCompile Include="2268번.cpp">
+      <Filter>소스 파일\트리\펜윅트리</Filter>
+    </ClCompile>
+    <ClCompile Include="1976번.cpp">
+      <Filter>소스 파일\트리\최소 스패닝 트리\크루스칼 알고리즘</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
