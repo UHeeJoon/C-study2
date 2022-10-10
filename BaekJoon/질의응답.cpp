@@ -8,6 +8,14 @@ using namespace std;
 
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-
+	while (1) {
+		string s; int age, weight;
+		cin >> s >> age >> weight;
+		if (s == "#" && !age && !weight)break;
+		if (age > 17 || weight >= 80)
+			cout << s + " Senior\n";
+		else
+			cout << s + " Junior\n";
+	}
 	return 0;
 }
