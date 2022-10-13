@@ -1500,5 +1500,8 @@
     <ClCompile Include="17352번.cpp">
       <Filter>소스 파일\트리\최소 스패닝 트리\크루스칼 알고리즘</Filter>
     </ClCompile>
+    <ClCompile Include="4195번.cpp">
+      <Filter>소스 파일\트리\최소 스패닝 트리\크루스칼 알고리즘</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
