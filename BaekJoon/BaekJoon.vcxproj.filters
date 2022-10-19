@@ -1503,5 +1503,23 @@
     <ClCompile Include="4195번.cpp">
       <Filter>소스 파일\트리\최소 스패닝 트리\크루스칼 알고리즘</Filter>
     </ClCompile>
+    <ClCompile Include="12847번.cpp">
+      <Filter>소스 파일\누적합</Filter>
+    </ClCompile>
+    <ClCompile Include="11652번.cpp">
+      <Filter>소스 파일\정렬</Filter>
+    </ClCompile>
+    <ClCompile Include="5568번.cpp">
+      <Filter>소스 파일\아무문제3</Filter>
+    </ClCompile>
+    <ClCompile Include="1059번.cpp">
+      <Filter>소스 파일\아무문제3</Filter>
+    </ClCompile>
+    <ClCompile Include="1275번.cpp">
+      <Filter>소스 파일\트리\펜윅트리</Filter>
+    </ClCompile>
+    <ClCompile Include="14427번.cpp">
+      <Filter>소스 파일\트리\세그먼트 트리</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

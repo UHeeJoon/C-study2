@@ -1,10 +1,7 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 100'000 + 10
 #define INF 2'100'000'000
-//#define MOD 1000
-//typedef long long ll;
 struct Node { int num = INF, idx = INF; };
 bool operator < (const Node& a, const Node& b) {
     if (a.num == b.num) return a.idx < b.idx;
@@ -47,7 +44,7 @@ int main() {
     int m; cin >> m;
     while (m--) {
         int a, b, c;
-        cin >> a ;
+        cin >> a;
         if (a == 1) {
             cin >> b >> c;
             update(tree, 0, n - 1, 1, b - 1, c);
