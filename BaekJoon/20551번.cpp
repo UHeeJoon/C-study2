@@ -1,10 +1,6 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 200'000 + 10
-//#define INF 2'100'000'000
-//#define MOD 1000
-//typedef long long ll;
 int arr[MAX];
 int n, m;
 int main() {

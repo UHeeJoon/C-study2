@@ -148,6 +148,9 @@
     <Filter Include="소스 파일\완전탐색, 백트래킹\외판원순회">
       <UniqueIdentifier>{973af7ce-b4ae-492f-adba-363098ea8a93}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\트리\느리게 갱신되는 세그먼트 트리">
+      <UniqueIdentifier>{124f4fb8-7b82-489f-8975-84107239143f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -1520,6 +1523,21 @@
     </ClCompile>
     <ClCompile Include="14427번.cpp">
       <Filter>소스 파일\트리\세그먼트 트리</Filter>
+    </ClCompile>
+    <ClCompile Include="18436번.cpp">
+      <Filter>소스 파일\트리\펜윅트리</Filter>
+    </ClCompile>
+    <ClCompile Include="12837번.cpp">
+      <Filter>소스 파일\트리\펜윅트리</Filter>
+    </ClCompile>
+    <ClCompile Include="10999번.cpp">
+      <Filter>소스 파일\트리\느리게 갱신되는 세그먼트 트리</Filter>
+    </ClCompile>
+    <ClCompile Include="2503번.cpp">
+      <Filter>소스 파일\아무문제3</Filter>
+    </ClCompile>
+    <ClCompile Include="20551번.cpp">
+      <Filter>소스 파일\이분탐색</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
