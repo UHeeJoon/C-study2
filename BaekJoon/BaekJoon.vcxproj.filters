@@ -1545,5 +1545,8 @@
     <ClCompile Include="2089번.cpp">
       <Filter>소스 파일\아무문제3</Filter>
     </ClCompile>
+    <ClCompile Include="소스.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,14 +1,9 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
-//#define MAX 100'000 + 10
-//#define INF 2'100'000'000
-//#define MOD 1000
-//typedef long long ll;
 void print(int n) {
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n * 5; j++) {
-			if (j / n == 0 || j/n == 4) cout << '@';
+			if (j / n == 0 || j / n == 4) cout << '@';
 			else cout << ' ';
 
 		}
@@ -26,7 +21,7 @@ void print2(int n) {
 }
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-    int n; cin >> n;
+	int n; cin >> n;
 	print(n);
 	print2(n);
 	for (int i = 0; i < n; i++) {
