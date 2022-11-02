@@ -324,5 +324,14 @@
     <ClCompile Include="23809번.cpp">
       <Filter>소스 파일\브론즈 3-3</Filter>
     </ClCompile>
+    <ClCompile Include="23810번.cpp">
+      <Filter>소스 파일\브론즈 3-3</Filter>
+    </ClCompile>
+    <ClCompile Include="23811번.cpp">
+      <Filter>소스 파일\브론즈 3-3</Filter>
+    </ClCompile>
+    <ClCompile Include="23812번.cpp">
+      <Filter>소스 파일\브론즈 3-3</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
