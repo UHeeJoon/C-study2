@@ -1,10 +1,5 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
-//#define MAX 100'000 + 10
-//#define INF 2'100'000'000
-//#define MOD 1000
-//typedef long long ll;
 char A[55][55];
 char B[55][55];
 int n, m;
@@ -16,7 +11,7 @@ void init(char tmp[55][55]) {
 		}
 	}
 }
-void trans(int y, int x) {
+void change(int y, int x) {
 	for (int i = y; i < y + 3; i++) {
 		for (int j = x; j < x + 3; j++) {
 			A[i][j] = A[i][j] == '0' ? '1' : '0';
@@ -30,7 +25,7 @@ int main() {
 	for (int i = 0; i < n - 2; i++) {
 		for (int j = 0; j < m - 2; j++) {
 			if (A[i][j] != B[i][j]) {
-				trans(i, j);
+				change(i, j);
 				cnt++;
 			}
 		}
