@@ -1554,5 +1554,11 @@
     <ClCompile Include="1080번.cpp">
       <Filter>소스 파일\그리디</Filter>
     </ClCompile>
+    <ClCompile Include="2143번.cpp">
+      <Filter>소스 파일\누적합</Filter>
+    </ClCompile>
+    <ClCompile Include="15828번.cpp">
+      <Filter>소스 파일\자료구조\큐</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
