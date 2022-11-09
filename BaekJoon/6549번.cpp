@@ -1,11 +1,5 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
-//#define MAX 100'000 + 10
-//#define INF 2'100'000'000
-//#define MOD 1000
-//typedef long long ll;
-
 int h[100010];
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
@@ -22,7 +16,7 @@ int main() {
 			while (!s.empty() && h[s.top()] > h[i]) {
 				int check = s.top();
 				s.pop();
-				ans = max(ans,(long long)h[check] * (i - s.top() - 1));
+				ans = max(ans, (long long)h[check] * (i - s.top() - 1));
 			}
 			s.push(i);
 		}

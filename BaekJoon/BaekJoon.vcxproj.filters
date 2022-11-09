@@ -1560,5 +1560,11 @@
     <ClCompile Include="15828번.cpp">
       <Filter>소스 파일\자료구조\큐</Filter>
     </ClCompile>
+    <ClCompile Include="6549번.cpp">
+      <Filter>소스 파일\자료구조\스택</Filter>
+    </ClCompile>
+    <ClCompile Include="6549번 세그먼트 트리.cpp">
+      <Filter>소스 파일\트리\세그먼트 트리</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
