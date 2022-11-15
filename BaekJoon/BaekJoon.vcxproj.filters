@@ -151,6 +151,9 @@
     <Filter Include="소스 파일\트리\느리게 갱신되는 세그먼트 트리">
       <UniqueIdentifier>{124f4fb8-7b82-489f-8975-84107239143f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\정렬\합병정렬">
+      <UniqueIdentifier>{335f48ce-5ea5-4701-8e41-ecd4b6f885ec}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -1455,9 +1458,6 @@
     <ClCompile Include="17829번.cpp">
       <Filter>소스 파일\분할정복</Filter>
     </ClCompile>
-    <ClCompile Include="11528번.cpp">
-      <Filter>소스 파일\정렬</Filter>
-    </ClCompile>
     <ClCompile Include="4779번.cpp">
       <Filter>소스 파일\분할정복</Filter>
     </ClCompile>
@@ -1580,6 +1580,12 @@
     </ClCompile>
     <ClCompile Include="1246번.cpp">
       <Filter>소스 파일\그리디</Filter>
+    </ClCompile>
+    <ClCompile Include="11256번.cpp">
+      <Filter>소스 파일\그리디</Filter>
+    </ClCompile>
+    <ClCompile Include="11582번.cpp">
+      <Filter>소스 파일\정렬\합병정렬</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
