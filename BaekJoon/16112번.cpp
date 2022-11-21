@@ -1,10 +1,5 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
-//#define MAX 200'000 + 10
-//#define INF 2'100'000'000
-//#define MOD 1000
-//typedef unsigned long long ull;
 typedef long long ll;
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
@@ -19,6 +14,6 @@ int main() {
 		ll tmp = arr[i] * min(i, k);
 		sum += tmp;
 	}
-	cout << sum;
-	return 0;			  
+	cout << sum << '\n';
+	return 0;
 }

@@ -2,129 +2,231 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#define MAX_VERTICES 50
-typedef struct {
-    int n;
-    char subject[50];
-} element;
-typedef struct GraphNode {
-    element vertex;
-    struct GraphNode* link;
-}GraphNode;
-typedef struct GraphType {
-    int n;
-    GraphNode* adj_list[MAX_VERTICES];
-}GraphType;
-void graph_init(GraphType* g) {
-    g->n = 0;
-    for (int v = 0; v < MAX_VERTICES; v++) {
-        g->adj_list[v] = NULL;
-    }
+#define MAX_SIZE 100'000
+typedef struct _heap {
+	int data[MAX_SIZE];
+	int heap_size;
+}heap;
+heap* init(heap* h) {
+	h = (heap*)malloc(sizeof(heap));
+	h->heap_size = 0;
+	return h;
 }
-void insert_vertex(GraphType* g, int v) {
-    if (((g->n) + 1) > MAX_VERTICES) {
-        fprintf(stderr, "정점개수 초과");
-        return;
-    }
-    g->n++;
+void swap(int* a, int* b, int* c) {
+	*a = *b;
+	*b = *c;
+	*c = *a;
 }
-void insert_edge(GraphType* g, element u, element v) {
-    GraphNode* node;
-    if (u.n >= g->n || v.n >= g->n) {
-        fprintf(stderr, "정점 번호 오류");
-        return;
-    }
-    node = (GraphNode*)malloc(sizeof(GraphNode));
-    node->vertex = v;
-    node->link = g->adj_list[u.n];
-    g->adj_list[u.n] = node;
+void add(heap* h, int data) {
+	h->heap_size += 1;
+	h->data[h->heap_size] = data;
+	int me = h->heap_size;
+	int parent = me / 2;
+	while (parent) {
+		if (h->data[parent] < h->data[me]) {
+			int temp = h->data[parent];
+			swap(&temp, &h->data[parent], &h->data[me]);
+			me = parent;
+			parent = me / 2;
+		}
+		else {
+			break;
+		}
+	}
+	return;
 }
-
-
-void dfs(GraphType* g, int* tmp, int idx, element* data) {
-    printf("%s => ", data[idx].subject);
-    GraphNode* node = g->adj_list[idx];
-    while (node != NULL) {
-        int u = node->vertex.n;
-        tmp[u]--;
-        if (tmp[u] == 0) {
-            dfs(g, tmp, u, data);
-        }
-        node = node->link;
-    }
+int _remove(heap* h) {
+	int res = h->data[1];
+	h->data[1] = h->data[h->heap_size];
+	h->heap_size -= 1;
+	int me = 1;
+	int child = 2;
+	while (child <= h->heap_size) {
+		if (child + 1 <= h->heap_size && h->data[child] < h->data[child + 1]) {
+			child += 1;
+		}
+		if (h->data[me] < h->data[child]) {
+			int temp = h->data[me];
+			swap(&temp, &h->data[me], &h->data[child]);
+			me = child;
+			child = me * 2;
+		}
+		else {
+			break;
+		}
+	}
+	return res;
 }
-
-int topo_sort(GraphType* g, element* data) {
-    int i;
-
-    int* in_degree = (int*)malloc(g->n * sizeof(int));
-    for (int i = 0; i < g->n; i++) {
-        in_degree[i] = 0;
-    }
-    for (i = 0; i < g->n; i++) {
-        GraphNode* node = g->adj_list[i];
-        while (node != NULL) {
-            in_degree[node->vertex.n]++;
-            node = node->link;
-        }
-    }
-
-    int* root = (int*)malloc(g->n * sizeof(int));
-    int idx = 0;
-
-    for (i = 0; i < g->n; i++) {
-        if (in_degree[i] == 0) {
-            root[idx++] = i;
-        }
-    }
-    for (int i = 0; i < idx; i++) {
-        dfs(g, in_degree, root[i], data);
-    }
-    printf("\n");
-    free(in_degree);
-    return i == g->n;
+void printHip(heap *p, int idx) {
+	if (p->heap_size < idx ) {
+		return;
+	}
+	printf("(%d ", p->data[idx]);
+	printHip(p, idx * 2);
+	if (p->heap_size < idx + 1 || idx == 1) {
+		printf(")");
+		return;
+	}
+	printf("%d)", p->data[idx + 1]);
+	return;
 }
-
-
-element find(char a[], int n, element* data) {
-    for (int i = 0; i < n; i++) {
-        if (strcmp(data[i].subject, a) == 0)
-            return data[i];
-    }
-}
-
 int main() {
-    GraphType g;
-    printf("입력할 과목 수를 입력하세요. >> ");
-    int n; (void)scanf("%d", &n);
-    (void)getchar();
-    graph_init(&g);
-    element* data = (element*)malloc(n * sizeof(element));
-    for (int i = 0; i < n; i++) {
-        element tmp;
-        printf("과목을 입력하세요. >> ");
-        fgets(tmp.subject, 50, stdin);
-        tmp.n = i;
-        tmp.subject[strlen(tmp.subject) - 1] = '\0';
-        data[i] = tmp;
-        insert_vertex(&g, i);
-    }
-    printf("\n");
-    while (1) {
-        char subject[50] = { 0, }, pre_subject[50] = { 0, };
-        printf("과목을 입력하세요.(끝낼려면 \"끝\" 입력) >> ");
-        fgets(subject, 50, stdin);
-        subject[strlen(subject) - 1] = '\0';
-        if (strcmp(subject, "끝") == 0)break;
-        printf("선수 과목을 입력하세요. >> ");
-        fgets(pre_subject, 50, stdin);
-        pre_subject[strlen(pre_subject) - 1] = '\0';
-        insert_edge(&g, find(pre_subject, n, data), find(subject, n, data));
-    }
-    topo_sort(&g, data);
-    free(data);
-    return 0;
+	heap* h = NULL;
+	h = init(h);
+	while (1) {
+		char str[20];
+		printf(">명령어를 입력하시오(중지를 원하면 stop을 입력): insert/delete\n");
+		scanf("%s", str);
+		if (strcmp(str,"stop") == 0)break;
+		else if (strcmp(str, "insert") == 0) {
+			int num;
+			printf("> 숫자를 입력하시오.\n");
+			scanf("%d", &num);
+			add(h, num);
+			printHip(h, 1);
+			printf("\n");
+		}
+		else if (strcmp(str, "delete") == 0) {
+			_remove(h);
+			printHip(h, 1);
+			printf("\n");
+		}
+		else {
+			printf("입력오류 다시 입력해주세요\n");
+		}
+	}
+	printHip(h, 1);
+	return 0;
 }
+
+
+
+//#include<stdio.h>
+//#include<stdlib.h>
+//#include<string.h>
+//#define MAX_VERTICES 50
+//typedef struct {
+//    int n;
+//    char subject[50];
+//} element;
+//typedef struct GraphNode {
+//    element vertex;
+//    struct GraphNode* link;
+//}GraphNode;
+//typedef struct GraphType {
+//    int n;
+//    GraphNode* adj_list[MAX_VERTICES];
+//}GraphType;
+//void graph_init(GraphType* g) {
+//    g->n = 0;
+//    for (int v = 0; v < MAX_VERTICES; v++) {
+//        g->adj_list[v] = NULL;
+//    }
+//}
+//void insert_vertex(GraphType* g, int v) {
+//    if (((g->n) + 1) > MAX_VERTICES) {
+//        fprintf(stderr, "정점개수 초과");
+//        return;
+//    }
+//    g->n++;
+//}
+//void insert_edge(GraphType* g, element u, element v) {
+//    GraphNode* node;
+//    if (u.n >= g->n || v.n >= g->n) {
+//        fprintf(stderr, "정점 번호 오류");
+//        return;
+//    }
+//    node = (GraphNode*)malloc(sizeof(GraphNode));
+//    node->vertex = v;
+//    node->link = g->adj_list[u.n];
+//    g->adj_list[u.n] = node;
+//}
+//
+//
+//void dfs(GraphType* g, int* tmp, int idx, element* data) {
+//    printf("%s => ", data[idx].subject);
+//    GraphNode* node = g->adj_list[idx];
+//    while (node != NULL) {
+//        int u = node->vertex.n;
+//        tmp[u]--;
+//        if (tmp[u] == 0) {
+//            dfs(g, tmp, u, data);
+//        }
+//        node = node->link;
+//    }
+//}
+//
+//int topo_sort(GraphType* g, element* data) {
+//    int i;
+//
+//    int* in_degree = (int*)malloc(g->n * sizeof(int));
+//    for (int i = 0; i < g->n; i++) {
+//        in_degree[i] = 0;
+//    }
+//    for (i = 0; i < g->n; i++) {
+//        GraphNode* node = g->adj_list[i];
+//        while (node != NULL) {
+//            in_degree[node->vertex.n]++;
+//            node = node->link;
+//        }
+//    }
+//
+//    int* root = (int*)malloc(g->n * sizeof(int));
+//    int idx = 0;
+//
+//    for (i = 0; i < g->n; i++) {
+//        if (in_degree[i] == 0) {
+//            root[idx++] = i;
+//        }
+//    }
+//    for (int i = 0; i < idx; i++) {
+//        dfs(g, in_degree, root[i], data);
+//    }
+//    printf("\n");
+//    free(in_degree);
+//    return i == g->n;
+//}
+//
+//
+//element find(char a[], int n, element* data) {
+//    for (int i = 0; i < n; i++) {
+//        if (strcmp(data[i].subject, a) == 0)
+//            return data[i];
+//    }
+//}
+//
+//int main() {
+//    GraphType g;
+//    printf("입력할 과목 수를 입력하세요. >> ");
+//    int n; (void)scanf("%d", &n);
+//    (void)getchar();
+//    graph_init(&g);
+//    element* data = (element*)malloc(n * sizeof(element));
+//    for (int i = 0; i < n; i++) {
+//        element tmp;
+//        printf("과목을 입력하세요. >> ");
+//        fgets(tmp.subject, 50, stdin);
+//        tmp.n = i;
+//        tmp.subject[strlen(tmp.subject) - 1] = '\0';
+//        data[i] = tmp;
+//        insert_vertex(&g, i);
+//    }
+//    printf("\n");
+//    while (1) {
+//        char subject[50] = { 0, }, pre_subject[50] = { 0, };
+//        printf("과목을 입력하세요.(끝낼려면 \"끝\" 입력) >> ");
+//        fgets(subject, 50, stdin);
+//        subject[strlen(subject) - 1] = '\0';
+//        if (strcmp(subject, "끝") == 0)break;
+//        printf("선수 과목을 입력하세요. >> ");
+//        fgets(pre_subject, 50, stdin);
+//        pre_subject[strlen(pre_subject) - 1] = '\0';
+//        insert_edge(&g, find(pre_subject, n, data), find(subject, n, data));
+//    }
+//    topo_sort(&g, data);
+//    free(data);
+//    return 0;
+//}
 
 /*
 8
