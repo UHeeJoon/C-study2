@@ -25,9 +25,6 @@
     <Filter Include="소스 파일\단계별 문제 풀이, 14단계 백트래킹">
       <UniqueIdentifier>{723ea454-43b2-4ba2-aaf7-b1b63ca3d337}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\아무문제 2">
-      <UniqueIdentifier>{c6b65e38-f4e9-4964-8a3d-6cedabf2455a}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\단계별 문제풀이 18 스택">
       <UniqueIdentifier>{79672795-d1a7-4b68-bdbf-afa914bae128}</UniqueIdentifier>
     </Filter>
@@ -153,6 +150,9 @@
     </Filter>
     <Filter Include="소스 파일\정렬\합병정렬">
       <UniqueIdentifier>{335f48ce-5ea5-4701-8e41-ecd4b6f885ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\아무문제2">
+      <UniqueIdentifier>{c6b65e38-f4e9-4964-8a3d-6cedabf2455a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -283,7 +283,7 @@
       <Filter>소스 파일\아무문제</Filter>
     </ClCompile>
     <ClCompile Include="13023번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="11723번.cpp">
       <Filter>소스 파일\비트마스킹</Filter>
@@ -346,28 +346,28 @@
       <Filter>소스 파일\그리디, 라인스위핑, 투포인터</Filter>
     </ClCompile>
     <ClCompile Include="2525번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="1931번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="11047번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="17615번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="1049번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="1051번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="1105번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="17085번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="9935번.cpp">
       <Filter>소스 파일\그리디, 라인스위핑, 투포인터</Filter>
@@ -379,13 +379,13 @@
       <Filter>소스 파일\그리디, 라인스위핑, 투포인터</Filter>
     </ClCompile>
     <ClCompile Include="4101번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="18110번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="1522번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="1439번.cpp">
       <Filter>소스 파일\아무문제</Filter>
@@ -517,7 +517,7 @@
       <Filter>소스 파일\아무문제</Filter>
     </ClCompile>
     <ClCompile Include="10866번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="2042번.cpp">
       <Filter>소스 파일\트리\세그먼트 트리</Filter>
@@ -541,25 +541,25 @@
       <Filter>소스 파일\다이나믹 프로그래밍</Filter>
     </ClCompile>
     <ClCompile Include="23827번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="17427번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="1764번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="11656번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="17413번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="15829.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="1302번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="11403번.cpp">
       <Filter>소스 파일\그래프 이론\플로이드-와샬</Filter>
@@ -679,16 +679,16 @@
       <Filter>소스 파일\이분탐색</Filter>
     </ClCompile>
     <ClCompile Include="18111번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="4150번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="1292번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="6588번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="1920번.cpp">
       <Filter>소스 파일\이분탐색</Filter>
@@ -703,7 +703,7 @@
       <Filter>소스 파일\자료구조</Filter>
     </ClCompile>
     <ClCompile Include="11399번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="17219번.cpp">
       <Filter>소스 파일\자료구조\해시를 이용한 집합과 맵</Filter>
@@ -847,10 +847,10 @@
       <Filter>소스 파일\누적합</Filter>
     </ClCompile>
     <ClCompile Include="1107번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="14500번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="9019번.cpp">
       <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS</Filter>
@@ -895,7 +895,7 @@
       <Filter>소스 파일\그래프 이론\플로이드-와샬</Filter>
     </ClCompile>
     <ClCompile Include="2407번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="11404번.cpp">
       <Filter>소스 파일\그래프 이론\플로이드-와샬</Filter>
@@ -988,7 +988,7 @@
       <Filter>소스 파일\완전탐색, 백트래킹</Filter>
     </ClCompile>
     <ClCompile Include="15662번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="10799번.cpp">
       <Filter>소스 파일\자료구조\스택</Filter>
@@ -1057,7 +1057,7 @@
       <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS</Filter>
     </ClCompile>
     <ClCompile Include="15685번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="15653번.cpp">
       <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS</Filter>
@@ -1072,7 +1072,7 @@
       <Filter>소스 파일\이분탐색</Filter>
     </ClCompile>
     <ClCompile Include="15683번.cpp">
-      <Filter>소스 파일\아무문제 2</Filter>
+      <Filter>소스 파일\아무문제2</Filter>
     </ClCompile>
     <ClCompile Include="1269번.cpp">
       <Filter>소스 파일\아무문제</Filter>
@@ -1592,6 +1592,12 @@
     </ClCompile>
     <ClCompile Include="16112번.cpp">
       <Filter>소스 파일\그리디</Filter>
+    </ClCompile>
+    <ClCompile Include="25328번.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="2578번.cpp">
+      <Filter>소스 파일\구현/ 시뮬레이션</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
