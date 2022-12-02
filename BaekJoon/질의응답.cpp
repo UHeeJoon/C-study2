@@ -6,54 +6,29 @@ using namespace std;
 //#define MOD 1000
 //typedef unsigned long long ull;
 //typedef long long ll;
-bool bingo[6][6];
-int number[26];
-bool check() {
-	int cnt = 0;
-	if (bingo[0][0] && bingo[1][1] && bingo[2][2] && bingo[3][3] && bingo[4][4])cnt++;
-	if (bingo[4][0] && bingo[3][1] && bingo[2][2] && bingo[1][3] && bingo[0][4])cnt++;
-	for (int i = 0; i < 5; i++) {
-		int cnt2 = 0;
-		for (int j = 0; j < 5; j++) {
-			if (!bingo[i][j])break;
-			else cnt2++;
-		}
-		if (cnt2 == 5) {
-			cnt++;
-			if (cnt >= 3)return true;
-		}
-		cnt2 = 0;
-		for (int j = 0; j < 5; j++) {
-			if (!bingo[j][i])break;
-			else cnt2++;
-		}
-		if (cnt2 == 5) {
-			cnt++;
-			if (cnt >= 3)return true;
-		}
-	}
-	return false;
-}
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-	for (int i = 0; i < 5; i++) {
-		for (int j = 0; j < 5; j++) {
-			int num; cin >> num;
-			number[num] = i * 10 + j;
+
+	int num[10] ={0,}, num2[10] = {0,};
+	for (int i = 1; i <= 9; i++) {
+		cin >> num[i];
+		num[i] += num[i - 1];
+	}
+	for (int i = 1; i <= 9; i++) {
+		cin >> num2[i];
+		num2[i] += num2[i - 1];
+	}
+	int flag = 0;
+	for (int i = 1; i <= 9; i++) {
+		if (num[i] > num2[i - 1])
+		{
+			flag = 1;
+			break;
 		}
 	}
-	int cnt = 0;
-	for (int i = 0; i < 5; i++) {
-		for (int j = 0; j < 5; j++) {
-			int num; cin >> num;
-			int idx = number[num];
-			bingo[idx / 10][idx % 10] = true;
-			if (!check()) {
-				cnt++;
-			}
-		}
-	}
-	
-	cout << cnt + 1 << '\n';
+	if ((num[9] < num2[9]) && (flag == 1))
+		cout << "Yes\n";
+	else
+		cout << "No\n";
 	return 0;
 }

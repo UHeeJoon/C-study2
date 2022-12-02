@@ -2,102 +2,150 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#define MAX_SIZE 100'000
-typedef struct _heap {
-	int data[MAX_SIZE];
-	int heap_size;
-}heap;
-heap* init(heap* h) {
-	h = (heap*)malloc(sizeof(heap));
-	h->heap_size = 0;
-	return h;
+
+
+#define swap(x, y, t) ((t) =(x), (x) = (y), (y) = (t))
+void printList(int quick[], int n) {
+	for (int i = 0; i < n; i++) {
+		printf("%d ", quick[i]);
+	}
+	printf("\n");
 }
-void swap(int* a, int* b, int* c) {
-	*a = *b;
-	*b = *c;
-	*c = *a;
-}
-void add(heap* h, int data) {
-	h->heap_size += 1;
-	h->data[h->heap_size] = data;
-	int me = h->heap_size;
-	int parent = me / 2;
-	while (parent) {
-		if (h->data[parent] < h->data[me]) {
-			int temp = h->data[parent];
-			swap(&temp, &h->data[parent], &h->data[me]);
-			me = parent;
-			parent = me / 2;
+int Partition(int arr[], int left, int right){
+	int pivot = arr[left];
+	int low = left + 1;
+	int high = right;
+	int tmp;
+	while (low <= high){
+		while (low <= right && pivot >= arr[low]){
+			low++;
 		}
-		else {
-			break;
+		while (high >= (left + 1) && pivot <= arr[high]){
+			high--;
+		}
+		if (low <= high){
+			swap(arr[low], arr[high], tmp);
 		}
 	}
-	return;
+	swap(arr[left], arr[high], tmp);
+	return high;
 }
-int _remove(heap* h) {
-	int res = h->data[1];
-	h->data[1] = h->data[h->heap_size];
-	h->heap_size -= 1;
-	int me = 1;
-	int child = 2;
-	while (child <= h->heap_size) {
-		if (child + 1 <= h->heap_size && h->data[child] < h->data[child + 1]) {
-			child += 1;
-		}
-		if (h->data[me] < h->data[child]) {
-			int temp = h->data[me];
-			swap(&temp, &h->data[me], &h->data[child]);
-			me = child;
-			child = me * 2;
-		}
-		else {
-			break;
-		}
+
+void QuickSort(int arr[], int n, int left, int right){
+	if (left <= right){
+		int pivot = Partition(arr, left, right);
+		printList(arr, n);
+		QuickSort(arr, n, left, pivot - 1);
+		QuickSort(arr, n, pivot + 1, right);
 	}
-	return res;
 }
-void printHip(heap *p, int idx) {
-	if (p->heap_size < idx ) {
-		return;
-	}
-	printf("(%d ", p->data[idx]);
-	printHip(p, idx * 2);
-	if (p->heap_size < idx + 1 || idx == 1) {
-		printf(")");
-		return;
-	}
-	printf("%d)", p->data[idx + 1]);
-	return;
+int main()
+{
+	int n, quick[1001];
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++)
+		scanf("%d", &quick[i]);
+
+	QuickSort(quick, n, 0, n - 1);
 }
-int main() {
-	heap* h = NULL;
-	h = init(h);
-	while (1) {
-		char str[20];
-		printf(">명령어를 입력하시오(중지를 원하면 stop을 입력): insert/delete\n");
-		scanf("%s", str);
-		if (strcmp(str,"stop") == 0)break;
-		else if (strcmp(str, "insert") == 0) {
-			int num;
-			printf("> 숫자를 입력하시오.\n");
-			scanf("%d", &num);
-			add(h, num);
-			printHip(h, 1);
-			printf("\n");
-		}
-		else if (strcmp(str, "delete") == 0) {
-			_remove(h);
-			printHip(h, 1);
-			printf("\n");
-		}
-		else {
-			printf("입력오류 다시 입력해주세요\n");
-		}
-	}
-	printHip(h, 1);
-	return 0;
-}
+
+
+//#define MAX_SIZE 100'000
+//typedef struct _heap {
+//	int data[MAX_SIZE];
+//	int heap_size;
+//}heap;
+//heap* init(heap* h) {
+//	h = (heap*)malloc(sizeof(heap));
+//	h->heap_size = 0;
+//	return h;
+//}
+//void swap(int* a, int* b, int* c) {
+//	*a = *b;
+//	*b = *c;
+//	*c = *a;
+//}
+//void add(heap* h, int data) {
+//	h->heap_size += 1;
+//	h->data[h->heap_size] = data;
+//	int me = h->heap_size;
+//	int parent = me / 2;
+//	while (parent) {
+//		if (h->data[parent] < h->data[me]) {
+//			int temp = h->data[parent];
+//			swap(&temp, &h->data[parent], &h->data[me]);
+//			me = parent;
+//			parent = me / 2;
+//		}
+//		else {
+//			break;
+//		}
+//	}
+//	return;
+//}
+//int _remove(heap* h) {
+//	int res = h->data[1];
+//	h->data[1] = h->data[h->heap_size];
+//	h->heap_size -= 1;
+//	int me = 1;
+//	int child = 2;
+//	while (child <= h->heap_size) {
+//		if (child + 1 <= h->heap_size && h->data[child] < h->data[child + 1]) {
+//			child += 1;
+//		}
+//		if (h->data[me] < h->data[child]) {
+//			int temp = h->data[me];
+//			swap(&temp, &h->data[me], &h->data[child]);
+//			me = child;
+//			child = me * 2;
+//		}
+//		else {
+//			break;
+//		}
+//	}
+//	return res;
+//}
+//void printHip(heap *p, int idx) {
+//	if (p->heap_size < idx ) {
+//		return;
+//	}
+//	printf("(%d ", p->data[idx]);
+//	printHip(p, idx * 2);
+//	if (p->heap_size < idx + 1 || idx == 1) {
+//		printf(")");
+//		return;
+//	}
+//	printf("%d)", p->data[idx + 1]);
+//	return;
+//}
+//int main() {
+//	heap* h = NULL;
+//	h = init(h);
+//	while (1) {
+//		char str[20];
+//		printf(">명령어를 입력하시오(중지를 원하면 stop을 입력): insert/delete\n");
+//		scanf("%s", str);
+//		if (strcmp(str,"stop") == 0)break;
+//		else if (strcmp(str, "insert") == 0) {
+//			int num;
+//			printf("> 숫자를 입력하시오.\n");
+//			scanf("%d", &num);
+//			add(h, num);
+//			printHip(h, 1);
+//			printf("\n");
+//		}
+//		else if (strcmp(str, "delete") == 0) {
+//			_remove(h);
+//			printHip(h, 1);
+//			printf("\n");
+//		}
+//		else {
+//			printf("입력오류 다시 입력해주세요\n");
+//		}
+//	}
+//	printHip(h, 1);
+//	return 0;
+//}
 
 
 

@@ -154,6 +154,12 @@
     <Filter Include="소스 파일\아무문제2">
       <UniqueIdentifier>{c6b65e38-f4e9-4964-8a3d-6cedabf2455a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\문자열">
+      <UniqueIdentifier>{4d70f22f-8cd9-4d56-8175-937cfa93ddad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\문자열\KMP">
+      <UniqueIdentifier>{51c7bff1-e2a9-4508-bbbd-e14564a5ec91}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -1598,6 +1604,9 @@
     </ClCompile>
     <ClCompile Include="2578번.cpp">
       <Filter>소스 파일\구현/ 시뮬레이션</Filter>
+    </ClCompile>
+    <ClCompile Include="16916번.cpp">
+      <Filter>소스 파일\문자열\KMP</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
