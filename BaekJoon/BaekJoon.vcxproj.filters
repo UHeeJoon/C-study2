@@ -160,6 +160,9 @@
     <Filter Include="소스 파일\문자열\KMP">
       <UniqueIdentifier>{51c7bff1-e2a9-4508-bbbd-e14564a5ec91}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\문자열\브루트포스">
+      <UniqueIdentifier>{cfe07c9c-4417-4e26-92a0-630058ae8d4b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -1607,6 +1610,12 @@
     </ClCompile>
     <ClCompile Include="16916번.cpp">
       <Filter>소스 파일\문자열\KMP</Filter>
+    </ClCompile>
+    <ClCompile Include="1251번.cpp">
+      <Filter>소스 파일\문자열\브루트포스</Filter>
+    </ClCompile>
+    <ClCompile Include="1337번.cpp">
+      <Filter>소스 파일\구현/ 시뮬레이션</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
