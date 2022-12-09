@@ -1,11 +1,5 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
-//#define MAX 200'000 + 10
-//#define INF 2'100'000'000
-//#define MOD 1000
-//typedef unsigned long long ull;
-//typedef long long ll;
 int arr[1001][6];
 bool check[1001][1001];
 int main() {
