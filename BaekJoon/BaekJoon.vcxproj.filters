@@ -163,6 +163,9 @@
     <Filter Include="소스 파일\문자열\브루트포스">
       <UniqueIdentifier>{cfe07c9c-4417-4e26-92a0-630058ae8d4b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\문자열\파싱">
+      <UniqueIdentifier>{78b3f171-3d18-477f-8a1a-ca747763b5ce}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -1622,6 +1625,9 @@
     </ClCompile>
     <ClCompile Include="17204번.cpp">
       <Filter>소스 파일\그래프 이론</Filter>
+    </ClCompile>
+    <ClCompile Include="1706번.cpp">
+      <Filter>소스 파일\문자열\파싱</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

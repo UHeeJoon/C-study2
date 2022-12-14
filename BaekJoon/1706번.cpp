@@ -1,11 +1,5 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
-//#define MAX 200'000 + 10
-//#define INF 2'100'000'000
-//#define MOD 1000
-//typedef unsigned long long ull;
-//typedef long long ll;
 char str[25][25];
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
