@@ -5,40 +5,20 @@ using namespace std;
 //#define INF 2'100'000'000
 //#define MOD 1000
 //typedef unsigned long long ull;
-//typedef long long ll;
-char str[25][25];
+typedef long long ll;
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-	int r, c; cin >> r >> c;
-	vector<string> v;
-	for (int i = 0; i < r; i++) {
-		string s = "";
-		for (int j = 0; j < c; j++) {
-			cin >> str[i][j];
-			if (str[i][j] == '#') {
-				if (s.length() > 1)v.push_back(s);
-				s = "";
-			}
-			else {
-				s.push_back(str[i][j]);
-			}
+	while (1) {
+		ll n; cin >> n;
+		if (!n)break;
+		ll sum = 0;
+		if (n & 1) {
+			sum = n + (n / 2) * n;
 		}
-		if (s.length() > 1)v.push_back(s);
-	}
-	for (int i = 0; i < c; i++) {
-		string s = "";
-		for (int j = 0; j < r; j++) {
-			if (str[j][i] == '#') {
-				if (s.length() > 1)v.push_back(s);
-				s = "";
-			}
-			else {
-				s.push_back(str[j][i]);
-			}
+		else {
+			sum = (n / 2) * (n + 1);
 		}
-		if (s.length() > 1)v.push_back(s);
+		cout << sum << '\n';
 	}
-	sort(v.begin(), v.end());
-	cout << v[0] << '\n';
 	return 0;
 }
