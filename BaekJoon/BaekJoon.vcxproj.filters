@@ -166,6 +166,12 @@
     <Filter Include="소스 파일\문자열\파싱">
       <UniqueIdentifier>{78b3f171-3d18-477f-8a1a-ca747763b5ce}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\문자열\fft">
+      <UniqueIdentifier>{dfd7d131-d838-484c-a2fa-4871045e27f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\정렬\sort">
+      <UniqueIdentifier>{6b00b349-b8d9-44f2-90d4-6ec8d6871c5a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -1628,6 +1634,12 @@
     </ClCompile>
     <ClCompile Include="1706번.cpp">
       <Filter>소스 파일\문자열\파싱</Filter>
+    </ClCompile>
+    <ClCompile Include="10826번.cpp">
+      <Filter>소스 파일\문자열\fft</Filter>
+    </ClCompile>
+    <ClCompile Include="26265번.cpp">
+      <Filter>소스 파일\정렬\sort</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
