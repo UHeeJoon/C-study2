@@ -6,15 +6,15 @@ using namespace std;
 //#define MOD 1000
 //typedef unsigned long long ull;
 //typedef long long ll;
+vector<int> v;
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 	int n; cin >> n;
-	int cnt = 0;
 	while (n--) {
-		string str; cin >> str;
-		if (str.find("CD") == string::npos)cnt++;
+		int num; cin >> num;
+		v.push_back(num);
 	}
-	cout << cnt << '\n';
-
+	sort(v.begin(), v.end(), greater<>());
+	for (int a : v) cout << a << '\n';
 	return 0;
 }
