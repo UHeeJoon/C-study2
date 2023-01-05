@@ -1641,5 +1641,8 @@
     <ClCompile Include="26265번.cpp">
       <Filter>소스 파일\정렬\sort</Filter>
     </ClCompile>
+    <ClCompile Include="2304번.cpp">
+      <Filter>소스 파일\자료구조</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
