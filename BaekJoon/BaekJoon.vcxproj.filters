@@ -1650,5 +1650,11 @@
     <ClCompile Include="1735번.cpp">
       <Filter>소스 파일\아무문제3</Filter>
     </ClCompile>
+    <ClCompile Include="1431번.cpp">
+      <Filter>소스 파일\정렬\sort</Filter>
+    </ClCompile>
+    <ClCompile Include="10157번.cpp">
+      <Filter>소스 파일\구현/ 시뮬레이션</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
