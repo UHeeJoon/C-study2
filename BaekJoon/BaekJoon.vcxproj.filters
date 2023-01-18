@@ -1656,5 +1656,8 @@
     <ClCompile Include="10157번.cpp">
       <Filter>소스 파일\구현/ 시뮬레이션</Filter>
     </ClCompile>
+    <ClCompile Include="20055번.cpp">
+      <Filter>소스 파일\구현/ 시뮬레이션</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
