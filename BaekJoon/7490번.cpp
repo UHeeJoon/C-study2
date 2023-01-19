@@ -5,7 +5,7 @@ int calculate(const int num1, const char& op, const int num2)
 	if (op == '+') return num1 + num2;
 	return num1 - num2;
 }
-void back_tracking(vector<string>& answer, const int num, const int idx, const string& operate)
+void make_zero(vector<string>& answer, const int num, const int idx, const string& operate)
 {
 	if (idx == num)
 	{
@@ -42,7 +42,7 @@ void back_tracking(vector<string>& answer, const int num, const int idx, const s
 	}
 	for (const string op : {"+", " ", "-"})
 	{
-		back_tracking(answer, num, idx + 1, operate + op);
+		make_zero(answer, num, idx + 1, operate + op);
 	}
 }
 int main() {
@@ -52,7 +52,7 @@ int main() {
 	{
 		int num; cin >> num;
 		vector<string>answer;
-		back_tracking(answer, num - 1, 0, "");
+		make_zero(answer, num - 1, 0, "");
 		sort(answer.begin(), answer.end());
 		for (constexpr string ans : answer)
 			cout << ans << '\n';
