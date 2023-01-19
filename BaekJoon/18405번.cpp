@@ -9,7 +9,7 @@ using namespace std;
 #define TYPE(virus) get<0>(virus)
 
 
-typedef tuple<int, pair<int, int>, int> virus_type_location_time;
+typedef tuple<int, pair<int, int>, int> type_location_time;
 typedef vector<vector<int>> square_vector;
 
 constexpr int row_to_move[] = { 1,0,-1,0 };
@@ -26,11 +26,11 @@ bool check_out_of_size(const int size_test_tube, const int row_of_virus, const i
 	return false;
 }
 
-void infect_virus(square_vector& test_tube, const int size_test_tube, queue<virus_type_location_time>& viruses, const int time_to_check)
+void infect_virus(square_vector& test_tube, const int size_test_tube, queue<type_location_time>& viruses, const int time_to_check)
 {
 	while (!viruses.empty())
 	{
-		const virus_type_location_time virus{ viruses.front() };
+		const type_location_time virus{ viruses.front() };
 		viruses.pop();
 
 		const int type_of_virus = TYPE(virus);
@@ -58,8 +58,8 @@ void solve()
 	int size_test_tube, max_virus_type;
 	cin >> size_test_tube >> max_virus_type;
 
-	queue<virus_type_location_time> viruses;
-	vector<virus_type_location_time> tmp_sort_by_virus_type;
+	queue<type_location_time> viruses;
+	vector<type_location_time> tmp_sort_by_virus_type;
 	square_vector test_tube(size_test_tube, vector<int>(size_test_tube));
 
 	for (int row = 0; row < size_test_tube; row++)
@@ -77,13 +77,13 @@ void solve()
 	}
 
 	sort(tmp_sort_by_virus_type.begin(), tmp_sort_by_virus_type.end());
-	for (virus_type_location_time& sort_by_virus_type_element : tmp_sort_by_virus_type)
+	for (type_location_time& sort_by_virus_type_element : tmp_sort_by_virus_type)
 	{
 		viruses.push(sort_by_virus_type_element);
 	}
 
 	// free memory
-	vector<virus_type_location_time>().swap(tmp_sort_by_virus_type);
+	vector<type_location_time>().swap(tmp_sort_by_virus_type);
 
 	int time_to_check, row_to_check, column_to_check;
 	cin >> time_to_check >> row_to_check >> column_to_check;
