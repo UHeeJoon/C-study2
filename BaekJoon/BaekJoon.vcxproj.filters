@@ -1659,5 +1659,11 @@
     <ClCompile Include="20055번.cpp">
       <Filter>소스 파일\구현/ 시뮬레이션</Filter>
     </ClCompile>
+    <ClCompile Include="7490번.cpp">
+      <Filter>소스 파일\구현/ 시뮬레이션</Filter>
+    </ClCompile>
+    <ClCompile Include="18405번.cpp">
+      <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS 2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
