@@ -51,8 +51,8 @@ void infect_virus(square_vector& test_tube, const int size_test_tube, queue<viru
 		}
 	}
 }
-
-int main() {
+void solve()
+{
 	FAST_IO;
 
 	int size_test_tube, max_virus_type;
@@ -91,6 +91,11 @@ int main() {
 	infect_virus(test_tube, size_test_tube, viruses, time_to_check);
 
 	cout << test_tube[row_to_check - 1][column_to_check - 1] << '\n';
+}
+
+int main() {
+
+	solve();
 
 	return 0;
 }
