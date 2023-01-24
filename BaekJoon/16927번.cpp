@@ -25,34 +25,32 @@ void rotate_y_x(int& y, int& x, const int y1, const int x1, const int y2, const 
 
 void rotate(const int n, const int m, const int r)
 {
-	int cnt = 0;
+	int starting_point = 0;
 	int nn = n, mm = m;
-	while (true)
+	while (nn && mm)
 	{
-		const int repeat_count = nn * 2 + (mm - 2) * 2;
+		const int border_length = nn * 2 + (mm - 2) * 2;
 
-		int tmp = r % repeat_count;
+		int tmp = r % border_length;
 		if (tmp)
 		{
-			const int y1 = cnt, x1 = cnt, y2 = n - 1 - cnt, x2 = m - 1 - cnt;
-			int y = cnt, x = cnt;
+			int y = starting_point, x = starting_point;
 			while (tmp)
 			{
-				rotate_y_x(y, x, y1, x1, y2, x2);
+				rotate_y_x(y, x, starting_point, starting_point, n - 1 - starting_point, m - 1 - starting_point);
 				tmp--;
 			}
-			int dy = cnt, dx = cnt;
-			for (int i = 0; i < repeat_count; i++)
+			int dy = starting_point, dx = starting_point;
+			for (int i = 0; i < border_length; i++)
 			{
 
 				arr[dy][dx] = tmp_arr[y][x];
-				rotate_y_x(y, x, y1, x1, y2, x2);
-				rotate_y_x(dy, dx, y1, x1, y2, x2);
+				rotate_y_x(y, x, starting_point, starting_point, n - 1 - starting_point, m - 1 - starting_point);
+				rotate_y_x(dy, dx, starting_point, starting_point, n - 1 - starting_point, m - 1 - starting_point);
 			}
 		}
-		cnt++;
+		starting_point++;
 		nn -= 2; mm -= 2;
-		if (nn <= 0 || mm <= 0)return;
 	}
 }
 void print_array(const int n, const  int m)
