@@ -82,3 +82,70 @@ int main() {
 
 	return 0;
 }
+
+
+
+/*
+ * 다른 사람 풀이
+ #include<cstdio>
+#include<algorithm>
+int n, m, r;
+int a[301][301];
+
+void printary()
+{
+	for(int i=0; i<n; i++)
+	{
+		for(int j=0; j<m; j++)
+		{
+			printf("%d ", a[i][j]);
+		}
+		printf("\n");
+	}
+}
+void rotate(int x, int y, int w, int h)
+{
+	int tmp = a[x][y];
+	for(int i=y; i<y+w; i++)
+	{
+		a[x][i] = a[x][i+1];
+	}
+	for(int i=x; i<x+h; i++)
+	{
+		a[i][y+w-1] = a[i+1][y+w-1];
+	}
+	for(int i=y+w-1; i>y; i--)
+	{
+		a[x+h-1][i] = a[x+h-1][i-1];
+	}
+	for(int i=x+h-1; i>x; i--)
+	{
+		a[i][y] = a[i-1][y];
+	}
+	a[x+1][y] = tmp;
+}
+
+int main()
+{
+	scanf("%d %d %d", &n, &m, &r);
+	for(int i=0; i<n; i++)
+	{
+		for(int j=0; j<m; j++)
+		{
+			scanf("%d", &a[i][j]);
+		}
+	}
+	for(int i=0; i<std::min(n, m)/2; i++)
+	{
+		int w = m-2*i;
+		int h = n-2*i;
+		int rot = r % (w*h-((w-2)*(h-2)));
+		for(int j=0; j<rot; j++)
+		{
+			rotate(i, i, w, h);
+			
+		}
+	}
+	printary();
+}
+ */
