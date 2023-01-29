@@ -3,7 +3,7 @@ using namespace std;
 #define FAST_IO ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr)
 void ab(const string &str, const string& s)
 {
-	if (s.length() < 1)return;
+	if (s.length() < str.length())return;
 	string tmp = s;
 	if (str == s)
 	{
@@ -16,7 +16,7 @@ void ab(const string &str, const string& s)
 		tmp.pop_back();
 		ab(str, tmp);
 	}
-	if (s[s.length() - 1] == 'A')
+	if (s[s.length() - 1] == 'A')	
 	{
 		tmp = s;
 		tmp.pop_back();
