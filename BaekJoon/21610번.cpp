@@ -4,7 +4,6 @@ using namespace std;
 int moving[9][2] = { {0,0}, {0,-1}, {-1,-1},{-1,0},{-1,1},{0,1},{1, 1},{1,0},{1,-1} };
 struct cloud
 {
-	cloud(const int y, const int x) : y(y), x(x) {}
 	void location_clearance(const int basket_size)
 	{
 		y = (y >= basket_size ? y % basket_size : y < 0 ? (basket_size * 30 + y) % basket_size : y);
@@ -30,9 +29,9 @@ void make_clouds(vector<vector<int>>& baskets, vector<cloud>& clouds, vector<vec
 				clouds_location[i][j] = false;
 				continue;
 			}
-			if (baskets[i][j] > 1)
+			if (baskets[i][j] > 1 )
 			{
-				clouds.emplace_back(i, j);
+				clouds.push_back({i, j});
 				baskets[i][j] -= 2;
 				clouds_location[i][j] = true;
 			}
@@ -43,7 +42,7 @@ void make_clouds(vector<vector<int>>& baskets, vector<cloud>& clouds, vector<vec
 void water_copy_burg(vector<vector<int>>& baskets, const vector<cloud>& clouds, const int basket_size)
 {
 	vector<vector<int>> copy_baskets(baskets);
-	for (const cloud cloud : clouds)
+	for(const cloud cloud : clouds)
 	{
 		for (int i = 2; i <= 8; i += 2)
 		{
@@ -106,11 +105,11 @@ int main() {
 		}
 	}
 	vector<cloud> clouds;
-	clouds.emplace_back(basket_size - 1, 0);
-	clouds.emplace_back(basket_size - 1, 1);
-	clouds.emplace_back(basket_size - 2, 0);
-	clouds.emplace_back(basket_size - 2, 1);
-	while (move_command_size--)
+	clouds.push_back({ basket_size - 1, 0} );
+	clouds.push_back( {basket_size - 1, 1} );
+	clouds.push_back( {basket_size - 2, 0} );
+	clouds.push_back( {basket_size - 2, 1} );
+	while(move_command_size--)
 	{
 		int move_direction, move_squares;
 		cin >> move_direction >> move_squares;
