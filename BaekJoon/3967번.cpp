@@ -32,9 +32,13 @@ int search_width(char magic_star[][10], const int r)
 }
 bool check(char magic_star[][10])
 {
-	if (search_slash(magic_star, 1, 1) == 26 && search_slash(magic_star, 0, 4) == 26
-		&& search_slash(magic_star, 0, 4, true) == 26 && search_slash(magic_star, 1, 7, true) == 26
-		&& search_width(magic_star, 1) == 26 && search_width(magic_star, 3) == 26)
+	if (search_slash(magic_star, 1, 1) == 26 
+		&& search_slash(magic_star, 0, 4) == 26
+		&& search_slash(magic_star, 0, 4, true) == 26 
+		&& search_slash(magic_star, 1, 7, true) == 26
+		&& search_width(magic_star, 1) == 26 
+		&& search_width(magic_star, 3) == 26
+		)
 	{
 		return true;
 	}
