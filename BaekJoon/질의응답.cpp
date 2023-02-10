@@ -1,64 +1,112 @@
 //#pragma warning(disable : 4996)
-//3967번 풀이중...
+// 20056번 마법사 상어와 파이어볼...
+// https://www.acmicpc.net/problem/20056
 #include<bits/stdc++.h>
 using namespace std;
 #define FAST_IO ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr)
-bool alpha[13];
-void calculation(char magic_star[][10])
+constexpr int move_way[8][2] = { {-1, 0}, {-1,1}, {0,1},{1,1},{1,0},{1,-1},{0,-1},{-1,-1} };
+struct fireball
 {
-}
-bool check(const pair<int, int> x)
-{
-	int sum = 0;
-	if(x.first == 0)
+	void location_clearance(const int grid_size)
 	{
-		
+		r = r % grid_size;
+		r = r < 0 ? r + grid_size : r;
+		c = c % grid_size;
+		c = c < 0 ? c + grid_size : c;
+	}
+	int r;
+	int c;
+	int m;
+	int s;
+	int d;
+};
+struct merged_contents
+{
+	int count;
+	int m;
+	int d;
+	int s;
+};
+typedef map<int, merged_contents> merged_fireball;
+void move(vector<fireball>& fireballs, const int grid_size)
+{
+	for (fireball& fireball : fireballs)
+	{
+		fireball.r += move_way[fireball.d][0] * fireball.s;
+		fireball.c += move_way[fireball.d][1] * fireball.s;
+		fireball.location_clearance(grid_size);
 	}
 }
-void back_tracking(char magic_star[][10], const int x_index, vector<pair<int, int>>& x)
+merged_fireball merged_fireballs(const vector<fireball>& fireballs)
 {
-	if(x_index == static_cast<int>(x.size()))
+	merged_fireball merged;
+	for (const fireball fireball : fireballs)
 	{
-		calculation(magic_star);
-		return;
+		const int location = fireball.r * 100 + fireball.c;
+		merged[location].count++;
+		merged[location].m += fireball.m;
+		merged[location].s += fireball.s;
+		merged[location].d = fireball.d;
 	}
-	for (int j = 0; j < 12; j++)
+	return merged;
+}
+void divide_4_fireballs(vector<fireball>& fireballs, const merged_fireball& merged)
+{
+	for (const auto fireball : merged)
 	{
-		if(!alpha[j])
+		const int r = fireball.first / 100;
+		const int c = fireball.first % 100;
+		const int mass = fireball.second.m / 5;
+		const int speed = fireball.second.s / fireball.second.count;
+		if (fireball.second.count == 1)
 		{
-			const char tmp = magic_star[x[x_index].first][x[x_index].second];
-			alpha[j] = true;
-			magic_star[x[x_index].first][x[x_index].second] = static_cast<char>(j + 'A');
-			if (check(x[x_index])) {
-				magic_star[x[x_index].first][x[x_index].second] = tmp;
-				alpha[j] = false;
-				return;
-			}
-			back_tracking(magic_star, x_index + 1, x);
-			alpha[j] = false;
+			fireballs.push_back({ r, c, fireball.second.m, fireball.second.s, fireball.second.d });
+			continue;
+		}
+		if (!mass) {
+			continue;
+		}
+		if ((mass & 1 && speed & 1) || (!(mass & 1) && !(speed & 1)))
+		{
+			for (int i = 0; i < 8; i += 2)
+				fireballs.push_back({ r, c, mass, speed, i });
+		}
+		else
+		{
+			for (int i = 1; i < 8; i += 2)
+				fireballs.push_back({ r, c, mass, speed, i });
 		}
 	}
 }
-int main() {
+void print_mass_sum(const vector<fireball>& fireballs)
+{
+	int mass_sum = 0;
+	for (const fireball fireball : fireballs)
+	{
+		mass_sum += fireball.m;
+	}
+	cout << mass_sum << '\n';
+}
+void command(vector<fireball>& fireballs, const int grid_size)
+{
+	move(fireballs, grid_size);
+	const merged_fireball merged = merged_fireballs(fireballs);
+	vector<fireball>().swap(fireballs); // free
+	divide_4_fireballs(fireballs, merged);
+}
+int main()
+{
 	FAST_IO;
-	char magic_star[6][10] = {};
-	vector<pair<int, int>> x;
-	for (int i = 0; i < 5; i++)
+	int n, m, k; cin >> n >> m >> k;
+	vector<fireball> fireballs(m);
+	for (fireball& fireball : fireballs)
 	{
-		for (int j = 0; j < 9; j++)
-		{
-			cin >> magic_star[i][j];
-			if (magic_star[i][j] == 'x')
-			{
-				x.emplace_back(i, j);
-			}
-			else if (magic_star[i][j] != '.')
-			{
-				alpha[magic_star[i][j] - 'A'] = true;
-			}
-		}
+		cin >> fireball.r >> fireball.c >> fireball.m >> fireball.s >> fireball.d;
 	}
-	back_tracking(magic_star, 0, x);
-	cout << _count << '\n';
+	while (k--)
+	{
+		command(fireballs, n);
+	}
+	print_mass_sum(fireballs);
 	return 0;
 }
