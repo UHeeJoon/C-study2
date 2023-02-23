@@ -12,12 +12,12 @@ struct student
 };
 constexpr int dr[] = { 0,1,0,-1 };
 constexpr int dc[] = { 1,0,-1,0 };
-bool check_nearby(const student like_person, const int near)
+bool check_nearby(const student me, const int near)
 {
-	if (like_person.like1 == near ||
-		like_person.like2 == near ||
-		like_person.like3 == near ||
-		like_person.like4 == near)
+	if (me.like1 == near ||
+		me.like2 == near ||
+		me.like3 == near ||
+		me.like4 == near)
 	{
 		return true;
 	}
