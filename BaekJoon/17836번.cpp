@@ -1,3 +1,4 @@
+// gram주운곳을 기준으로 다시 bfs
 #include<bits/stdc++.h>
 using namespace std;
 #define FAST_IO ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr)
@@ -79,6 +80,7 @@ int main()
 
 
 /*
+ * // gram줍는 순간 게임 끝
 #include<bits/stdc++.h>
 using namespace std;
 #define FAST_IO ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr)
