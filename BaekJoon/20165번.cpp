@@ -64,6 +64,7 @@ void overthrow_the_dominoes(const vector<vector<int>>& board, const int board_ro
 			board_state[next_row][next_col] = 'F';
 		}
 
+		// Score increase by the number of dominoes overthrow
 		score++;
 	}
 }
