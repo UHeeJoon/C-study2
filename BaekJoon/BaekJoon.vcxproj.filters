@@ -1722,5 +1722,41 @@
     <ClCompile Include="21610번.cpp">
       <Filter>소스 파일\구현/ 시뮬레이션\골드 5</Filter>
     </ClCompile>
+    <ClCompile Include="3967번.cpp">
+      <Filter>소스 파일\구현/ 시뮬레이션\골드 5</Filter>
+    </ClCompile>
+    <ClCompile Include="2303번.cpp">
+      <Filter>소스 파일\구현/ 시뮬레이션\실버 5</Filter>
+    </ClCompile>
+    <ClCompile Include="7785번.cpp">
+      <Filter>소스 파일\자료구조\해시를 이용한 집합과 맵</Filter>
+    </ClCompile>
+    <ClCompile Include="15558번.cpp">
+      <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS 2</Filter>
+    </ClCompile>
+    <ClCompile Include="17140번.cpp">
+      <Filter>소스 파일\구현/ 시뮬레이션\골드 4</Filter>
+    </ClCompile>
+    <ClCompile Include="20056번.cpp">
+      <Filter>소스 파일\구현/ 시뮬레이션\골드 4</Filter>
+    </ClCompile>
+    <ClCompile Include="5347번.cpp">
+      <Filter>소스 파일\아무문제3</Filter>
+    </ClCompile>
+    <ClCompile Include="21608번.cpp">
+      <Filter>소스 파일\구현/ 시뮬레이션\골드 5</Filter>
+    </ClCompile>
+    <ClCompile Include="17836번.cpp">
+      <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS 2</Filter>
+    </ClCompile>
+    <ClCompile Include="23562번 풀이 중.cpp">
+      <Filter>소스 파일\구현/ 시뮬레이션\골드 5</Filter>
+    </ClCompile>
+    <ClCompile Include="20165번.cpp">
+      <Filter>소스 파일\구현/ 시뮬레이션\골드 5</Filter>
+    </ClCompile>
+    <ClCompile Include="16956번.cpp">
+      <Filter>소스 파일\애드혹</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

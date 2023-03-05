@@ -399,5 +399,32 @@
     <ClCompile Include="1592번.cpp">
       <Filter>소스 파일\브론즈 2</Filter>
     </ClCompile>
+    <ClCompile Include="27433번.cpp">
+      <Filter>소스 파일\브론즈 5</Filter>
+    </ClCompile>
+    <ClCompile Include="1296번.cpp">
+      <Filter>소스 파일\브론즈 1</Filter>
+    </ClCompile>
+    <ClCompile Include="10802번.cpp">
+      <Filter>소스 파일\브론즈 2</Filter>
+    </ClCompile>
+    <ClCompile Include="10813번.cpp">
+      <Filter>소스 파일\브론즈 2</Filter>
+    </ClCompile>
+    <ClCompile Include="1668번.cpp">
+      <Filter>소스 파일\브론즈 2</Filter>
+    </ClCompile>
+    <ClCompile Include="10811번.cpp">
+      <Filter>소스 파일\브론즈 2</Filter>
+    </ClCompile>
+    <ClCompile Include="3985번.cpp">
+      <Filter>소스 파일\브론즈 1</Filter>
+    </ClCompile>
+    <ClCompile Include="13410번.cpp">
+      <Filter>소스 파일\브론즈 2</Filter>
+    </ClCompile>
+    <ClCompile Include="27512번.cpp">
+      <Filter>소스 파일\브론즈 2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
