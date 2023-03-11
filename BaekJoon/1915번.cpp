@@ -14,7 +14,7 @@ int main()
 			if (row[j] == '0')continue;
 			dp[i][j + 1] = 1;
 		}
-	}¤º
+	}
 	int len = 0;
 	for (int i = 1; i <= square_row; i++)
 	{
