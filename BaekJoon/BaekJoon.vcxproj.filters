@@ -88,9 +88,6 @@
     <Filter Include="소스 파일\자료구조\스택">
       <UniqueIdentifier>{ce9d6edc-fc47-4c6a-a0bd-5a7ffbfded8b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\다이나믹 프로그래밍2">
-      <UniqueIdentifier>{53e95193-4057-4b27-aec8-7e8d6c78723e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\완전탐색, 백트래킹\n과 m">
       <UniqueIdentifier>{0468ad6d-909e-4f93-b9d4-fa7740de0f9f}</UniqueIdentifier>
     </Filter>
@@ -888,39 +885,6 @@
     <ClCompile Include="17086번.cpp">
       <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS</Filter>
     </ClCompile>
-    <ClCompile Include="9656번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
-    </ClCompile>
-    <ClCompile Include="1965번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
-    </ClCompile>
-    <ClCompile Include="14916번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
-    </ClCompile>
-    <ClCompile Include="16395번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
-    </ClCompile>
-    <ClCompile Include="13699번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
-    </ClCompile>
-    <ClCompile Include="14494번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
-    </ClCompile>
-    <ClCompile Include="2491번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
-    </ClCompile>
-    <ClCompile Include="15990번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
-    </ClCompile>
-    <ClCompile Include="10211번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
-    </ClCompile>
-    <ClCompile Include="2302번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
-    </ClCompile>
-    <ClCompile Include="17216번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
-    </ClCompile>
     <ClCompile Include="14503번.cpp">
       <Filter>소스 파일\아무문제</Filter>
     </ClCompile>
@@ -953,9 +917,6 @@
     </ClCompile>
     <ClCompile Include="2110번.cpp">
       <Filter>소스 파일\이분탐색</Filter>
-    </ClCompile>
-    <ClCompile Include="2565번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
     </ClCompile>
     <ClCompile Include="5639번.cpp">
       <Filter>소스 파일\트리</Filter>
@@ -1071,33 +1032,6 @@
     <ClCompile Include="1358번.cpp">
       <Filter>소스 파일\아무문제3</Filter>
     </ClCompile>
-    <ClCompile Include="2225번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
-    </ClCompile>
-    <ClCompile Include="1495번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
-    </ClCompile>
-    <ClCompile Include="15989번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
-    </ClCompile>
-    <ClCompile Include="16194번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
-    </ClCompile>
-    <ClCompile Include="10164번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
-    </ClCompile>
-    <ClCompile Include="2670번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
-    </ClCompile>
-    <ClCompile Include="15486번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
-    </ClCompile>
-    <ClCompile Include="2502번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
-    </ClCompile>
-    <ClCompile Include="1535번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
-    </ClCompile>
     <ClCompile Include="1406번.cpp">
       <Filter>소스 파일\자료구조\스택</Filter>
     </ClCompile>
@@ -1188,9 +1122,6 @@
     <ClCompile Include="14284번.cpp">
       <Filter>소스 파일\그래프 이론\다익스트라</Filter>
     </ClCompile>
-    <ClCompile Include="11909번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
-    </ClCompile>
     <ClCompile Include="20168번.cpp">
       <Filter>소스 파일\그래프 이론\다익스트라</Filter>
     </ClCompile>
@@ -1215,9 +1146,6 @@
     <ClCompile Include="1043번.cpp">
       <Filter>소스 파일\트리\최소 스패닝 트리\크루스칼 알고리즘</Filter>
     </ClCompile>
-    <ClCompile Include="2096번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
-    </ClCompile>
     <ClCompile Include="11779번.cpp">
       <Filter>소스 파일\그래프 이론\다익스트라</Filter>
     </ClCompile>
@@ -1226,9 +1154,6 @@
     </ClCompile>
     <ClCompile Include="1238번.cpp">
       <Filter>소스 파일\그래프 이론\다익스트라</Filter>
-    </ClCompile>
-    <ClCompile Include="14002번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
     </ClCompile>
     <ClCompile Include="1655번.cpp">
       <Filter>소스 파일\우선순위 큐</Filter>
@@ -1244,15 +1169,6 @@
     </ClCompile>
     <ClCompile Include="12738번.cpp">
       <Filter>소스 파일\이분탐색\LIS</Filter>
-    </ClCompile>
-    <ClCompile Include="5557번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
-    </ClCompile>
-    <ClCompile Include="4781번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
-    </ClCompile>
-    <ClCompile Include="14863번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
     </ClCompile>
     <ClCompile Include="10868번.cpp">
       <Filter>소스 파일\트리\세그먼트 트리</Filter>
@@ -1382,9 +1298,6 @@
     </ClCompile>
     <ClCompile Include="14465번.cpp">
       <Filter>소스 파일\누적합</Filter>
-    </ClCompile>
-    <ClCompile Include="5582번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
     </ClCompile>
     <ClCompile Include="12904번.cpp">
       <Filter>소스 파일\그리디</Filter>
@@ -1526,9 +1439,6 @@
     </ClCompile>
     <ClCompile Include="2304번.cpp">
       <Filter>소스 파일\자료구조</Filter>
-    </ClCompile>
-    <ClCompile Include="10942번.cpp">
-      <Filter>소스 파일\다이나믹 프로그래밍2</Filter>
     </ClCompile>
     <ClCompile Include="1735번.cpp">
       <Filter>소스 파일\아무문제3</Filter>
@@ -1790,6 +1700,93 @@
     </ClCompile>
     <ClCompile Include="17626번.cpp">
       <Filter>소스 파일\다이나믹 프로그래밍\실버 3</Filter>
+    </ClCompile>
+    <ClCompile Include="1495번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\실버 1</Filter>
+    </ClCompile>
+    <ClCompile Include="1535번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\실버 2</Filter>
+    </ClCompile>
+    <ClCompile Include="1965번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\실버 2</Filter>
+    </ClCompile>
+    <ClCompile Include="2096번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\골드 5</Filter>
+    </ClCompile>
+    <ClCompile Include="2225번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\골드 5</Filter>
+    </ClCompile>
+    <ClCompile Include="2302번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\실버 1</Filter>
+    </ClCompile>
+    <ClCompile Include="2491번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\실버 4</Filter>
+    </ClCompile>
+    <ClCompile Include="2502번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\실버 1</Filter>
+    </ClCompile>
+    <ClCompile Include="2565번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\골드 5</Filter>
+    </ClCompile>
+    <ClCompile Include="2670번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\실버 4</Filter>
+    </ClCompile>
+    <ClCompile Include="4781번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\골드 4</Filter>
+    </ClCompile>
+    <ClCompile Include="5557번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\골드 5</Filter>
+    </ClCompile>
+    <ClCompile Include="5582번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\골드 5</Filter>
+    </ClCompile>
+    <ClCompile Include="9656번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\실버 4</Filter>
+    </ClCompile>
+    <ClCompile Include="10164번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\실버 1</Filter>
+    </ClCompile>
+    <ClCompile Include="10211번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\실버 4</Filter>
+    </ClCompile>
+    <ClCompile Include="10942번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\골드 4</Filter>
+    </ClCompile>
+    <ClCompile Include="11909번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\골드 5</Filter>
+    </ClCompile>
+    <ClCompile Include="13699번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\실버 4</Filter>
+    </ClCompile>
+    <ClCompile Include="14002번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\골드 4</Filter>
+    </ClCompile>
+    <ClCompile Include="14494번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\실버 3</Filter>
+    </ClCompile>
+    <ClCompile Include="14863번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\골드 4</Filter>
+    </ClCompile>
+    <ClCompile Include="14916번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\실버 5</Filter>
+    </ClCompile>
+    <ClCompile Include="15486번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\골드 5</Filter>
+    </ClCompile>
+    <ClCompile Include="15989번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\실버 1</Filter>
+    </ClCompile>
+    <ClCompile Include="15990번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\실버 2</Filter>
+    </ClCompile>
+    <ClCompile Include="16194번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\실버 1</Filter>
+    </ClCompile>
+    <ClCompile Include="16395번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\실버 5</Filter>
+    </ClCompile>
+    <ClCompile Include="17216번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\실버 1</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
