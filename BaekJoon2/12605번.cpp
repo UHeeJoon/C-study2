@@ -21,7 +21,7 @@ int main()
 	{
 		string data;
 		getline(cin, data);
-		stack < string> stk = tokenize_getline(data);
+		stack <string> stk = tokenize_getline(data);
 		cout << "Case #" << i << ": ";
 		while (!stk.empty())
 		{
