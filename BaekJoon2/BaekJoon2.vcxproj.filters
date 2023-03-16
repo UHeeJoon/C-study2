@@ -426,5 +426,14 @@
     <ClCompile Include="27512번.cpp">
       <Filter>소스 파일\브론즈 2</Filter>
     </ClCompile>
+    <ClCompile Include="10812번.cpp">
+      <Filter>소스 파일\브론즈 2</Filter>
+    </ClCompile>
+    <ClCompile Include="21756번.cpp">
+      <Filter>소스 파일\브론즈 2</Filter>
+    </ClCompile>
+    <ClCompile Include="12605번.cpp">
+      <Filter>소스 파일\브론즈 1</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

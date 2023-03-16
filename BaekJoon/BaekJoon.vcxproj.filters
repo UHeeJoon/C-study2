@@ -214,6 +214,9 @@
     <Filter Include="소스 파일\다이나믹 프로그래밍\실버 5">
       <UniqueIdentifier>{15fa9d2d-7284-45a4-b99f-8ae5b09104a2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\자료구조\덱">
+      <UniqueIdentifier>{5d6886c9-98ed-41aa-8e4c-dda485ca2d1c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -1787,6 +1790,12 @@
     </ClCompile>
     <ClCompile Include="17216번.cpp">
       <Filter>소스 파일\다이나믹 프로그래밍\실버 1</Filter>
+    </ClCompile>
+    <ClCompile Include="2346번.cpp">
+      <Filter>소스 파일\자료구조\덱</Filter>
+    </ClCompile>
+    <ClCompile Include="4358번.cpp">
+      <Filter>소스 파일\자료구조\해시를 이용한 집합과 맵</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
