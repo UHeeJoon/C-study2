@@ -1,6 +1,3 @@
-//#pragma warning(disable : 4996)
-// 13702번 이상한 술집...
-// https://www.acmicpc.net/problem/18428
 #include<bits/stdc++.h>
 using namespace std;
 #define FAST_IO ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr)
@@ -24,7 +21,7 @@ int main()
 	{
 		const pair<int, int> cur = q.front();
 		q.pop();
-		if(cur.first == b)
+		if (cur.first == b)
 		{
 			ans = cur.second;
 			break;
@@ -45,5 +42,5 @@ int main()
 		}
 	}
 	cout << ans << '\n';
-    return 0;
+	return 0;
 }

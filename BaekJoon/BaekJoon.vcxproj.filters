@@ -1797,5 +1797,11 @@
     <ClCompile Include="4358번.cpp">
       <Filter>소스 파일\자료구조\해시를 이용한 집합과 맵</Filter>
     </ClCompile>
+    <ClCompile Include="10997번.cpp">
+      <Filter>소스 파일\아무문제3</Filter>
+    </ClCompile>
+    <ClCompile Include="1326번.cpp">
+      <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS 2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
