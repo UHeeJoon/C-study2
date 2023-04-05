@@ -1803,5 +1803,8 @@
     <ClCompile Include="1326번.cpp">
       <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS 2</Filter>
     </ClCompile>
+    <ClCompile Include="1850번.cpp">
+      <Filter>소스 파일\아무문제3</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
