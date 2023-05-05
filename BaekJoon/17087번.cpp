@@ -1,17 +1,14 @@
-//#pragma warning(disable : 4996)
-// 13702번 이상한 술집...
-// https://www.acmicpc.net/problem/5212
 #include<bits/stdc++.h>
 using namespace std;
 #define FAST_IO ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr)
 int gcd(int a, int b)
 {
-	return b ? gcd(b, a % b) : a;
+    return b ? gcd(b, a % b) : a;
 }
 
 int main()
 {
-	FAST_IO;
+    FAST_IO;
     int n, s;
     int gcd_tmp = -1;
     cin >> n >> s;
@@ -30,5 +27,5 @@ int main()
         }
     }
     cout << gcd_tmp << '\n';
-	return 0;
+    return 0;
 }
