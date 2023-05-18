@@ -1830,6 +1830,18 @@
     <ClCompile Include="17087번.cpp">
       <Filter>소스 파일\아무문제3</Filter>
     </ClCompile>
+    <ClCompile Include="15312번.cpp">
+      <Filter>소스 파일\아무문제3</Filter>
+    </ClCompile>
+    <ClCompile Include="13414.cpp">
+      <Filter>소스 파일\자료구조\해시를 이용한 집합과 맵</Filter>
+    </ClCompile>
+    <ClCompile Include="13909번.cpp">
+      <Filter>소스 파일\아무문제3</Filter>
+    </ClCompile>
+    <ClCompile Include="1254번.cpp">
+      <Filter>소스 파일\문자열\브루트포스</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="front.in" />
