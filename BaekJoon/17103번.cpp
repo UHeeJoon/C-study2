@@ -6,14 +6,20 @@ vector<int> prime;
 int main()
 {
 	FAST_IO;
-	for (int i = 2; i <= 1'000'001; i++)
+	for (int i = 2; i <= sqrt(1'000'001); i++)
 	{
 		if (isPrime[i]) { continue; }
 		for (int j = i + i; j <= 1'000'000; j += i)
 		{
 			isPrime[j] = true;
 		}
-		prime.push_back(i);
+	}
+	for (int i = 2; i <= 1000000; i++)
+	{
+		if (!isPrime[i])
+		{
+			prime.push_back(i);
+		}
 	}
 	int t; cin >> t;
 	while (t--)
