@@ -1,39 +1,24 @@
-//#pragma warning(disable : 4996)
-// 13702¹ø ÀÌ»óÇÑ ¼úÁý...
-// https://www.acmicpc.net/problem/5212
+ï»¿//#pragma warning(disable : 4996)
+//https://www.acmicpc.net/problem/1996
 #include<bits/stdc++.h>
 using namespace std;
 #define FAST_IO ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr)
-bool check_pal(const string& str)
-{
-	for (string::size_type i = 0; i < str.length() / 2; i++)
-	{
-		if (str[i] != str[str.length() - 1 - i])
-		{
-			return false;
-		}
-	}
-	return true;
-}
 int main()
 {
 	FAST_IO;
-	string str; cin >> str;
-	int idx = 0;
-	string tmp = str;
-	while (!check_pal(tmp))
+	int n; cin >> n;
+	unordered_map<string, int> chat;
+	int ans = 0;
+	while(n--)
 	{
-		tmp = str;
-		for (int i = idx++; i >= 0; i--)
+		string str; cin >> str;
+		if(str == "ENTER")
 		{
-			tmp += str[i];
+			ans += chat.size() - 1;
+			unordered_map<string, int>().swap(chat);
 		}
+		chat[str]++;
 	}
-	cout << str.length() + idx << '\n';
+	cout << ans + chat.size() << '\n';
 	return 0;
 }
-/**
- *
-asdasd
-asdasdasd
- */

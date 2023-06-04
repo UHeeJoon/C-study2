@@ -217,6 +217,9 @@
     <Filter Include="소스 파일\자료구조\덱">
       <UniqueIdentifier>{5d6886c9-98ed-41aa-8e4c-dda485ca2d1c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\에라토스테네스의 체">
+      <UniqueIdentifier>{1798c0c2-e1a2-4bc9-9ef6-6389ea8d7119}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2589번.cpp">
@@ -1841,6 +1844,30 @@
     </ClCompile>
     <ClCompile Include="1254번.cpp">
       <Filter>소스 파일\문자열\브루트포스</Filter>
+    </ClCompile>
+    <ClCompile Include="20291번.cpp">
+      <Filter>소스 파일\자료구조\해시를 이용한 집합과 맵</Filter>
+    </ClCompile>
+    <ClCompile Include="1786번.cpp">
+      <Filter>소스 파일\문자열\KMP</Filter>
+    </ClCompile>
+    <ClCompile Include="1531번.cpp">
+      <Filter>소스 파일\아무문제3</Filter>
+    </ClCompile>
+    <ClCompile Include="25418번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\실버 3</Filter>
+    </ClCompile>
+    <ClCompile Include="14647번.cpp">
+      <Filter>소스 파일\아무문제3</Filter>
+    </ClCompile>
+    <ClCompile Include="1996번.cpp">
+      <Filter>소스 파일\아무문제3</Filter>
+    </ClCompile>
+    <ClCompile Include="17103번.cpp">
+      <Filter>소스 파일\에라토스테네스의 체</Filter>
+    </ClCompile>
+    <ClCompile Include="25192번.cpp">
+      <Filter>소스 파일\자료구조\해시를 이용한 집합과 맵</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
