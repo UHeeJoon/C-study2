@@ -7,18 +7,15 @@ int main()
 {
 	FAST_IO;
 	int n; cin >> n;
-	unordered_map<string, int> chat;
-	int ans = 0;
-	while(n--)
-	{
-		string str; cin >> str;
-		if(str == "ENTER")
+	vector<int> arr(n);
+	for_each(arr.begin(), arr.end(), [](int& el)-> void {cin >> el; });
+	long long sum = accumulate(arr.begin(), arr.end(), 0L);
+	long long result = 0;
+	for_each(arr.begin(), arr.end() - 1, [&result, &sum](const int num)-> void
 		{
-			ans += chat.size() - 1;
-			unordered_map<string, int>().swap(chat);
-		}
-		chat[str]++;
-	}
-	cout << ans + chat.size() << '\n';
+			sum -= num;
+			result += sum * num;
+		});
+	cout << result << '\n';
 	return 0;
 }

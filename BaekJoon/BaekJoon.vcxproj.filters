@@ -1869,6 +1869,9 @@
     <ClCompile Include="25192번.cpp">
       <Filter>소스 파일\자료구조\해시를 이용한 집합과 맵</Filter>
     </ClCompile>
+    <ClCompile Include="14929번.cpp">
+      <Filter>소스 파일\누적합</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="front.in" />
