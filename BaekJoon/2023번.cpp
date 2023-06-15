@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define FAST_IO ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr)
-bool check(int num)
+bool check(const int num)
 {
 	for (int i = 2; i <= sqrt(num); i++)
 	{
