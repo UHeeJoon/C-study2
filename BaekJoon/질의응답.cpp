@@ -6,16 +6,27 @@ using namespace std;
 int main()
 {
 	FAST_IO;
-	int n; cin >> n;
-	vector<int> arr(n);
-	for_each(arr.begin(), arr.end(), [](int& el)-> void {cin >> el; });
-	long long sum = accumulate(arr.begin(), arr.end(), 0L);
-	long long result = 0;
-	for_each(arr.begin(), arr.end() - 1, [&result, &sum](const int num)-> void
+	int n, l, time = 1;
+	cin >> n >> l;
+	vector<vector<int>> v(n, vector<int>(3));
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < 3; j++)
 		{
-			sum -= num;
-			result += sum * num;
-		});
-	cout << result << '\n';
+			cin >> v[i][j];
+		}
+	}
+	for (int i = 1; i <= l; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			if (i == v[j][0] && v[j][1] > time % (v[j][1] + v[j][2]))
+			{
+				time += v[j][1] - time % (v[j][1] + v[j][2]);
+			}
+		}
+		time++;
+	}
+	cout << time - 1 << '\n';
 	return 0;
 }

@@ -1872,6 +1872,15 @@
     <ClCompile Include="14929번.cpp">
       <Filter>소스 파일\누적합</Filter>
     </ClCompile>
+    <ClCompile Include="14235번.cpp">
+      <Filter>소스 파일\우선순위 큐</Filter>
+    </ClCompile>
+    <ClCompile Include="2023번.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="2980번.cpp">
+      <Filter>소스 파일\구현/ 시뮬레이션\실버 4</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="front.in" />
