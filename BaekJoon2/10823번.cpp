@@ -22,10 +22,10 @@ int main()
 	{
 		str += s;
 	}
-	for (const string& s : split(str))
+	for (const string& ss : split(str))
 	{
-		if (s == (const char*)"") { continue; }
-		answer += stoi(s);
+		if (ss == (const char*)"") { continue; }
+		answer += stoi(ss);
 	}
 	cout << answer << '\n';
 	return 0;
