@@ -26,7 +26,6 @@ int main()
 {
 	FAST_IO;
 	int n, k; cin >> n >> k;
-	bool flag = false;
 	backtracking(n, k, 0, "");
 	if (k)
 	{
