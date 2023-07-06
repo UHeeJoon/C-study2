@@ -3,36 +3,35 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define FAST_IO ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr)
-void backtracking(const int n, int& k, const int value, const string& exp)
+void backtracking(const vector<int>& idx, vector<bool>& visited, vector<int>& answer, const int init_num, const int current_num)
 {
-	if(k == 0)
+	if(init_num < current_num)
 	{
-		for_each(exp.begin() + 1, exp.end(), [](const char& c)->void { cout << c; });
-		cout << '\n';
+		answer.push_back(current_num);
 		return;
 	}
-	for (int i = 1; i < 4; i++)
+	for(vector<int>::size_type i = 0 ; i < idx.size(); i++)
 	{
-		if(value + i > n || k == 0)
+		if(!visited[i])
 		{
-			continue;
+			visited[i] = true;
+			backtracking(idx, visited, answer, init_num, current_num * 10 + idx[i]);
+			visited[i] = false;
 		}
-		if(value + i == n)
-		{
-			k--;
-		}
-		backtracking(n, k, value + i, exp + "+" + to_string(i));
 	}
 }
 int main()
 {
 	FAST_IO;
-	int n, k; cin >> n >> k;
-	bool flag = false;
-	backtracking(n, k, 0, "");
-	if(k)
-	{
-		cout << -1 << '\n';
-	}
+	string str;
+	cin >> str;
+	vector<int> idx;
+	vector<bool> visited(str.length());
+	for_each(str.begin(), str.end(), [&idx](const char c)-> void { idx.push_back(c - '0'); });
+	const int init_num = stoi(str);
+	vector<int> answer;
+	backtracking(idx, visited, answer, init_num, 0);
+	sort(answer.begin(), answer.end());
+	cout << (!answer.empty() ? answer[0] : 0) << '\n';
 	return 0;
 }

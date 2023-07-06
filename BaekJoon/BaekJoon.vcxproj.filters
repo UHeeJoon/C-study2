@@ -1890,6 +1890,18 @@
     <ClCompile Include="6186번.cpp">
       <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS 2</Filter>
     </ClCompile>
+    <ClCompile Include="fft.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="17203번.cpp">
+      <Filter>소스 파일\누적합</Filter>
+    </ClCompile>
+    <ClCompile Include="11502번.cpp">
+      <Filter>소스 파일\에라토스테네스의 체</Filter>
+    </ClCompile>
+    <ClCompile Include="2992번.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="front.in" />

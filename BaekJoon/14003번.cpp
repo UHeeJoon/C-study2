@@ -1,13 +1,14 @@
-#pragma warning(disable : 4996)
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 1000004
 #define INF 2147483647
+#define FAST_IO ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr)
 int n, lis[MAX], len, num;
 pair<int, int> ans[MAX];
 stack<int> stk;
 int main() {
-    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    FAST_IO;
+    fill(lis, lis + MAX, INF);
     cin >> n;
     for (int i = 0; i < n; i++) {
         cin >> num;
