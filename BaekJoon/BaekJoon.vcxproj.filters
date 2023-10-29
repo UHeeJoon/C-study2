@@ -1902,6 +1902,42 @@
     <ClCompile Include="2992번.cpp">
       <Filter>소스 파일\완전탐색, 백트래킹</Filter>
     </ClCompile>
+    <ClCompile Include="14534번.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="18429번.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="15661번.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="11899번.cpp">
+      <Filter>소스 파일\자료구조\스택</Filter>
+    </ClCompile>
+    <ClCompile Include="18511번.cpp">
+      <Filter>소스 파일\아무문제3</Filter>
+    </ClCompile>
+    <ClCompile Include="9742번.cpp">
+      <Filter>소스 파일\완전탐색, 백트래킹</Filter>
+    </ClCompile>
+    <ClCompile Include="1822번.cpp">
+      <Filter>소스 파일\자료구조\해시를 이용한 집합과 맵</Filter>
+    </ClCompile>
+    <ClCompile Include="11401번.cpp">
+      <Filter>소스 파일\분할정복</Filter>
+    </ClCompile>
+    <ClCompile Include="15810번.cpp">
+      <Filter>소스 파일\이분탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="16564번.cpp">
+      <Filter>소스 파일\이분탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="11663번.cpp">
+      <Filter>소스 파일\이분탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="16212번.cpp">
+      <Filter>소스 파일\정렬\sort</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="front.in" />
