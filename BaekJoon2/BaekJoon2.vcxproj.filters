@@ -555,5 +555,8 @@
     <ClCompile Include="10173번.cpp">
       <Filter>소스 파일\브론즈 2</Filter>
     </ClCompile>
+    <ClCompile Include="12813번.cpp">
+      <Filter>소스 파일\브론즈 2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
