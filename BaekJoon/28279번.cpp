@@ -10,7 +10,7 @@ int main()
 		int order; cin >> order;
 		int num;
 		switch (order)
-		{¤º
+		{
 		case 1:
 			cin >> num;
 			dq.push_front(num);
