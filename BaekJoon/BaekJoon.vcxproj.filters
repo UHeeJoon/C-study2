@@ -1941,6 +1941,12 @@
     <ClCompile Include="28279번.cpp">
       <Filter>소스 파일\자료구조\덱</Filter>
     </ClCompile>
+    <ClCompile Include="12789번.cpp">
+      <Filter>소스 파일\자료구조\스택</Filter>
+    </ClCompile>
+    <ClCompile Include="24511번.cpp">
+      <Filter>소스 파일\자료구조\덱</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="front.in" />
