@@ -1947,6 +1947,18 @@
     <ClCompile Include="24511번.cpp">
       <Filter>소스 파일\자료구조\덱</Filter>
     </ClCompile>
+    <ClCompile Include="29700번.cpp">
+      <Filter>소스 파일\누적합</Filter>
+    </ClCompile>
+    <ClCompile Include="11637번.cpp">
+      <Filter>소스 파일\구현/ 시뮬레이션\실버 5</Filter>
+    </ClCompile>
+    <ClCompile Include="17129번.cpp">
+      <Filter>소스 파일\그래프 이론\깊이, 너비 우선 탐색\BFS 2</Filter>
+    </ClCompile>
+    <ClCompile Include="25757번.cpp">
+      <Filter>소스 파일\아무문제3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="front.in" />
