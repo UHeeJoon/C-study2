@@ -1968,6 +1968,9 @@
     <ClCompile Include="11059번.cpp">
       <Filter>소스 파일\누적합</Filter>
     </ClCompile>
+    <ClCompile Include="9417번.cpp">
+      <Filter>소스 파일\아무문제3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="front.in" />
