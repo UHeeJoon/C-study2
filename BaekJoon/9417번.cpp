@@ -32,3 +32,39 @@ int main()
 	}
 	return 0;
 }
+
+#include <iostream>
+ 
+using namespace std;
+int x, y;
+int p1, p2;
+ 
+bool check[100100];
+ 
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(0); cout.tie(0);
+ 
+    cin >> x >> y >> p1 >> p2;
+ 
+    int ans = -1;
+ 
+    for (int i = p1; i < 100100; i += x)
+    {
+        check[i] = 1;
+    }
+ 
+    for (int i = p2; i < 100100; i += y)
+    {
+        if (check[i])
+        {
+            ans = i;
+            break;
+        }
+    }
+ 
+    cout << ans;
+ 
+    return 0;
+}
