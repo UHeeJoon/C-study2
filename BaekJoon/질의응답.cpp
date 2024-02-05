@@ -1,34 +1,17 @@
 ﻿//#pragma warning(disable : 4996)
-//https://www.acmicpc.net/problem/16564
+//https://www.acmicpc.net/problem/17175
 #include<bits/stdc++.h>
 using namespace std;
 #define FAST_IO ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr)
+constexpr int MOD = 1'000'000'007;
 int main()
 {
 	FAST_IO;
-	int arr[1010] = { 0, };
-	string str; cin >> str;
-	int len = str.length();
-	for (int i = 0; i < len; i++) {
-		arr[i + 1] = arr[i] + (str[i] - '0');
+	vector<int> fibonacci(51, 1);
+	int n; cin >> n;
+	for (int i = 2; i <= n; i++) {
+		fibonacci[i] = (fibonacci[i] + fibonacci[i - 2] + fibonacci[i - 1]) % MOD;
 	}
-	int dist = len + ((len & 1) == 1 ? -1 : 0);
-	for (int i = 0; i < dist; i += 2) {
-		bool flag = false;
-		int new_dist = dist - i;
-		for (int j = 0; j <= len - new_dist; j++) {
-			int half = j + new_dist / 2;
-			int left = arr[half] - arr[j];
-			int right = arr[new_dist + j] - arr[half];
-			if (left == right) {
-				flag = true;
-				break;
-			}
-		}
-		if (flag) {
-			cout << new_dist << '\n';
-			break;
-		}
-	}
+	cout << fibonacci[n] << '\n';
 	return 0;
 }
