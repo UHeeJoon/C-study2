@@ -1971,6 +1971,9 @@
     <ClCompile Include="9417번.cpp">
       <Filter>소스 파일\아무문제3</Filter>
     </ClCompile>
+    <ClCompile Include="17175번.cpp">
+      <Filter>소스 파일\다이나믹 프로그래밍\실버 3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="front.in" />
