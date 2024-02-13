@@ -1983,6 +1983,12 @@
     <ClCompile Include="15724번.cpp">
       <Filter>소스 파일\누적합</Filter>
     </ClCompile>
+    <ClCompile Include="27496번.cpp">
+      <Filter>소스 파일\누적합</Filter>
+    </ClCompile>
+    <ClCompile Include="1515번.cpp">
+      <Filter>소스 파일\구현/ 시뮬레이션\실버 3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="front.in" />
