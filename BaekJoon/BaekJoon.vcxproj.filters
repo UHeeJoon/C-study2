@@ -1992,6 +1992,9 @@
     <ClCompile Include="1564번.cpp">
       <Filter>소스 파일\아무문제3</Filter>
     </ClCompile>
+    <ClCompile Include="2212번.cpp">
+      <Filter>소스 파일\정렬\sort</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="front.in" />
