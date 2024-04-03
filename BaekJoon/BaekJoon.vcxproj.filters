@@ -1998,6 +1998,9 @@
     <ClCompile Include="1517번.cpp">
       <Filter>소스 파일\정렬\합병정렬</Filter>
     </ClCompile>
+    <ClCompile Include="2012번.cpp">
+      <Filter>소스 파일\정렬\sort</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="front.in" />
